@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchMultipleItems extends CommonAPI {
-    @FindBy(css = ".ui-searchbar-size-middle [type=\"text\"]")
+    @FindBy(xpath= "//input[@id='gh-ac']")
     public WebElement searchElements;
 
     public void searchItems(){
