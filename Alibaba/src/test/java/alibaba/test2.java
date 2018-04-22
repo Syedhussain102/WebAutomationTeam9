@@ -12,4 +12,9 @@ public class test2 extends CommonAPI {
     SearchMultipleItems refVar = PageFactory.initElements(driver,SearchMultipleItems.class);
         refVar.searchItems();
 }
+    @Test
+    public void test4(){
+        SearchMultipleItems refVar = new SearchMultipleItems();
+        refVar.searchItems();
+    }
 }

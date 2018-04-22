@@ -18,7 +18,7 @@ public class ViewMultipleItems extends CommonAPI {
 
     }
 
-    /*@Test
+    /*@Test//input[@class='ui2-checkbox-customize-txt']
     public void categories(){
         typeByXpathNEnter("//input[@id='gh-ac']","Java");
     List<WebElement> menu = driver.findElements(By.className("s-item__price"));

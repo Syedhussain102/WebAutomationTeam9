@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1684696-1c20-4c0b-95e7-2c27117fc491" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba/src/main/java/main/SearchMultipleItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba/src/main/java/main/ViewMultipleItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/ApplicationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentTestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/TestLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba/Alibaba.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-15:59PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-16:00PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-16:02PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-16:35PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-16:36PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-17:27PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-17:31PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-17:32PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-17:37PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-17:39PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/screenshots/searchforItems (04.21.2018-17:45PM).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/src/main/java/main/ViewMultipleItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba/src/main/java/main/ViewMultipleItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba/src/test/resources/Alibaba_TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba/src/test/resources/Alibaba_TestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/Facebook.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HBO/HBO.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAutomationTeam9.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba/target/test-classes/alibaba/test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba/target/test-classes/alibaba/test1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,15 +43,13 @@
       <file leaf-file-name="CommonAPI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="337" column="13" selection-start-line="337" selection-start-column="13" selection-end-line="337" selection-end-column="13" />
+            <state relative-caret-position="932">
+              <caret line="194" column="5" lean-forward="true" selection-start-line="194" selection-start-column="5" selection-end-line="194" selection-end-column="5" />
               <folding>
-                <element signature="e#4859#4867#0" expanded="true" />
-                <element signature="e#5195#5207#0" expanded="true" />
-                <element signature="e#7210#7218#0" expanded="true" />
-                <element signature="e#9699#9700#0" expanded="true" />
-                <element signature="e#9766#9767#0" expanded="true" />
-                <element signature="e#9805#9817#0" expanded="true" />
+                <element signature="e#5357#5365#0" expanded="true" />
+                <element signature="e#5693#5705#0" expanded="true" />
+                <element signature="e#7712#7720#0" expanded="true" />
+                <element signature="e#12746#12758#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +58,8 @@
       <file leaf-file-name="test1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="420">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,32 +69,18 @@
       </file>
       <file leaf-file-name="ViewMultipleItems.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alibaba/src/main/java/main/ViewMultipleItems.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="SearchMultipleItems.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Alibaba/src/main/java/main/SearchMultipleItems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alibaba_TestRunner.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Alibaba/target/test-classes/Alibaba_TestRunner.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="220">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -107,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/Alibaba/src/test/resources/Alibaba_TestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -151,10 +133,11 @@
         <option value="$PROJECT_DIR$/Generic/pom.xml" />
         <option value="$PROJECT_DIR$/Alibaba/src/test/resources/Alibaba_TestRunner.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/idea.vmoptions" />
+        <option value="$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test2.java" />
+        <option value="$PROJECT_DIR$/Alibaba/src/main/java/main/SearchMultipleItems.java" />
+        <option value="$PROJECT_DIR$/Alibaba/src/main/java/main/ViewMultipleItems.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" />
         <option value="$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test1.java" />
-        <option value="$PROJECT_DIR$/Alibaba/src/main/java/main/SearchMultipleItems.java" />
-        <option value="$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test2.java" />
       </list>
     </option>
   </component>
@@ -172,8 +155,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="18" />
+    <option name="x" value="46" />
     <option name="width" value="1634" />
     <option name="height" value="1028" />
   </component>
@@ -184,6 +166,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,8 +288,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,22 +297,25 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Generic/src/main/java" />
-      <recent name="$PROJECT_DIR$/ObamaCare/src/test/resources" />
-      <recent name="$PROJECT_DIR$/Alibaba/src/test/resources" />
-      <recent name="$PROJECT_DIR$/CityBank/src/test/resources" />
-      <recent name="$PROJECT_DIR$/Facebook/src/test/resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Alibaba/src/test" />
       <recent name="$PROJECT_DIR$/CityBank/src/test" />
       <recent name="$PROJECT_DIR$/Facebook/src/test" />
       <recent name="$PROJECT_DIR$/HBO/src/test" />
       <recent name="$PROJECT_DIR$/ObamaCare/src/test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="alibaba" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Alibaba/src/main/java/main" />
+      <recent name="$PROJECT_DIR$/Generic/src/main/java" />
+      <recent name="$PROJECT_DIR$/ObamaCare/src/test/resources" />
+      <recent name="$PROJECT_DIR$/Alibaba/src/test/resources" />
+      <recent name="$PROJECT_DIR$/CityBank/src/test/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -432,6 +417,35 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="test1.addToCart" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="alibaba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alibaba.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="alibaba" />
+      <option name="MAIN_CLASS_NAME" value="alibaba.test1" />
+      <option name="METHOD_NAME" value="addToCart" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="test1.searchforItems" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="alibaba" />
       <extension name="coverage">
@@ -465,10 +479,12 @@
       <item itemvalue="TestNG./Users/zann/Downloads/WebAutomationTeam9/Alibaba/target/test-classes/Alibaba_TestRunner.xml" />
       <item itemvalue="TestNG./Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" />
       <item itemvalue="TestNG.test1.searchforItems" />
+      <item itemvalue="TestNG.test1.addToCart" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" />
+        <item itemvalue="TestNG.test1.addToCart" />
         <item itemvalue="TestNG.test1.searchforItems" />
         <item itemvalue="TestNG./Users/zann/Downloads/WebAutomationTeam9/Alibaba/target/test-classes/Alibaba_TestRunner.xml" />
       </list>
@@ -488,34 +504,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 20h 08m 34s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 32m 54s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 20h 09m 36s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 35m 08s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 20h 10m 25s.xml">
+    <history-entry file="test1_addToCart - 2018.04.22 at 07h 35m 25s.xml">
+      <configuration name="test1.addToCart" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 35m 38s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 20h 15m 11s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 36m 04s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 20h 15m 54s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 38m 26s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 20h 18m 40s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 57m 29s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 21h 44m 14s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 58m 26s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 22h 03m 57s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 07h 59m 22s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 22h 04m 49s.xml">
-      <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.21 at 22h 10m 26s.xml">
+    <history-entry file="_Users_zann_Downloads_WebAutomationTeam9_Alibaba_src_test_resources_Alibaba_TestRunner_xml - 2018.04.22 at 08h 02m 16s.xml">
       <configuration name="/Users/zann/Downloads/WebAutomationTeam9/Alibaba/src/test/resources/Alibaba_TestRunner.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -529,19 +545,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="18" width="1634" height="1028" extended-state="0" />
+    <frame x="46" y="0" width="1634" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32967034" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32953104" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="right" id="Mongo Explorer" order="4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.16593407" />
       <window_info id="Capture Tool" order="6" />
@@ -559,6 +574,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32967034" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -894,31 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="337" column="13" selection-start-line="337" selection-start-column="13" selection-end-line="337" selection-end-column="13" />
-          <folding>
-            <element signature="e#4859#4867#0" expanded="true" />
-            <element signature="e#5195#5207#0" expanded="true" />
-            <element signature="e#7210#7218#0" expanded="true" />
-            <element signature="e#9699#9700#0" expanded="true" />
-            <element signature="e#9766#9767#0" expanded="true" />
-            <element signature="e#9805#9817#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alibaba/src/test/resources/Alibaba_TestRunner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Alibaba/src/main/java/main/ViewMultipleItems.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -926,17 +917,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Alibaba/src/test/resources/Alibaba_TestRunner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alibaba/src/main/java/main/ViewMultipleItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="932">
+          <caret line="194" column="5" lean-forward="true" selection-start-line="194" selection-start-column="5" selection-end-line="194" selection-end-column="5" />
+          <folding>
+            <element signature="e#5357#5365#0" expanded="true" />
+            <element signature="e#5693#5705#0" expanded="true" />
+            <element signature="e#7712#7720#0" expanded="true" />
+            <element signature="e#12746#12758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Alibaba/src/main/java/main/SearchMultipleItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Alibaba/src/test/java/alibaba/test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="420">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

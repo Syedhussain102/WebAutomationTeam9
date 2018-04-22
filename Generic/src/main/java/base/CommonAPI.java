@@ -28,6 +28,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 public class CommonAPI {
     //public static ExtentReports extent;
     public WebDriver driver ;
@@ -36,11 +38,14 @@ public class CommonAPI {
     public void setUp(String URL,String os, String browser_name){
         getLocalDriver(os,browser_name);
         driver.get(URL);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
+
     }
     @AfterMethod
     public void quit() throws InterruptedException {
         Thread.sleep(1000);
-        driver.quit();
+        //driver.quit();
     }
 
     //setting up the OS and Browser
