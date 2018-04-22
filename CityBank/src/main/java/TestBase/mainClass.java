@@ -1,4 +1,4 @@
-package base;
+package TestBase;
 
 public class mainClass {
 }
