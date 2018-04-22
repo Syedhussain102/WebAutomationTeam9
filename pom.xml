@@ -11,7 +11,7 @@
     <modules>
         <module>HBO</module>
         <module>Facebook</module>
-        <module>Alibaba</module>
+
         <module>CityBank</module>
         <module>ObamaCare</module>
         <module>Generic</module>

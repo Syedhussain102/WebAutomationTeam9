@@ -2,8 +2,11 @@ package ebay;
 
 import base.CommonAPI;
 import main.Login;
+<<<<<<< HEAD
+=======
 import main.Search;
 import org.openqa.selenium.By;
+>>>>>>> a6f8910a55e77bd23b07283f235226fdacd8c1d9
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 

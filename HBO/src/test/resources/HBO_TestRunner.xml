@@ -3,14 +3,14 @@
 
 <suite name="HBO Automation Script " parallel="false">
 
-    <parameter name="url" value="https://www.base.com"/>
+    <parameter name="url" value="https://www.hbo.com"/>
     <parameter name="browser_name" value="Chrome"/>
     <parameter name="os" value="mac"/>
 
-    <test name = "test bho">
+    <test name = "test1">
 
-        <classes>
-         <!--   <class name="base.test1"/>-->
+        <classes>'
+        <class name="TestBase.test1"/>
 
         </classes>
     </test>
