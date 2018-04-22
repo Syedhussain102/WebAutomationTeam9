@@ -3,15 +3,15 @@
 
 <suite name="Alibaba Automation Script " parallel="false">
 
-    <parameter name="url" value="https://alibaba.com"/>
+    <parameter name="url" value="https://ebay.com"/>
     <parameter name="browser_name" value="Chrome"/>
     <parameter name="os" value="mac"/>
 
-    <test name = "test alibaba">
+    <test name = "test ebay">
 
         <classes>
-            <class name="alibaba.test1"/>
-
+           <!-- <class name="ebay.test1"/>-->
+            <class name="ebay.test2"/>
         </classes>
     </test>
 

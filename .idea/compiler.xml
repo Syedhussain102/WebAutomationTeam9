@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="alibaba" />
         <module name="Alibaba" />
         <module name="cityBank" />
         <module name="CityBank" />
+        <module name="Ebay" />
         <module name="facebook" />
         <module name="Facebook" />
         <module name="generic" />
@@ -20,5 +20,8 @@
         <module name="ObamaCare" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alibaba" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

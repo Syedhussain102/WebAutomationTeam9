@@ -15,6 +15,7 @@
         <module>CityBank</module>
         <module>ObamaCare</module>
         <module>Generic</module>
+        <module>Ebay</module>
     </modules>
     <dependencyManagement>
         <dependencies>

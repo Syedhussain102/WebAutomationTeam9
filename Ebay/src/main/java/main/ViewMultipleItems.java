@@ -10,7 +10,7 @@ public class ViewMultipleItems extends CommonAPI {
     //view multiple items
 
     public void categories(){
-    List<WebElement> menu = driver.findElements(By.id("gh-cat-box"));
+    List<WebElement> menu = driver.findElements(By.xpath("//*[@id='category\']/table[1]/tbody/tr[1]/td[1]/a/span"));
 
     for(WebElement search : menu) {
         System.out.println(search.getText());

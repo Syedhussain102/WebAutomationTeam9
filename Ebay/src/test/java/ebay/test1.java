@@ -1,4 +1,4 @@
-package alibaba;
+package ebay;
 
 import base.CommonAPI;
 import org.testng.annotations.Test;
