@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="alibaba" />
         <module name="Alibaba" />
+        <module name="cityBank" />
         <module name="CityBank" />
+        <module name="facebook" />
         <module name="Facebook" />
+        <module name="generic" />
         <module name="Generic" />
+        <module name="hbo" />
         <module name="HBO" />
+        <module name="obamaCare" />
         <module name="ObamaCare" />
       </profile>
     </annotationProcessing>
