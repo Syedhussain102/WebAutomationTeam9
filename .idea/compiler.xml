@@ -15,8 +15,8 @@
         <module name="Facebook" />
         <module name="generic" />
         <module name="Generic" />
-        <module name="hbo" />
         <module name="HBO" />
+        <module name="hbo" />
         <module name="obamaCare" />
         <module name="ObamaCare" />
       </profile>
