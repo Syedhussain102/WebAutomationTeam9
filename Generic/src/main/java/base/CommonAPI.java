@@ -52,18 +52,18 @@ public class CommonAPI {
     public WebDriver getLocalDriver(String browser_name,String os){
         if(browser_name.equalsIgnoreCase("Chrome")){
             if(os.equalsIgnoreCase("win")){
-                System.setProperty("webdriver.chrome.driver", "/Users/zann/Downloads/MavenTrial/Generic/driver/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
                 driver = new ChromeDriver();
             }else if(os.equalsIgnoreCase("mac")){
-                System.setProperty("webdriver.chrome.driver", "/Users/zann/Downloads/MavenTrial/Generic/driver/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
                 driver = new ChromeDriver();
             }
         }else if(browser_name.equalsIgnoreCase("firefox")){
             if(os.equalsIgnoreCase("win")){
-                System.setProperty("webdriver.gecko.driver", "/Users/zann/Downloads/MavenTrial/Generic/driver/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", ".../Generic/driver/geckodriver.exe");
                 driver = new FirefoxDriver();
             }else if(os.equalsIgnoreCase("mac")){
-                System.setProperty("webdriver.gecko.driver", "/Users/zann/Downloads/MavenTrial/Generic/driver/geckodriver");
+                System.setProperty("webdriver.gecko.driver", ".../Generic/driver/geckodriver");
                 driver = new FirefoxDriver();
             }
         }

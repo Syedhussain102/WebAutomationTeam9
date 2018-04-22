@@ -2,6 +2,7 @@ package ebay;
 
 import base.CommonAPI;
 import main.Login;
+import main.Search;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -14,8 +15,18 @@ public class test1 extends CommonAPI {
         refVar.myAccount();
     }
 
-//search for a laptop, define group apple,sort by heighest price
-
+    //search for a laptop, ,sort by heighest price
+    @Test
+    public void searchLaptop(){
+    Search refVar = PageFactory.initElements(driver, Search.class);
+    refVar.lookForALaptop();
+}
+    //define group apple
+    @Test
+    public void group(){
+        Search refVar = PageFactory.initElements(driver, Search.class);
+        refVar.group();
+    }
     public void addToCart(){
         typeByCssNEnter(".ui-searchbar-size-middle [type=\"text\"]","iphone");
         clickByLinkedLink("Hot 2018 phone case cover for iphone X, tpu pc card slot case pouch mobile cover for iphone X 8 6s plus hybrid case");
