@@ -27,6 +27,7 @@ public class test1 extends CommonAPI {
         clickByLinkedLink("Hot 2018 phone case cover for iphone X, tpu pc card slot case pouch mobile cover for iphone X 8 6s plus hybrid case");
         switchTabs(0,1);
         clickByCss("#J-btn-order");
+        //wkjfvsavnlgit
     }
 
 }
