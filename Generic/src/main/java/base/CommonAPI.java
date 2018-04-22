@@ -52,10 +52,17 @@ public class CommonAPI {
             }
         }else if(browser_name.equalsIgnoreCase("firefox")){
             if(os.equalsIgnoreCase("win")){
+<<<<<<< HEAD
                 System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver.exe");
                 driver = new FirefoxDriver();
             }else if(os.equalsIgnoreCase("mac")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver");
+=======
+                System.setProperty("webdriver.gecko.driver", ".../Generic/driver/geckodriver.exe");
+                driver = new FirefoxDriver();
+            }else if(os.equalsIgnoreCase("mac")){
+                System.setProperty("webdriver.gecko.driver", ".../Generic/driver/geckodriver");
+>>>>>>> a6f8910a55e77bd23b07283f235226fdacd8c1d9
                 driver = new FirefoxDriver();
             }
         }
