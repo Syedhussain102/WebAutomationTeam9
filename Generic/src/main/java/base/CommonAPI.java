@@ -36,7 +36,7 @@ public class CommonAPI {
     @AfterMethod
     public void quit() throws InterruptedException {
         Thread.sleep(5000);
-        driver.quit();
+        //driver.quit();
     }
     //setting up the OS and Browser
     public WebDriver getLocalDriver(String browser_name,String os){
@@ -195,6 +195,7 @@ public class CommonAPI {
      public void mouseHoverNClickbyXC(String locator,String linkText) {
         try{Actions action = new Actions(driver);
         action.moveToElement(driver.findElement(By.cssSelector(locator))).build().perform();
+        Thread.sleep(3000);
         driver.findElement(By.linkText(linkText)).click();}
         catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");

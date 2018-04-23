@@ -18,9 +18,12 @@ public class Search extends CommonAPI {
             lookForALaptop();
             group.click();
         }
+
     //sort by heighest price
-    public void mouseHoverToSort() {
-            //group();
-            mouseHoverNClickbyXC(".srp-controls.srp-controls__control:nth-of-type(1).icon-arrow-down", "Price + Shipping: highest first");
+    public void mouseHoverToSort() throws InterruptedException {
+        typeByXpathNEnter("//input[@id='gh-ac']","laptop");
+        Thread.sleep(5000);
+        clickByXpath("//span[@class='prodsch-tooltip__close']");
+        mouseHoverNClickbyXC("//div[@class='sort-menu-container']", "Price + Shipping: highest first");
     }
 }

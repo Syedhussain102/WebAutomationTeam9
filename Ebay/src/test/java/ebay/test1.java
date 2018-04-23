@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class test1 extends CommonAPI {
     //Go to my account
-    @Test
+    //@Test
     public void myAccount(){
         Login refVar = PageFactory.initElements(driver,Login.class);
         refVar.myAccount();
@@ -25,13 +25,6 @@ public class test1 extends CommonAPI {
         Search refVar = PageFactory.initElements(driver, Search.class);
         refVar.group();
 
-    }
-    //sort by heighest price
-    //@Test
-    public void testMouseHover(){
-        group();
-        Search refVar = new Search();
-        refVar.mouseHoverToSort();
     }
     public void addToCart(){
         typeByCssNEnter(".ui-searchbar-size-middle [type=\"text\"]","iphone");
