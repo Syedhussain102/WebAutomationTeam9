@@ -35,7 +35,7 @@ public class CommonAPI {
     }
     @AfterMethod
     public void quit() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         driver.quit();
     }
     //setting up the OS and Browser

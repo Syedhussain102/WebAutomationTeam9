@@ -1,6 +1,9 @@
 package TestBase;
 
-public class mainClass {
+import base.CommonAPI;
 
-    //just for try
+public class mainClass extends CommonAPI {
+
+
+
 }

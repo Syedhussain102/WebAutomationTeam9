@@ -18,6 +18,9 @@ public class Search extends CommonAPI {
             lookForALaptop();
             group.click();
         }
-   // mouseHoverNClickbyXC(".srp-controls .srp-controls__control:nth-of-type(1) .icon-arrow-down","Price + Shipping: highest first");
-
+    //sort by heighest price
+    public void mouseHoverToSort() {
+            //group();
+            mouseHoverNClickbyXC(".srp-controls.srp-controls__control:nth-of-type(1).icon-arrow-down", "Price + Shipping: highest first");
+    }
 }

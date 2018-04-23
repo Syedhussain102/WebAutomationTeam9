@@ -24,7 +24,7 @@ public class test2 extends CommonAPI {
     }
 
 }
-    @Test
+
     public void selectM(){
         getElementList("ID","gh-cat");
 

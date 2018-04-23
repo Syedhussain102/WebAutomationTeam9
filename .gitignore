@@ -3,4 +3,10 @@
 # virtual machine crash logs
 hs_err_pid*git
 .idea/
-.DS_Store
+
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+/webAutomationTeam9.iml
+
