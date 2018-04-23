@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class test1 extends CommonAPI {
     //Go to my account
-    //@Test
+    @Test
     public void myAccount(){
         Login refVar = PageFactory.initElements(driver,Login.class);
         refVar.myAccount();
@@ -27,7 +27,7 @@ public class test1 extends CommonAPI {
 
     }
     //sort by heighest price
-    @Test
+    //@Test
     public void testMouseHover(){
         group();
         Search refVar = new Search();
