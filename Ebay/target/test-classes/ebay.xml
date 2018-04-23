@@ -11,7 +11,7 @@
 
         <classes>
             <class name="ebay.test1"/>
-            <class name="ebay.test2"/>
+            <!--<class name="ebay.test2"/>-->
         </classes>
     </test>
 

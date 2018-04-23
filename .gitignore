@@ -1,3 +1,39 @@
 # Created by .ignore support plugin (hsz.mobi)
-workspace.xml
+### Java template
+# Compiled class file
+*.class
 /.idea/
+/SeleniumFramework.iml
+/.idea/workspace.xml
+.idea
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.target
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.idea/
+CityBank/target/generated-test-sources/
+Ebay/target/generated-sources/
+Ebay/target/generated-test-sources/
+Facebook/target/generated-test-sources/
+Generic/src/main/resources/
+Generic/src/test/
+Generic/target/generated-sources/
+HBO/target/generated-test-sources/
+ObamaCare/target/generated-test-sources/
+src/
