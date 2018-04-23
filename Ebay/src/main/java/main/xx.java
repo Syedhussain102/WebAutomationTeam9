@@ -3,7 +3,7 @@ package main;
 import base.CommonAPI;
 import org.openqa.selenium.By;
 
-public class test4 extends CommonAPI {
+public class xx extends CommonAPI {
     //sort by heighest price
     public void mouseHoverToSort() throws InterruptedException {
         typeByXpathNEnter("//input[@id='gh-ac']","laptop");

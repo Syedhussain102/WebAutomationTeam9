@@ -10,8 +10,8 @@
     <test name = "test ebay">
 
         <classes>
-            <class name="ebay.test3"/>
-            <!--<class name="ebay.test2"/>-->
+            <!--<class name="ebay.searchTest"/>-->
+            <class name="ebay.loginTest"/>
         </classes>
     </test>
 

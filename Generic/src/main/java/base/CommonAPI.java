@@ -160,7 +160,18 @@ public class CommonAPI {
         }
         return text;
     }
+    //new tab
+    public void openNewTab(String body)
+    {
+        driver.findElement(By.cssSelector(body)).sendKeys(Keys.COMMAND +"t");
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
 
+    public List<WebElement> getElementsByCSSforList(String CSS){
+        List<WebElement> value = driver.findElements(By.cssSelector(CSS));
+        return value;
+    }
     public List<WebElement> getElementList(String type, String locator) {
         type = type.toLowerCase();
         List<WebElement> elementList = new ArrayList<WebElement>();
@@ -201,7 +212,7 @@ public class CommonAPI {
             System.out.println("First attempt has been done, This is second try");
              Actions action = new Actions(driver);
             action.moveToElement(driver.findElement(By.xpath(locator))).build().perform();
-            driver.findElement(By.linkText(linkText)).click();;
+            driver.findElement(By.linkText(linkText)).click();
         }
     }
     //switch tabs
