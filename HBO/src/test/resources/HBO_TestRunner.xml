@@ -9,7 +9,7 @@
 
     <test name = "test1">
 
-        <classes>'
+        <classes>
         <class name="TestBase.test1"/>
 
         </classes>
