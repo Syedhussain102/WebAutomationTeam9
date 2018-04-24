@@ -16,6 +16,7 @@ public class Search extends CommonAPI {
     public void lookForALaptop() {
         search.sendKeys("laptop", Keys.ENTER);
     }
+
     // define group apple
     @FindBy(how = How.XPATH, using = "//a[contains(text(),'Apple Laptops')]")
     public static WebElement group;
@@ -23,18 +24,7 @@ public class Search extends CommonAPI {
         lookForALaptop();
         group.click();
     }
-    //sort by heighest price
-    @FindBy(how = How.XPATH, using = "//div[@class='sort-menu-container']")
-    public static WebElement sortByPrice;
-    public void mouseHoverToSort() throws InterruptedException {
-        group();
-        Thread.sleep(5000);
-        clickByXpath("//span[@class='prodsch-tooltip__close']");
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//div[@class='sort-menu-container']"))).build().perform();
-        Thread.sleep(3000);
-        driver.findElement(By.linkText("Price + Shipping: highest first")).click();
-    }
+
     //SearchMultipleItems
     @FindBy(xpath = "//input[@id='gh-ac']")
     public WebElement searchElements;
@@ -48,4 +38,6 @@ public class Search extends CommonAPI {
             searchElements.clear();
         }
     }
+
+
 }
