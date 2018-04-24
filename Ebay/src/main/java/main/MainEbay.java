@@ -35,13 +35,13 @@ public class MainEbay extends CommonAPI {
         driver.findElement(By.xpath("//*[@id='productSearchToggle']/div/span[2]")).click();
 
     }
-    //go to daily deals
+    //go to daily deals--spotlight deal
     public void searchProblems() throws InterruptedException {
-        xtendedSearches();
+        //xtendedSearches();
         clickByXpath("//*[@id='gh-p-1']/a");
         clickByXpath("//*[@id='s4-c0-c1-title']/a/span");
-        driver.findElement(By.cssSelector(".qtyInput")).clear();
-        driver.findElement(By.cssSelector(".qtyInput")).sendKeys("2", Keys.ENTER);
+        //driver.findElement(By.cssSelector(".qtyInput")).clear();
+        //driver.findElement(By.cssSelector(".qtyInput")).sendKeys("2", Keys.ENTER);
     }
 
 
