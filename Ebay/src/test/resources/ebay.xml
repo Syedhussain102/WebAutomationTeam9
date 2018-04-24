@@ -10,8 +10,13 @@
     <test name = "test ebay">
 
         <classes>
+<<<<<<< HEAD
             <class name="ebay.test1"/>
             <class name="ebay.test2"/>
+=======
+            <!--<class name="ebay.searchTest"/>-->
+            <class name="ebay.loginTest"/>
+>>>>>>> 4d39b09cdba7b93b3d987826784212b9cc91c1c8
         </classes>
     </test>
 
