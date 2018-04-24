@@ -10,7 +10,7 @@
     <test name = "test1">
 
         <classes>
-        <class name="TestBase.searchMultipleItems"/>
+        <class name="TestBase.mouseMovement"/>
             <!--//<class name="TestBase.searchItem"/>-->
        <!-- <class name="TestBase.PlayAvideo"/>-->
 

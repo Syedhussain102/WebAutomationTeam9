@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class PlayAvideo extends CommonAPI {
 
-    //@Test
+    @Test
     public void playVideo() throws InterruptedException {
         driver.findElement(By.xpath("/html/body/main/div[1]/div/div/header/div[1]/div/div[2]/div/div/div")).click();
         Thread.sleep(3000);
