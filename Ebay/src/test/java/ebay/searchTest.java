@@ -2,12 +2,8 @@ package ebay;
 
 import base.CommonAPI;
 import main.Search;
-import main.MainEbay;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 public class searchTest extends CommonAPI {
     //search for a laptop
@@ -28,6 +24,8 @@ public class searchTest extends CommonAPI {
         Search refVar = PageFactory.initElements(driver,Search.class);
         refVar.searchItems();
 }
+
+
 
 
 }

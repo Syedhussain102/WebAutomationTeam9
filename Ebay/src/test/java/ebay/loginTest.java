@@ -19,4 +19,19 @@ public class loginTest extends Login {
     public void input() throws InterruptedException {
         inputValues();
     }
+    // log in
+    //@Test
+    public void clickOnSignIn(){
+        login();
+    }
+    //go to my messages
+    //@Test
+    public void myMessage(){
+        myMessages();
+    }
+    //create folder in messages
+    @Test
+    public void createFolder(){
+        folderInMessages();
+    }
 }

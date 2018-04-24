@@ -88,6 +88,10 @@ public class CommonAPI {
             }
         }
     }
+    //click n clear
+    public void clickNClearbyXpath(String xpath){
+        driver.findElement(By.xpath(xpath)).clear();
+    }
     //typeNenter
      public void typeByCssNEnter(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);

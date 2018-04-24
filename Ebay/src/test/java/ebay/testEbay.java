@@ -21,8 +21,20 @@ public class testEbay extends MainEbay {
         xtendedSearches();
     }
     //search problems
-    @Test
+    //@Test
     public void Problems() throws InterruptedException {
         searchProblems();
     }
+
+    //search different parameters
+    //@Test
+    public void searcfDifferent(){
+        searchWithDifferentRequirements();
+    }
+    //edit categories
+    @Test
+    public void editcategoriess(){
+        editCategories();
+    }
+
 }

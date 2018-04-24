@@ -40,8 +40,29 @@ public class MainEbay extends CommonAPI {
         //xtendedSearches();
         clickByXpath("//*[@id='gh-p-1']/a");
         clickByXpath("//*[@id='s4-c0-c1-title']/a/span");
-        //driver.findElement(By.cssSelector(".qtyInput")).clear();
-        //driver.findElement(By.cssSelector(".qtyInput")).sendKeys("2", Keys.ENTER);
+         }
+
+    //search for a laptop and use different options
+    public void searchWithDifferentRequirements(){
+        typeByXpathNEnter("/html//input[@id='gh-ac']","Laptop");
+        try{clickByXpath("//*[@id='productSearchToggle']/div/span[2]");}catch (Exception ex){
+        //click acer
+        clickByXpath("//*[@id='w3-w0-w1-multiselect[0]']/a/span[1]");}
+
+        clickByCss("[id='w3-w0-w1-multiselect\\[0\\]'] .x-refine__multi-select-cbx");
+        //clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_valueOption']");
+        //clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_select']/option[6]");
+        //clickNClearbyXpath("//*[@id='w3-w0-singleselect[9]-w0-zipcode-validator-x-zipcode-validator__input']");
+        //typeOnInputField("//*[@id='w3-w0-singleselect[9]-w0-zipcode-validator-x-zipcode-validator__input']","11377");
+        //clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_submit']");
+
+    }
+
+    //select categories and then select travel
+    public void editCategories(){
+        clickByCss("[aria-label='Select a category for search']");
+        WebElement menu = driver.findElement(By.xpath("//*[@id='gh-cat']/option[34]"));
+        System.out.println(menu.getText());
     }
 
 

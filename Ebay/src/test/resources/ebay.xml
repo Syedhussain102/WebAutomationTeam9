@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ebay Automation Script " parallel="false">
+<suite name="Facebook Automation Script " parallel="false">
 
-    <parameter name="url" value="https://www.ebay.com/"/>
-    <parameter name="browser_name" value="Chrome"/>
-    <parameter name="os" value="mac"/>
+<parameter name="url" value="https://www.ebay.com"/>
+<parameter name="browser_name" value="Chrome"/>
+<parameter name="os" value="mac"/>
 
-    <test name = "test ebay">
+<test name = "test Ebay">
 
-        <classes>
+    <classes>
+       <class name="ebay.testEbay"/>
 
-            <class name="ebay.testEbay"/>
-            <!--<class name="ebay.searchTest"/>-->
-            <class name="ebay.loginTest"/>
-        </classes>
-    </test>
+    </classes>
+</test>
 
 </suite>
