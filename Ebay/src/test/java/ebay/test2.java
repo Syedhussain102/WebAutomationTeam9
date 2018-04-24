@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class test2 extends CommonAPI {
-
+@Test
     public void test3() {
     SearchMultipleItems refVar = PageFactory.initElements(driver,SearchMultipleItems.class);
         refVar.searchItems();
