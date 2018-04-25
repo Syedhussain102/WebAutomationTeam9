@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-04-25T01:39:30Z" name="Facebook Automation Script " finished-at="2018-04-25T01:39:44Z" duration-ms="14675">
+    <groups>
+    </groups>
+    <test started-at="2018-04-25T01:39:30Z" name="test Ebay" finished-at="2018-04-25T01:39:44Z" duration-ms="14675">
+      <class name="ebay.testEbay">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ebay.testEbay@5ace1ed4]" started-at="2018-04-25T01:39:30Z" name="setUp" finished-at="2018-04-25T01:39:34Z" duration-ms="4296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.ebay.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="editcategoriess()[pri:0, instance:ebay.testEbay@5ace1ed4]" started-at="2018-04-25T01:39:34Z" name="editcategoriess" finished-at="2018-04-25T01:39:34Z" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editcategoriess -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ebay.testEbay@5ace1ed4]" started-at="2018-04-25T01:39:34Z" name="quit" finished-at="2018-04-25T01:39:44Z" duration-ms="10004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- ebay.testEbay -->
+    </test> <!-- test Ebay -->
+  </suite> <!-- Facebook Automation Script  -->
+</testng-results>
