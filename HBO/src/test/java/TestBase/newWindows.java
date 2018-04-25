@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class newWindows extends CommonAPI {
 
 
-@Test
+    @Test
     public void newwindow(){
         driver.findElement(By.xpath("/html//main/div[11]/div/div//ul[@class='modules/FooterLinks--links modules/FooterLinks--topLinks']//a[@href='https://hbocareers.com/']")).click();
         switchTabs(0,1);
