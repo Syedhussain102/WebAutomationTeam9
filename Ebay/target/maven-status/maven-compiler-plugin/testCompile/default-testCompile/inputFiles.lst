@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /Users/zann/Downloads/WebAutomationTeam9/Ebay/src/test/java/ebay/testEbay.java
 /Users/zann/Downloads/WebAutomationTeam9/Ebay/src/test/java/ebay/loginTest.java
 /Users/zann/Downloads/WebAutomationTeam9/Ebay/src/test/java/ebay/searchTest.java
+=======
+/Users/sreejon/IdeaProjects/WebAutomationTeam9/Ebay/src/test/java/ebay/loginTest.java
+/Users/sreejon/IdeaProjects/WebAutomationTeam9/Ebay/src/test/java/ebay/searchTest.java
+/Users/sreejon/IdeaProjects/WebAutomationTeam9/Ebay/src/test/java/ebay/test2.java
+>>>>>>> ed3b7c1613253982471fbf6e789c8a1c6acd4cba
