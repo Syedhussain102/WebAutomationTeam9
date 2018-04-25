@@ -1,28 +1,37 @@
 package ebay;
 import base.CommonAPI;
 import main.Login;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
-public class loginTest extends CommonAPI {
-    //Go to my account--messages
+public class loginTest extends Login {
+    //Go to my account
     //@Test
-    public void myAccount(){
-        Login refVar = PageFactory.initElements(driver,Login.class);
-        refVar.myAccount();
+    public void ClickMyAccount(){
+        myAccount();
     }
+    //click on register
+    //@Test
+    public void ClickOnRegister(){
+        clickRegister();
+    }
+    //input all values
+    //@Test
+    public void input() throws InterruptedException {
+        inputValues();
+    }
+    // log in
+    //@Test
+    public void clickOnSignIn(){
+        login();
+    }
+    //go to my messages
+    //@Test
+    public void myMessage(){
+        myMessages();
+    }
+    //create folder in messages
     @Test
-    public void addToCart() {
-        typeByXpathNEnter("/html//input[@id='gh-ac']","iphone");
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        clickByXpath("//span[@class='prodsch-tooltip__close']");
-        clickByXpath("//*[@id='item280a0dfce2']/h3/a");
-        clickByCss("#binBtn_btn");
-        //switchTabs(0,1);
-        //clickByCss("#J-btn-order");
-
+    public void createFolder(){
+        folderInMessages();
     }
-
 }

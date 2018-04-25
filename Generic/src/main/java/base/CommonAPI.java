@@ -35,7 +35,7 @@ public class CommonAPI {
     }
     @AfterMethod
     public void quit() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         //driver.quit();
     }
     //setting up the OS and Browser
@@ -88,6 +88,10 @@ public class CommonAPI {
             }
         }
     }
+    //click n clear
+    public void clickNClearbyXpath(String xpath){
+        driver.findElement(By.xpath(xpath)).clear();
+    }
     //typeNenter
      public void typeByCssNEnter(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
@@ -104,10 +108,10 @@ public class CommonAPI {
     }
     //type
     public void typeByCss(String locator, String value) {
-        driver.findElement(By.cssSelector(locator));
+        driver.findElement(By.cssSelector(locator)).sendKeys(value);
     }
     public void typeByXpath(String locator, String value) {
-        driver.findElement(By.xpath(locator));
+        driver.findElement(By.xpath(locator)).sendKeys(value);
     }
     public void typeOnInputField(String locator, String value){
         try {
@@ -222,7 +226,10 @@ public class CommonAPI {
         driver.close();
         driver.switchTo().window(tabs.get(toKeep));
     }
-
+    //implicity_wait
+    public void implicityWait(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
     //get url
     public String  getCurrentPageUrl(){
         String url = driver.getCurrentUrl();
