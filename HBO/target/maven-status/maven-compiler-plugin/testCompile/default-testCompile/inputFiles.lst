@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 /Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/clickSearch.java
 /Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/searchItem.java
+/Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/newWindows.java
 /Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/careers.java
+/Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/mouseMovement.java
 /Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/PlayAvideo.java
+/Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/dropDown.java
 /Users/zann/Downloads/WebAutomationTeam9/HBO/src/test/java/TestBase/searchMultipleItems.java
-=======
-/Users/sreejon/IdeaProjects/WebAutomationTeam9/HBO/src/test/java/TestBase/searchItem.java
-/Users/sreejon/IdeaProjects/WebAutomationTeam9/HBO/src/test/java/TestBase/clickSearch.java
-/Users/sreejon/IdeaProjects/WebAutomationTeam9/HBO/src/test/java/TestBase/PlayAvideo.java
-/Users/sreejon/IdeaProjects/WebAutomationTeam9/HBO/src/test/java/TestBase/careers.java
-/Users/sreejon/IdeaProjects/WebAutomationTeam9/HBO/src/test/java/TestBase/searchMultipleItems.java
->>>>>>> ed3b7c1613253982471fbf6e789c8a1c6acd4cba
