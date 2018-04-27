@@ -10,8 +10,8 @@ import java.util.concurrent.TimeUnit;
 public class mouseMovement extends CommonAPI {
 @Test
     public void movemouse() throws InterruptedException {
-        driver.findElement(By.xpath("/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/ul/li[2]/div/a")).click();
-        driver.findElement(By.xpath("/html/body/main/div[2]/div/div/div[1]/div/div[1]/ul/li[10]/span[1]")).click();
+        clickByXpath("/html/body/main/div[1]/div/div/header/div[1]/div/div[3]/ul/li[2]/div/a");
+        clickByXpath("/html/body/main/div[2]/div/div/div[1]/div/div[1]/ul/li[10]/span[1]");
    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     Actions action = new Actions(driver);
     action.moveToElement(driver.findElement(By.xpath("/html/body/main/div[2]/div/div/div[1]/div/div[2]/div/div[2]/div/ul/span/li[1]/ul/li[15]"))).build().perform();

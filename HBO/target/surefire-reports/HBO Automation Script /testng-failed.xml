@@ -6,13 +6,13 @@
   <parameter name="url" value="https://www.hbo.com"/>
   <test thread-count="5" verbose="0" name="test1(failed)">
     <classes>
-      <class name="TestBase.dropDown">
+      <class name="TestBase.CountryDropDown">
         <methods>
           <include name="quit"/>
+          <include name="dropDownCountry"/>
           <include name="setUp"/>
-          <include name="dropdownmanu"/>
         </methods>
-      </class> <!-- TestBase.dropDown -->
+      </class> <!-- TestBase.CountryDropDown -->
     </classes>
   </test> <!-- test1(failed) -->
 </suite> <!-- Failed suite [HBO Automation Script ] -->

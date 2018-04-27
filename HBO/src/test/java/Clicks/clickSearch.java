@@ -1,4 +1,4 @@
-package TestBase;
+package Clicks;
 
 import base.CommonAPI;
 import org.testng.annotations.Test;
