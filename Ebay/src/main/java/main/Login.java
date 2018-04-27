@@ -16,7 +16,7 @@ public class Login extends CommonAPI {
         myAccount();
         clickByXpath("/html//div[@id='regTab']");
         }
-    //input
+    //input values inside
     public void inputValues() throws InterruptedException {
         clickRegister();
         typeByCss("#firstname_r [v]","naim");
@@ -45,4 +45,6 @@ public class Login extends CommonAPI {
         driver.findElement(By.xpath("//*[@id='-1_inp_inp']")).clear();
         typeByXpath("//*[@id='-1_inp_inp']","folder1");
     }
+
+
 }

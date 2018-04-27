@@ -12,12 +12,14 @@ public class searchTest extends CommonAPI {
         Search refVar = PageFactory.initElements(driver, Search.class);
         refVar.lookForALaptop();
     }
+
     //search for a laptop  and define group apple
     //@Test
     public void group(){
         Search refVar = PageFactory.initElements(driver, Search.class);
         refVar.group();
     }
+
     //SearchMultipleItems
     //@Test
     public void test3() {

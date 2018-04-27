@@ -6,32 +6,38 @@ import org.testng.annotations.Test;
 public class loginTest extends Login {
     //Go to my account
     //@Test
-    public void ClickMyAccount(){
+    public void ClickMyAccount() {
         myAccount();
     }
+
     //click on register
     //@Test
-    public void ClickOnRegister(){
+    public void ClickOnRegister() {
         clickRegister();
     }
+
     //input all values
-    //@Test
+    // @Test
     public void input() throws InterruptedException {
         inputValues();
     }
+
     // log in
     //@Test
-    public void clickOnSignIn(){
+    public void clickOnSignIn() {
         login();
     }
+
     //go to my messages
     //@Test
-    public void myMessage(){
+    public void myMessage() {
         myMessages();
     }
+
     //create folder in messages
-    @Test
-    public void createFolder(){
+    //@Test
+    public void createFolder() {
         folderInMessages();
     }
+
 }

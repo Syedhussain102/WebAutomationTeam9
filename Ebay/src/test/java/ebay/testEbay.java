@@ -32,9 +32,15 @@ public class testEbay extends MainEbay {
         searchWithDifferentRequirements();
     }
     //edit categories
-    @Test
+    //@Test
     public void editcategoriess(){
         editCategories();
+    }
+
+    //test tab
+    @Test
+    public void testNewTab(){
+        newTab();
     }
 
 }
