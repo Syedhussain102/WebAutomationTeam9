@@ -8,7 +8,6 @@ Clicks/SeriesClickTest.class
 TestBase/UseOfTab.class
 TestBase/Scroll.class
 TestBase/dropDown.class
-TestBase/SignUp.class
 TestBase/searchMultipleItems.class
 Clicks/MoviesClickTest.class
 TestBase/CountryDropDown.class
