@@ -35,7 +35,7 @@ public class loginTest extends Login {
     }
 
     //create folder in messages
-    //@Test
+    @Test
     public void createFolder() {
         folderInMessages();
     }

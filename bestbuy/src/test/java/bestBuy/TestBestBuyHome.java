@@ -7,25 +7,26 @@ public class TestBestBuyHome extends CheckBestBuyHome {
     //my best buy
     @Test
     public void testBuy(){
+       // clickByXpath("//*[@id='modal625']/div/div/div[1]/button/span[2]");
         myBestBuy();
     }
     //CREDIT CARDS ›
-    @Test
+    //@Test
     public void Creditl(){
         creditCards();
     }
     //ORDERS & RETURNS ›
-    @Test
+    //@Test
     public void orderNreturns(){
         OnR();
     }
     //SUPPORT & SERVICES ›
-    @Test
+    //@Test
     public void supportNservices(){
         support();
     }
     //others
-    @Test
+    //@Test
     public void othersBestBuy(){
         others();
     }
