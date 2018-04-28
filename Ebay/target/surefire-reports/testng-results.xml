@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Facebook Automation Script " duration-ms="12870" started-at="2018-04-27T00:00:53Z" finished-at="2018-04-27T00:01:06Z">
+  <suite name="Facebook Automation Script " duration-ms="13025" started-at="2018-04-27T00:56:03Z" finished-at="2018-04-27T00:56:16Z">
     <groups>
     </groups>
-    <test name="test Ebay" duration-ms="12870" started-at="2018-04-27T00:00:53Z" finished-at="2018-04-27T00:01:06Z">
+    <test name="test Ebay" duration-ms="13025" started-at="2018-04-27T00:56:03Z" finished-at="2018-04-27T00:56:16Z">
       <class name="ebay.testEbay">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ebay.testEbay@5f282abb]" name="setUp" is-config="true" duration-ms="2616" started-at="2018-04-27T00:00:53Z" finished-at="2018-04-27T00:00:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ebay.testEbay@5f282abb]" name="setUp" is-config="true" duration-ms="2791" started-at="2018-04-27T00:56:03Z" finished-at="2018-04-27T00:56:05Z">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="editcategoriess()[pri:0, instance:ebay.testEbay@5f282abb]" name="editcategoriess" duration-ms="230" started-at="2018-04-27T00:00:55Z" finished-at="2018-04-27T00:00:56Z">
+        <test-method status="PASS" signature="editcategoriess()[pri:0, instance:ebay.testEbay@5f282abb]" name="editcategoriess" duration-ms="212" started-at="2018-04-27T00:56:05Z" finished-at="2018-04-27T00:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editcategoriess -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:ebay.testEbay@5f282abb]" name="quit" is-config="true" duration-ms="10004" started-at="2018-04-27T00:00:56Z" finished-at="2018-04-27T00:01:06Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:ebay.testEbay@5f282abb]" name="quit" is-config="true" duration-ms="10003" started-at="2018-04-27T00:56:06Z" finished-at="2018-04-27T00:56:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

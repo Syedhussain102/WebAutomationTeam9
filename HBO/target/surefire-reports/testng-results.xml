@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="HBO Automation Script " duration-ms="22518" started-at="2018-04-27T00:00:26Z" finished-at="2018-04-27T00:00:49Z">
+  <suite name="HBO Automation Script " duration-ms="21307" started-at="2018-04-27T01:39:40Z" finished-at="2018-04-27T01:40:01Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="22518" started-at="2018-04-27T00:00:26Z" finished-at="2018-04-27T00:00:49Z">
-      <class name="TestBase.CountryDropDown">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestBase.CountryDropDown@27a5f880]" name="setUp" is-config="true" duration-ms="4219" started-at="2018-04-27T00:00:26Z" finished-at="2018-04-27T00:00:31Z">
+    <test name="test1" duration-ms="21307" started-at="2018-04-27T01:39:40Z" finished-at="2018-04-27T01:40:01Z">
+      <class name="TestBase.SignUp">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestBase.SignUp@1786dec2]" name="setUp" is-config="true" duration-ms="4094" started-at="2018-04-27T01:39:40Z" finished-at="2018-04-27T01:39:44Z">
           <params>
             <param index="0">
               <value>
@@ -28,15 +28,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dropDownCountry()[pri:0, instance:TestBase.CountryDropDown@27a5f880]" name="dropDownCountry" duration-ms="8276" started-at="2018-04-27T00:00:31Z" finished-at="2018-04-27T00:00:39Z">
+        <test-method status="PASS" signature="signup()[pri:0, instance:TestBase.SignUp@1786dec2]" name="signup" duration-ms="7191" started-at="2018-04-27T01:39:44Z" finished-at="2018-04-27T01:39:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropDownCountry -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:TestBase.CountryDropDown@27a5f880]" name="quit" is-config="true" duration-ms="10004" started-at="2018-04-27T00:00:39Z" finished-at="2018-04-27T00:00:49Z">
+        </test-method> <!-- signup -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:TestBase.SignUp@1786dec2]" name="quit" is-config="true" duration-ms="10004" started-at="2018-04-27T01:39:51Z" finished-at="2018-04-27T01:40:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- TestBase.CountryDropDown -->
+      </class> <!-- TestBase.SignUp -->
     </test> <!-- test1 -->
   </suite> <!-- HBO Automation Script  -->
 </testng-results>
