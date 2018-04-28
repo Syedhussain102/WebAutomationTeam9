@@ -1,7 +1,5 @@
-package ebay;
-import base.CommonAPI;
+package bestBuy;
 import main.Login;
-import org.testng.annotations.Test;
 
 public class loginTest extends Login {
     //Go to my account
@@ -24,20 +22,8 @@ public class loginTest extends Login {
 
     // log in
     //@Test
-    public void clickOnSignIn() {
+    public void ignIn() {
         login();
-    }
-
-    //go to my messages
-    //@Test
-    public void myMessage() {
-        myMessages();
-    }
-
-    //create folder in messages
-    //@Test
-    public void createFolder() {
-        folderInMessages();
     }
 
 }

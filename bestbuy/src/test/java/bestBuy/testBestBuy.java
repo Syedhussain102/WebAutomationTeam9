@@ -1,19 +1,14 @@
-package ebay;
+package bestBuy;
 
-import main.MainEbay;
+import main.MainBestBuy;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
-public class testEbay extends MainEbay {
-    //@Test
-    public void mouse(){
-       mouseHoverByXpath("//*[@id='s0-container']/li[3]/a","Vehicles");
-    }
-
+public class testBestBuy extends MainBestBuy {
     //view multiple items
     //@Test
     public void view(){
-        viewMultipleByCSS("[aria-label=\'Select a category for search\']");
+        viewMultipleByCSS(".list-items .list-item:nth-of-type(1) h4");
     }
 
     //extended search
@@ -21,21 +16,11 @@ public class testEbay extends MainEbay {
     public void ExtendedSearch() throws InterruptedException {
         xtendedSearches();
     }
-    //search problems
-    //@Test
-    public void Problems() throws InterruptedException {
-        searchProblems();
-    }
 
     //search different parameters
     //@Test
     public void searcfDifferent(){
         searchWithDifferentRequirements();
-    }
-    //edit categories
-    //@Test
-    public void editcategoriess(){
-        editCategories();
     }
 
     //test tab

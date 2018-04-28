@@ -1,9 +1,8 @@
-package ebay;
+package bestBuy;
 
 import base.CommonAPI;
 import main.Search;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 
 public class searchTest extends CommonAPI {
     //search for a laptop
@@ -15,9 +14,9 @@ public class searchTest extends CommonAPI {
 
     //search for a laptop  and define group apple
     //@Test
-    public void group(){
+    public void viewChange(){
         Search refVar = PageFactory.initElements(driver, Search.class);
-        refVar.group();
+        refVar.view();
     }
 
     //SearchMultipleItems

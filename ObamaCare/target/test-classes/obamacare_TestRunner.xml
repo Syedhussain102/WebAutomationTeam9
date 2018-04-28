@@ -10,7 +10,7 @@
     <test name = "test obamacare">
 
         <classes>
-         <!--   <class name="obamacare.test1"/>-->
+        <class name="obamacare.test1"/>
 
         </classes>
     </test>

@@ -73,7 +73,7 @@ public class CommonAPI {
     public void clickByXpath(String locator) {
         driver.findElement(By.xpath(locator)).click();
     }
-    public void clickByLinkedLink(String locator) {
+    public void clickByLinkedText(String locator) {
         driver.findElement(By.linkText(locator)).click();
     }
 
