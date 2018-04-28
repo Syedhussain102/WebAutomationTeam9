@@ -5,7 +5,6 @@ import base.CommonAPI;
 public class CheckEbayHome extends CommonAPI {
     //Buy
     public void Buy(){
-
         clickByLinkedText("Registration");
         navigateBack();
         clickByLinkedText("eBay Money Back Guarantee");
@@ -14,7 +13,6 @@ public class CheckEbayHome extends CommonAPI {
         navigateBack();
         clickByLinkedText("Stores");
     }
-
     //Sell
     public void Sell(){
         clickByLinkedText("Start selling");
@@ -25,9 +23,7 @@ public class CheckEbayHome extends CommonAPI {
         navigateBack();
         clickByLinkedText("Affiliates");
         navigateBack();
-
     }
-
     //Tools & apps
     public void TnA(){
         clickByLinkedText("Mobile apps");
@@ -40,9 +36,7 @@ public class CheckEbayHome extends CommonAPI {
         navigateBack();
         clickByLinkedText("Site map");
         navigateBack();
-
     }
-
     //eBay companies
     public void companies(){
         clickByLinkedText("eBay Classifieds");
@@ -51,11 +45,7 @@ public class CheckEbayHome extends CommonAPI {
         navigateBack();
         clickByLinkedText("See all companies");
         navigateBack();
-
-
-
     }
-
     //about ebay
     public void about(){
         clickByLinkedText("Company info");
@@ -77,5 +67,4 @@ public class CheckEbayHome extends CommonAPI {
         clickByLinkedText("Policies");
         navigateBack();
     }
-
 }

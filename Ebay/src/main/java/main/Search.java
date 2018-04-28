@@ -50,7 +50,6 @@ public class Search extends CommonAPI {
         String [] data = dr.fileReader2(path,1);
         return data;
     }
-
     public void searchItemsAndSubmitButton()throws IOException {
         String [] value = getDataFromExcelFile();
         for(int i=0; i<value.length; i++) {

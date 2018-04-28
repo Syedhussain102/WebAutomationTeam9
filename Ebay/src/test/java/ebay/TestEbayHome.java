@@ -5,27 +5,27 @@ import org.testng.annotations.Test;
 
 public class TestEbayHome extends CheckEbayHome {
     //buy
-    @Test
+    //@Test
     public void testBuy(){
         Buy();
     }
     //Sell
-    @Test
+    //@Test
     public void testSell(){
         Sell();
     }
     //T&A
-    @Test
+    //@Test
     public void toolsNapps(){
         TnA();
     }
     //Companies
-    @Test
+    //@Test
     public void ebayCompanies(){
         companies();
     }
     //about Ebay
-    @Test
+    //@Test
     public void aboutEbay(){
         about();
     }

@@ -14,7 +14,7 @@
     <test name = "test CityBank">
 
         <classes>
-       <class name="citybank.test1"/>
+       <class name="citybank.login"/>
 
         </classes>
     </test>
