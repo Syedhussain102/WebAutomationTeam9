@@ -5,6 +5,8 @@ import main.Search;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class searchTest extends CommonAPI {
     //search for a laptop
     //@Test
@@ -26,6 +28,12 @@ public class searchTest extends CommonAPI {
         Search refVar = PageFactory.initElements(driver,Search.class);
         refVar.searchItems();
 }
+    //
+    @Test
+    public void testExcel() throws IOException {
+        Search refVar = PageFactory.initElements(driver,Search.class);
+        refVar.searchItemsAndSubmitButton();
+    }
 
 
 

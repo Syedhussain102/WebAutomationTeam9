@@ -11,11 +11,12 @@
     <modules>
         <module>HBO</module>
         <module>Facebook</module>
-
+        <module>bestbuy</module>
         <module>CityBank</module>
         <module>ObamaCare</module>
         <module>Generic</module>
         <module>Ebay</module>
+        <module>w3School</module>
     </modules>
 
     <dependencyManagement>
