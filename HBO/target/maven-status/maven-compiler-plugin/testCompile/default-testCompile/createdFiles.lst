@@ -1,0 +1,16 @@
+TestBase/newWindows.class
+Clicks/ArrowClick.class
+TestBase/Job.class
+Clicks/ableToChooseBoxing.class
+Clicks/ableToChooseMovie.class
+TestBase/PlayAvideo.class
+Clicks/ableToChooseSeries.class
+TestBase/UseOfTab.class
+TestBase/Scroll.class
+TestBase/dropDown.class
+TestBase/searchMultipleItems.class
+TestBase/CountryDropDown.class
+Clicks/clickSearch.class
+TestBase/searchItem.class
+TestBase/mouseMovement.class
+Clicks/careers.class

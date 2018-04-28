@@ -13,7 +13,11 @@
     <test name = "HBO test">
 
         <classes>
+<<<<<<< HEAD
         <class name="TestBase.dropDown"/>
+=======
+        <class name="Clicks.ableToChooseBoxing"/>
+>>>>>>> 17de85aed7812452d5a205181e21f554de0f0589
             <!--//<class name="TestBase.searchItem"/>-->
        <!-- <class name="TestBase.PlayAvideo"/>-->
 
