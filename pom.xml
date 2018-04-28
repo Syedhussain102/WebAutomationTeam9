@@ -16,7 +16,6 @@
         <module>ObamaCare</module>
         <module>Generic</module>
         <module>Ebay</module>
-        <module>w3School</module>
     </modules>
 
     <dependencyManagement>
