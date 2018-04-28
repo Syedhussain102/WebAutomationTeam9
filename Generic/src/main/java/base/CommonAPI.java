@@ -36,16 +36,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-
-
     public WebDriver driver ;
 
     private String saucelabs_username = "NaimKhanSiam";
     private String saucelabs_accesskey = "eba49d53-2951-4bc6-9f4c-eb73a341142f";
     private String browserstack_username = "naimkhansiam1";
     private String browserstack_accesskey = "Sy6BgU1zFfzkRWxN5Rpk";
-
-
 
     //Extent Report Setup
     public static ExtentReports extent;
@@ -150,7 +146,7 @@ public class CommonAPI {
             throws IOException {
 
         DesiredCapabilities cap = new DesiredCapabilities();
-        //sets the os and browser info in the cloud
+        //sets the os and browser info for the cloud
         cap.setCapability("browser", browser_name);
         cap.setCapability("browser_version", browser_version);
         cap.setCapability("os", os);

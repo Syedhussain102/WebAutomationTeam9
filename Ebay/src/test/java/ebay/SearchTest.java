@@ -11,29 +11,19 @@ public class SearchTest extends CommonAPI {
     //search for a laptop
     //@Test
     public void searchLaptop(){
-        Search refVar = PageFactory.initElements(driver, Search.class);
-        refVar.lookForALaptop();
+        Search search = PageFactory.initElements(driver, Search.class);
+        search.lookForALaptop();
     }
     //search for a laptop  and define group apple
     //@Test
     public void group(){
-        Search refVar = PageFactory.initElements(driver, Search.class);
-        refVar.group();
+        Search search = PageFactory.initElements(driver, Search.class);
+        search.group();
     }
     //SearchMultipleItems
     //@Test
     public void test3() {
-        Search refVar = PageFactory.initElements(driver, Search.class);
-        refVar.searchItems();
+        Search search = PageFactory.initElements(driver, Search.class);
+        search.searchItems();
     }
-    //
-    //@Test
-    public void testExcel() throws IOException {
-        Search refVar = PageFactory.initElements(driver,Search.class);
-        refVar.searchItemsAndSubmitButton();
-    }
-
-
-
-
 }

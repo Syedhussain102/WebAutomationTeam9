@@ -14,13 +14,13 @@ import java.util.List;
 
 public class Search extends CommonAPI {
     //search for a laptop,
-    @FindBy(how = How.XPATH, using = "/html//input[@id='gh-search-input']")
+    @FindBy(xpath = "/html//input[@id='gh-search-input']")
     public static WebElement search;
     public void lookForALaptop() {
         search.sendKeys("laptop", Keys.ENTER);
     }
     // define group apple
-    @FindBy(how = How.XPATH, using = "//a[contains(text(),'Apple Laptops')]")
+    @FindBy(xpath = "//a[contains(text(),'Apple Laptops')]")
     public static WebElement group;
     public void group() {
         lookForALaptop();
@@ -39,20 +39,4 @@ public class Search extends CommonAPI {
             searchElements.clear();
         }
     }
-    //search from excel sheet
-    DataReader dr = new DataReader();
-    public String[] getDataFromExcelFile() throws IOException {
-        String path = System.getProperty("user.dir")+"/data/Book1.xls";
-        String [] data = dr.fileReader2(path,1);
-        return data;
-    }
-    public void searchItemsAndSubmitButton()throws IOException {
-        String [] value = getDataFromExcelFile();
-        for(int i=0; i<value.length; i++) {
-            searchElements.sendKeys(value[i],Keys.ENTER);
-            searchElements.clear();
-        }
-    }
-
-
 }
