@@ -1,6 +1,7 @@
 TestBase/newWindows.class
 Clicks/ArrowClick.class
 TestBase/Job.class
+Clicks/ableToChooseBoxing.class
 Clicks/ableToChooseMovie.class
 TestBase/PlayAvideo.class
 Clicks/ableToChooseSeries.class

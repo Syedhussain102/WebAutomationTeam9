@@ -10,7 +10,7 @@
     <test name = "HBO test">
 
         <classes>
-        <class name="TestBase.Job"/>
+        <class name="Clicks.ableToChooseBoxing"/>
             <!--//<class name="TestBase.searchItem"/>-->
        <!-- <class name="TestBase.PlayAvideo"/>-->
 

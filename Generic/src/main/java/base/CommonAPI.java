@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-    //public static ExtentReports extent;
+
     public WebDriver driver ;
     @BeforeMethod
     @Parameters({"url","browser_name","os"})
@@ -172,6 +172,7 @@ public class CommonAPI {
         driver.switchTo().window(tabs.get(1));
     }
 
+
     public List<WebElement> getElementsByCSSforList(String CSS){
         List<WebElement> value = driver.findElements(By.cssSelector(CSS));
         return value;
@@ -225,6 +226,7 @@ public class CommonAPI {
         driver.switchTo().window(tabs.get(toClose));
         driver.close();
         driver.switchTo().window(tabs.get(toKeep));
+
     }
     //implicity_wait
     public void implicityWait(){
@@ -385,6 +387,11 @@ public class CommonAPI {
         select.selectByVisibleText(value);
     }
 
+    public static boolean isPopUpWindowDisplayed(WebDriver driver1, String locator){
+        boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
+        return value;
+    }
+
     //Extent Report Setup
     /*@BeforeSuite
     public void extentSetup(ITestContext context) {
@@ -464,14 +471,6 @@ public class CommonAPI {
 
     }*/
 
-    /*//Handling New Tabs
-    public static WebDriver handleNewTab(WebDriver driver1){
-        String oldTab = driver1.getWindowHandle();
-        List<String> newTabs = new ArrayList<String>(driver1.getWindowHandles());
-        newTabs.remove(oldTab);
-        driver1.switchTo().window(newTabs.get(0));
-        return driver1;
-    }*/
 
 
 }

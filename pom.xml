@@ -11,12 +11,16 @@
     <modules>
         <module>HBO</module>
         <module>Facebook</module>
-
+        <module>bestbuy</module>
         <module>CityBank</module>
         <module>ObamaCare</module>
         <module>Generic</module>
         <module>Ebay</module>
     </modules>
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
 
     <dependencyManagement>
         <dependencies>

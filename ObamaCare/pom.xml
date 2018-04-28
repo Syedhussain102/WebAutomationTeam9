@@ -10,10 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>obamaCare</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>bestbuy</module>
-    </modules>
+
     <dependencies>
         <dependency>
             <groupId>com.team9</groupId>
