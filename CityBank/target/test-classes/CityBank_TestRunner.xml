@@ -10,7 +10,7 @@
     <test name = "test CityBank">
 
         <classes>
-         <!--   <class name="citybank.test1"/>-->
+       <class name="citybank.test1"/>
 
         </classes>
     </test>

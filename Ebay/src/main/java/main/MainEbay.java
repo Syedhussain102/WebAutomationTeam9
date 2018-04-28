@@ -40,14 +40,14 @@ public class MainEbay extends CommonAPI {
         //xtendedSearches();
         clickByXpath("//*[@id='gh-p-1']/a");
         clickByXpath("//*[@id='s4-c0-c1-title']/a/span");
-         }
+    }
 
     //search for a laptop and use different options
     public void searchWithDifferentRequirements(){
         typeByXpathNEnter("/html//input[@id='gh-ac']","Laptop");
         try{clickByXpath("//*[@id='productSearchToggle']/div/span[2]");}catch (Exception ex){
-        //click acer
-        clickByXpath("//*[@id='w3-w0-w1-multiselect[0]']/a/span[1]");}
+            //click acer
+            clickByXpath("//*[@id='w3-w0-w1-multiselect[0]']/a/span[1]");}
 
         clickByCss("[id='w3-w0-w1-multiselect\\[0\\]'] .x-refine__multi-select-cbx");
         clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_valueOption']");
@@ -70,6 +70,20 @@ public class MainEbay extends CommonAPI {
         String newTabTest = Keys.chord(Keys.COMMAND,Keys.RETURN);
         driver.findElement(By.linkText("Contact us")).sendKeys(newTabTest);
         switchTabs(0,1);
+    }
+    //usint TAB
+    public void tabUse() throws InterruptedException {
+        Actions act = new Actions(driver);
+        act.sendKeys(Keys.TAB).perform();
+        Thread.sleep(2000);
+        act.sendKeys(Keys.TAB).perform();
+        Thread.sleep(2000);
+        act.sendKeys(Keys.TAB).perform();
+        Thread.sleep(2000);
+        act.sendKeys(Keys.TAB).perform();
+        Thread.sleep(2000);
+        act.sendKeys(Keys.TAB).perform();
+
     }
 
 

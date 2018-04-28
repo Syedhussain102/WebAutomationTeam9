@@ -5,6 +5,7 @@ import base.CommonAPI;
 public class CheckEbayHome extends CommonAPI {
     //Buy
     public void Buy(){
+
         clickByLinkedText("Registration");
         navigateBack();
         clickByLinkedText("eBay Money Back Guarantee");

@@ -7,7 +7,7 @@
     <parameter name="browser_name" value="Chrome"/>
     <parameter name="os" value="mac"/>
 
-    <test name = "test1">
+    <test name = "HBO test">
 
         <classes>
         <class name="TestBase.CountryDropDown"/>
