@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,6 +28,12 @@ import java.util.concurrent.TimeUnit;
 public class CommonAPI {
 
     public WebDriver driver ;
+
+    private String saucelabs_username = "NaimKhanSiam";
+    private String saucelabs_accesskey = "eba49d53-2951-4bc6-9f4c-eb73a341142f";
+    private String browserstack_username = "naimkhansiam1";
+    private String browserstack_accesskey = "Sy6BgU1zFfzkRWxN5Rpk";
+
     @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false")String cloudEnvName,
@@ -34,15 +42,15 @@ public class CommonAPI {
         System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
-                //getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,os,os_version, browserName, browserVersion);
+                getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,os,os_version, browserName, browserVersion);
             }else if (cloudEnvName.equalsIgnoreCase("saucelabs")){
-                //getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,os,os_version, browserName, browserVersion);
+                getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,os,os_version, browserName, browserVersion);
             }
         }else{
             getLocalDriver(os, browserName);
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
     }
@@ -70,47 +78,34 @@ public class CommonAPI {
 
     }
 
-    /* @BeforeMethod
-    @Parameters({"url","browser_name","os"})
-    public void setUp(String URL,String os, String browser_name){
-        getLocalDriver(os,browser_name);
-        driver.get(URL);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        //driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
+    public WebDriver getCloudDriver(String envName, String envUsername, String envAccessKey, String os,
+                                    String os_version, String browser_name, String browser_version)
+            throws IOException {
+
+        DesiredCapabilities cap = new DesiredCapabilities();
+        //sets the os and browser info in the cloud
+        cap.setCapability("browser", browser_name);
+        cap.setCapability("browser_version", browser_version);
+        cap.setCapability("os", os);
+        cap.setCapability("os_version", os_version);
+        if (envName.equalsIgnoreCase("Saucelabs")) {
+            //sets up the url and the remote driver
+            driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
+                    "@ondemand.saucelabs.com:80/wd/hub"), cap);
+        } else if (envName.equalsIgnoreCase("Browserstack")) {
+            cap.setCapability("resolution", "1024x768");
+            driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
+                    "@hub-cloud.browserstack.com/wd/hub"), cap);
+        }
+        return driver;
     }
     @AfterMethod
     public void quit() throws InterruptedException {
         Thread.sleep(10000);
-        //driver.quit();
+        driver.quit();
     }
-    //setting up the OS and Browser
-    public WebDriver getLocalDriver(String browser_name,String os){
-        if(browser_name.equalsIgnoreCase("Chrome")){
-            if(os.equalsIgnoreCase("win")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
-                driver = new ChromeDriver();
-            }else if(os.equalsIgnoreCase("mac")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
-                driver = new ChromeDriver();
-            }
-        }else if(browser_name.equalsIgnoreCase("firefox")){
-            if(os.equalsIgnoreCase("win")){
 
-                System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver.exe");
-                driver = new FirefoxDriver();
-            }else if(os.equalsIgnoreCase("mac")){
-                System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver");
 
-                System.setProperty("webdriver.gecko.driver", ".../Generic/driver/geckodriver.exe");
-                driver = new FirefoxDriver();
-            }else if(os.equalsIgnoreCase("mac")){
-                System.setProperty("webdriver.gecko.driver", ".../Generic/driver/geckodriver");
-
-                driver = new FirefoxDriver();
-            }
-        }
-        return driver;
-    }*/
     //clicks
     public void clickByCss(String locator) {
         driver.findElement(By.cssSelector(locator)).click();

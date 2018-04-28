@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class loginTest extends Login {
     //Go to my account
-    //@Test
+    @Test
     public void ClickMyAccount() {
         myAccount();
     }
@@ -35,7 +35,7 @@ public class loginTest extends Login {
     }
 
     //create folder in messages
-    @Test
+    //@Test
     public void createFolder() {
         folderInMessages();
     }
