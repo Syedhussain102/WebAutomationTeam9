@@ -4,15 +4,15 @@
   <parameter name="browser_name" value="Chrome"/>
   <parameter name="os" value="mac"/>
   <parameter name="url" value="https://www.hbo.com"/>
-  <test thread-count="5" verbose="0" name="test1(failed)">
+  <test thread-count="5" verbose="0" name="HBO test(failed)">
     <classes>
-      <class name="TestBase.SignUp">
+      <class name="TestBase.Job">
         <methods>
           <include name="quit"/>
-          <include name="signup"/>
+          <include name="lookForJob"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- TestBase.SignUp -->
+      </class> <!-- TestBase.Job -->
     </classes>
-  </test> <!-- test1(failed) -->
+  </test> <!-- HBO test(failed) -->
 </suite> <!-- Failed suite [HBO Automation Script ] -->

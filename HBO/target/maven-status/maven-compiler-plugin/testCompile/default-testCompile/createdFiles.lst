@@ -4,13 +4,10 @@ TestBase/Job.class
 Clicks/ableToChooseMovie.class
 TestBase/PlayAvideo.class
 Clicks/ableToChooseSeries.class
-Clicks/SeriesClickTest.class
 TestBase/UseOfTab.class
 TestBase/Scroll.class
 TestBase/dropDown.class
-TestBase/SignUp.class
 TestBase/searchMultipleItems.class
-Clicks/MoviesClickTest.class
 TestBase/CountryDropDown.class
 Clicks/clickSearch.class
 TestBase/searchItem.class
