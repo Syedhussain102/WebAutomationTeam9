@@ -1,4 +1,6 @@
 package base;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
@@ -11,10 +13,17 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
+import reporting.ExtentManager;
+import reporting.ExtentTestManager;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
@@ -27,12 +36,69 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
+
     public WebDriver driver ;
 
     private String saucelabs_username = "NaimKhanSiam";
     private String saucelabs_accesskey = "eba49d53-2951-4bc6-9f4c-eb73a341142f";
     private String browserstack_username = "naimkhansiam1";
     private String browserstack_accesskey = "Sy6BgU1zFfzkRWxN5Rpk";
+
+
+
+    //Extent Report Setup
+    public static ExtentReports extent;
+    @BeforeSuite
+    public void extentSetup(ITestContext context) {
+        ExtentManager.setOutputDirectory(context);
+        extent = ExtentManager.getInstance();
+    }
+
+    @BeforeMethod
+    public void startExtent(Method method) {
+        String className = method.getDeclaringClass().getSimpleName();
+        String methodName = method.getName().toLowerCase();
+        ExtentTestManager.startTest(method.getName());
+        ExtentTestManager.getTest().assignCategory(className);
+    }
+
+    protected String getStackTrace(Throwable t) {
+        StringWriter sw = new StringWriter();
+        PrintWriter pw = new PrintWriter(sw);
+        t.printStackTrace(pw);
+        return sw.toString();
+    }
+
+    @AfterMethod
+    public void afterEachTestMethod(ITestResult result) {
+        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
+        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
+
+        for (String group : result.getMethod().getGroups()) {
+            ExtentTestManager.getTest().assignCategory(group);
+        }
+
+        if (result.getStatus() == 1) {
+            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
+        } else if (result.getStatus() == 2) {
+            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
+        } else if (result.getStatus() == 3) {
+            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+        }
+
+        ExtentTestManager.endTest();
+        extent.flush();
+        if (result.getStatus() == ITestResult.FAILURE) {
+            captureScreenshot(driver, result.getName());
+        }
+    }
+
+    @AfterSuite
+    public void generateReport() {
+        extent.close();
+    }
+
+
 
     @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
     @BeforeMethod
@@ -347,9 +413,24 @@ public class CommonAPI {
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
+    //mouse hover
+    public void mouseHoverByXpath(String locator){
+        try {
+            WebElement element = driver.findElement(By.xpath(locator));
+            Actions action = new Actions(driver);
+            Actions hover = action.moveToElement(element);
+        }catch(Exception ex){
+            System.out.println("First attempt has been done, This is second try");
+            WebElement element = driver.findElement(By.cssSelector(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+
+        }
+
+    }
 
 
-    //Synchronization
+   /* //Synchronization
     public void waitUntilClickAble(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -385,7 +466,7 @@ public class CommonAPI {
             System.err.println("Element not found on web page.");
         }
         return element;
-    }
+    }*/
 
     public boolean isElementPresent(String type, String locator) {
         List<WebElement> elementList = getElementList(type, locator);
@@ -431,85 +512,6 @@ public class CommonAPI {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
     }
-
-    //Extent Report Setup
-    /*@BeforeSuite
-    public void extentSetup(ITestContext context) {
-        ExtentManager.setOutputDirectory(context);
-        extent = ExtentManager.getInstance();
-    }
-
-    @BeforeMethod
-    public void startExtent(Method method) {
-        String className = method.getDeclaringClass().getSimpleName();
-        String methodName = method.getName().toLowerCase();
-        ExtentTestManager.startTest(method.getName());
-        ExtentTestManager.getTest().assignCategory(className);
-    }
-
-    protected String getStackTrace(Throwable t) {
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        t.printStackTrace(pw);
-        return sw.toString();
-    }
-
-    @AfterMethod
-    public void afterEachTestMethod(ITestResult result) {
-        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
-        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
-
-        for (String group : result.getMethod().getGroups()) {
-            ExtentTestManager.getTest().assignCategory(group);
-        }
-
-        if (result.getStatus() == 1) {
-            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
-        } else if (result.getStatus() == 2) {
-            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
-        } else if (result.getStatus() == 3) {
-            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
-        }
-
-        ExtentTestManager.endTest();
-        extent.flush();
-        if (result.getStatus() == ITestResult.FAILURE) {
-            captureScreenshot(driver, result.getName());
-        }
-    }
-
-    @AfterSuite
-    public void generateReport() {
-        extent.close();
-    }*/
-    /* public void mouseHoverByCSS(String locator){
-        try {
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
-        }catch(Exception ex){
-            System.out.println("First attempt has been done, This is second try");
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
-
-        }
-
-    }
-    public void mouseHoverByXpath(String locator){
-        try {
-            WebElement element = driver.findElement(By.xpath(locator));
-            Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
-        }catch(Exception ex){
-            System.out.println("First attempt has been done, This is second try");
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
-
-        }
-
-    }*/
 
 
 

@@ -16,9 +16,8 @@
         <class name="TestBase.dropDown"/>
 
         <class name="Clicks.ableToChooseBoxing"/>
-
-            <!--//<class name="TestBase.searchItem"/>-->
-       <!-- <class name="TestBase.PlayAvideo"/>-->
+            <class name="TestBase.searchItem"/>
+        <class name="TestBase.PlayAvideo"/>
 
         </classes>
     </test>

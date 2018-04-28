@@ -11,31 +11,31 @@ public class loginTest extends Login {
     }
 
     //click on register
-    //@Test
+    @Test
     public void ClickOnRegister() {
         clickRegister();
     }
 
     //input all values
-    // @Test
+     @Test
     public void input() throws InterruptedException {
         inputValues();
     }
 
-    // log in
-    //@Test
+    //log in
+    @Test
     public void clickOnSignIn() {
         login();
     }
 
     //go to my messages
-    //@Test
+    @Test
     public void myMessage() {
         myMessages();
     }
 
     //create folder in messages
-    //@Test
+    @Test
     public void createFolder() {
         folderInMessages();
     }
