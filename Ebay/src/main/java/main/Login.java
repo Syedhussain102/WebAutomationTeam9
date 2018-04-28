@@ -9,7 +9,7 @@ import org.openqa.selenium.support.How;
 public class Login extends CommonAPI {
     //Go to myEbay
     public void myAccount(){
-        clickByXpath("//li[@id='gh-eb-My']//a[@href='http://my.ebay.com/ws/eBayISAPI.dll?MyEbay&gbh=1']");
+        clickByXpath("//*[@id='gh-eb-My']/div[1]/a[1]");
     }
    //Go To register
     public void clickRegister(){

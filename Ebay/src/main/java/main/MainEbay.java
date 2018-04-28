@@ -47,9 +47,6 @@ public class MainEbay extends CommonAPI {
         clickByCss("[id='w3-w0-w1-multiselect\\[0\\]'] .x-refine__multi-select-cbx");
         clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_valueOption']");
         clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_select']/option[6]");
-        //clickNClearbyXpath("//*[@id='w3-w0-singleselect[9]-w0-zipcode-validator-x-zipcode-validator__input']");
-        //typeOnInputField("//*[@id='w3-w0-singleselect[9]-w0-zipcode-validator-x-zipcode-validator__input']","11377");
-        //clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_submit']");
     }
     //select categories and then select travel
     public void editCategories(){
@@ -75,8 +72,5 @@ public class MainEbay extends CommonAPI {
         act.sendKeys(Keys.TAB).perform();
         Thread.sleep(2000);
         act.sendKeys(Keys.TAB).perform();
-
     }
-
-
 }

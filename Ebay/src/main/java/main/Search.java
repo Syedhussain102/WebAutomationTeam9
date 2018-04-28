@@ -19,7 +19,6 @@ public class Search extends CommonAPI {
     public void lookForALaptop() {
         search.sendKeys("laptop", Keys.ENTER);
     }
-
     // define group apple
     @FindBy(how = How.XPATH, using = "//a[contains(text(),'Apple Laptops')]")
     public static WebElement group;
@@ -27,7 +26,6 @@ public class Search extends CommonAPI {
         lookForALaptop();
         group.click();
     }
-
     //SearchMultipleItems
     @FindBy(xpath = "//input[@id='gh-ac']")
     public WebElement searchElements;
@@ -41,9 +39,7 @@ public class Search extends CommonAPI {
             searchElements.clear();
         }
     }
-
     //search from excel sheet
-
     DataReader dr = new DataReader();
     public String[] getDataFromExcelFile() throws IOException {
         String path = System.getProperty("user.dir")+"/data/Book1.xls";

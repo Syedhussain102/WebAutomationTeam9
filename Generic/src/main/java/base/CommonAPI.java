@@ -431,7 +431,7 @@ public class CommonAPI {
     }
 
 
-   /* //Synchronization
+    //Synchronization
     public void waitUntilClickAble(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -467,7 +467,7 @@ public class CommonAPI {
             System.err.println("Element not found on web page.");
         }
         return element;
-    }*/
+    }
 
     public boolean isElementPresent(String type, String locator) {
         List<WebElement> elementList = getElementList(type, locator);

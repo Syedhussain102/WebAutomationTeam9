@@ -3,7 +3,7 @@ import base.CommonAPI;
 import main.Login;
 import org.testng.annotations.Test;
 
-public class loginTest extends Login {
+public class LoginTest extends Login {
     //Go to my account
     @Test
     public void ClickMyAccount() {
