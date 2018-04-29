@@ -33,7 +33,7 @@ public class Login extends CommonAPI {
         typeByCss("#pri_signin .m12 [size]","testMySelenium123#@");
         clickByXpath("/html//input[@id='sgnBt']");
     }
-    //go to my messages
+    //go to my messages//
     public void myMessages(){
         login();
         mouseHoverNClickbyXC("//*[@id='gh-eb-My']/div/a[1]","Messages");
