@@ -9,8 +9,7 @@ public class LoginTest extends Login {
     @Test
     public void ClickMyAccount() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        myAccount();
-    }
+        myAccount(); }
     //click on register
     @Test
     public void ClickOnRegister() {
@@ -19,24 +18,20 @@ public class LoginTest extends Login {
     //input all values
      @Test
     public void input() throws InterruptedException {
-        inputValues();
-    }
+        inputValues(); }
     //log in
     @Test
     public void clickOnSignIn() {
         login();
     }
-
     //go to my messages
     @Test
     public void myMessage() {
         myMessages();
     }
-
     //create folder in messages
     @Test
     public void createFolder() {
         folderInMessages();
     }
-
 }

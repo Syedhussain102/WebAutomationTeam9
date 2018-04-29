@@ -54,7 +54,6 @@ public class MainEbay extends CommonAPI {
         WebElement menu = driver.findElement(By.xpath("//*[@id='gh-cat']/option[34]"));
         System.out.println(menu.getText());
     }
-
     //handeling new tab
     public void newTab(){
         String newTabTest = Keys.chord(Keys.COMMAND,Keys.RETURN);

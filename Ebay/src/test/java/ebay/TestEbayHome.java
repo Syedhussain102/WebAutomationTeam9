@@ -10,22 +10,22 @@ public class TestEbayHome extends CheckEbayHome {
         Buy();
     }
     //Sell
-    //@Test
+    @Test
     public void testSell(){
         Sell();
     }
     //T&A
-    //@Test
+    @Test
     public void toolsNapps(){
         TnA();
     }
     //Companies
-    //@Test
+    @Test
     public void ebayCompanies(){
         companies();
     }
     //about Ebay
-    //@Test
+    @Test
     public void aboutEbay(){
         about();
     }

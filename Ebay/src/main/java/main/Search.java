@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Search extends CommonAPI {
     //search for a laptop,
-    @FindBy(xpath = "/html//input[@id='gh-search-input']")
+    @FindBy(xpath = "//input[@id='gh-ac']")
     public static WebElement search;
     public void lookForALaptop() {
         search.sendKeys("laptop", Keys.ENTER);

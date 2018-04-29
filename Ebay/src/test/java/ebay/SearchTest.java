@@ -9,19 +9,19 @@ import java.io.IOException;
 
 public class SearchTest extends CommonAPI {
     //search for a laptop
-    //@Test
+    @Test
     public void searchLaptop(){
         Search search = PageFactory.initElements(driver, Search.class);
         search.lookForALaptop();
     }
     //search for a laptop  and define group apple
-    //@Test
+    @Test
     public void group(){
         Search search = PageFactory.initElements(driver, Search.class);
         search.group();
     }
     //SearchMultipleItems
-    //@Test
+    @Test
     public void test3() {
         Search search = PageFactory.initElements(driver, Search.class);
         search.searchItems();
