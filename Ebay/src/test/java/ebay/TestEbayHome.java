@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class TestEbayHome extends CheckEbayHome {
     //buy
-    //@Test
+    @Test
     public void testBuy(){
         Buy();
     }

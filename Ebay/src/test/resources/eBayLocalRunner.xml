@@ -13,7 +13,7 @@
 
 <test name = "eBay Home">
     <classes>
-        <class name="ebay.LoginTest"/>
+        <class name="ebay.TestExcelInputs"/>
     </classes>
 </test>
 

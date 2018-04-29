@@ -35,7 +35,8 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFiles>target/test-classes/ebay.xml</suiteXmlFiles>
+                        <suiteXmlFiles>target/test-classes/eBayLocalRunner.xml</suiteXmlFiles>
+                        <!--<suiteXmlFiles>target/test-classes/eBayCloudRunner.xml</suiteXmlFiles>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

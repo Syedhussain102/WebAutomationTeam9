@@ -41,7 +41,7 @@ public class DataReader {
     }
 
     public String[] fileReader2(String path, int sheetIndex) throws IOException {
-        String[] data ;
+        String[] data = {};
         File file = new File(path);
         FileInputStream fis = new FileInputStream(file);
         wb = new HSSFWorkbook(fis);
