@@ -7,11 +7,10 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class TestExcelInputs extends CommonAPI {
+public class TestExcelInputs extends ExcelSearch {
 
     @Test
     public void testExcel() throws IOException {
-        ExcelSearch excelSearch = PageFactory.initElements(driver,ExcelSearch.class);
-        excelSearch.searchItemsAndSubmitButton();
+        searchItemsAndSubmitButton();
     }
 }

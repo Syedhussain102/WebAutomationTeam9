@@ -2,26 +2,25 @@ package ebay;
 import base.CommonAPI;
 import main.Login;
 import org.testng.annotations.Test;
+import reporting.TestLogger;
 
 public class LoginTest extends Login {
     //Go to my account
     @Test
     public void ClickMyAccount() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         myAccount();
     }
-
     //click on register
     @Test
     public void ClickOnRegister() {
         clickRegister();
     }
-
     //input all values
      @Test
     public void input() throws InterruptedException {
         inputValues();
     }
-
     //log in
     @Test
     public void clickOnSignIn() {
