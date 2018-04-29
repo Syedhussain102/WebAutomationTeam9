@@ -45,6 +45,4 @@ public class Login extends CommonAPI {
         driver.findElement(By.xpath("//*[@id='-1_inp_inp']")).clear();
         typeByXpath("//*[@id='-1_inp_inp']","folder1");
     }
-
-
 }

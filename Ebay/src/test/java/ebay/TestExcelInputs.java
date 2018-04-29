@@ -1,13 +1,11 @@
 package ebay;
 
-import base.CommonAPI;
-import main.ExcelSearch;
-import org.openqa.selenium.support.PageFactory;
+import main.TryExcelSearch;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class TestExcelInputs extends ExcelSearch {
+public class TestExcelInputs extends TryExcelSearch {
     //@Test
     public void testExcel() throws IOException {
         searchItemsAndSubmitButton();

@@ -3,12 +3,12 @@ package main;
 import base.CommonAPI;
 import utility.DataReader;
 import java.io.IOException;
-public class ExcelSearch extends CommonAPI{
+public class TryExcelSearch extends CommonAPI{
 
     public String[] getDataFromExcelFile() throws IOException {
         DataReader dr = new DataReader();
         String path = System.getProperty("user.dir") + "/data/Book1.xls";
-        String[] data = dr.fileReader2(path,1);
+        String[] data = dr.fileReader(path);
         return data;
     }
     public void searchItemsAndSubmitButton()throws IOException {
@@ -19,6 +19,4 @@ public class ExcelSearch extends CommonAPI{
             clickNClearbyXpath( "//input[@id='gh-ac']");
         }
     }
-
-
 }

@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ebay Automation Script " parallel="false">
+<suite name="ObamaCare Automation Script " parallel="false">
 
+    <parameter name="url" value="https://www.cnbc.com/"/>
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="53.0"/>
-    <parameter name="url" value="https://www.ebay.com"/>
+    <test name = "test cnbc">
 
-    <test name = "eBay Home">
         <classes>
-            <!--<class name="ebay.LoginTest"/>
-            <class name="ebay.SearchTest"/>
-            <class name="ebay.TestEbay"/>
-            <class name="ebay.TestEbayHome"/>-->
-            <class name="ebay.TestExcelInputs"/>
+        <class name="base.test1"/>
+
         </classes>
     </test>
+
 </suite>

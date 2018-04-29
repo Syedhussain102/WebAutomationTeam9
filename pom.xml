@@ -16,6 +16,7 @@
         <module>ObamaCare</module>
         <module>Generic</module>
         <module>Ebay</module>
+        <module>Cnbc</module>
     </modules>
 
     <!--<properties>
