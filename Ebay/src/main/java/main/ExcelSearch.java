@@ -9,7 +9,7 @@ import utility.DataReader;
 
 import java.io.IOException;
 
-public class ExcelSearch{
+public class ExcelSearch extends CommonAPI{
     //search from excel sheet
     public String[] getDataFromExcelFile() throws IOException {
         DataReader dr = new DataReader();
@@ -40,4 +40,13 @@ public class ExcelSearch{
            clear();
         }
     }
+
+    /*public void searchItemsAndSubmitButton()throws IOException {
+        clickByXpath( "//input[@id='gh-ac']");
+        String [] value = getDataFromExcelFile();
+        for(int i=0; i<value.length; i++) {
+            typeByXpath("//input[@id='gh-ac']",value[i]);
+            clickNClearbyXpath( "//input[@id='gh-ac']");
+        }
+    }*/
 }

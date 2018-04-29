@@ -1,37 +1,53 @@
 package ebay;
-import base.CommonAPI;
+
 import main.Login;
 import org.testng.annotations.Test;
 import reporting.TestLogger;
 
 public class LoginTest extends Login {
-    //Go to my account
-    @Test
-    public void ClickMyAccount() {
+    //******positive testing
+    //login to ebay
+    @Test(priority = 1)
+    public void Login(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        myAccount(); }
-    //click on register
-    @Test
-    public void ClickOnRegister() {
-        clickRegister();
-    }
-    //input all values
-     @Test
-    public void input() throws InterruptedException {
-        inputValues(); }
-    //log in
-    @Test
-    public void clickOnSignIn() {
         login();
     }
-    //go to my messages
-    @Test
-    public void myMessage() {
-        myMessages();
+
+    //*****negative testing
+    //login with fake email
+    @Test(priority = 2)
+    public void FakeEmailLoginTry(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        fakeEmailLoginTry();
     }
-    //create folder in messages
-    @Test
-    public void createFolder() {
-        folderInMessages();
+    //login with fake password
+    @Test(priority = 3)
+    public void FakePassLoginTry(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+       fakePassLoginTry();
+    }
+    //login with fake email,fake pass
+    @Test(priority = 4)
+    public void FakePassEmailLoginTry(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        fakePassEmailLoginTry();
+    }
+    //log in with no email
+    @Test(priority = 5)
+    public void NoEmailLoginTry(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        noEmailLoginTry();
+    }
+    //log in with no password
+    @Test(priority = 6)
+    public void NoPassLoginTry(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        noPassLoginTry();
+    }
+    //log in with no password, no email
+    @Test(priority = 7)
+    public void NoPassEmailLoginTry(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        noPassEmailLoginTry();
     }
 }

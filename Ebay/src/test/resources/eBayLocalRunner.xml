@@ -13,11 +13,12 @@
 
     <test name = "eBay Home">
         <classes>
-            <!--<class name="ebay.LoginTest"/>
+            <!-- <class name="ebay.LoginTest"/>-->
+           <!-- <class name="ebay.SignUpTestt"/>-->
             <class name="ebay.SearchTest"/>
-            <class name="ebay.TestEbay"/>-->
-            <class name="ebay.TestEbayHome"/>
-            <!--<class name="ebay.TestExcelInputs"/>-->
+            <!--<class name="ebay.TestEbay"/>-->
+            <!--<class name="ebay.TestEbayHomeLinksLinks"/>-->
+            <!--<class name="ebay.ExcelSearchTest"/>-->
         </classes>
     </test>
 </suite>
