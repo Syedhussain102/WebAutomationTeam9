@@ -1,8 +1,13 @@
 package main;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 
-public class CheckEbayHome extends CommonAPI {
+import java.util.ArrayList;
+
+public class EbayHomeLinks extends CommonAPI {
     //Buy
     public void Buy(){
         clickByLinkedText("Registration");
@@ -47,24 +52,5 @@ public class CheckEbayHome extends CommonAPI {
         navigateBack();
     }
     //about ebay
-    public void about(){
-        clickByLinkedText("Company info");
-        navigateBack();
-        clickByLinkedText("News");
-        navigateBack();
-        clickByLinkedText("Investors");
-        navigateBack();
-        clickByLinkedText("Careers");
-        navigateBack();
-        clickByLinkedText("Diversity & Inclusion");
-        navigateBack();
-        clickByLinkedText("Global Impact");
-        navigateBack();
-        clickByLinkedText("Government relations");
-        navigateBack();
-        clickByLinkedText("Advertise with us");
-        navigateBack();
-        clickByLinkedText("Policies");
-        navigateBack();
-    }
+
 }

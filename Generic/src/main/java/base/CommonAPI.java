@@ -112,10 +112,10 @@ public class CommonAPI {
         }else{
             getLocalDriver(os, browserName);
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.get(url);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
     }
     public WebDriver getLocalDriver(@Optional("mac") String OS, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
@@ -268,11 +268,12 @@ public class CommonAPI {
         return text;
     }
     //new tab
-    public void openNewTab(String body)
-    {
-        driver.findElement(By.cssSelector(body)).sendKeys(Keys.COMMAND +"t");
-        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-        driver.switchTo().window(tabs.get(1));
+    public void openNewTab(String urlLink)
+    {   String selectLinkOpeninNewTab = Keys.chord(Keys.CONTROL,Keys.RETURN);
+        driver.findElement(By.linkText(urlLink)).sendKeys(selectLinkOpeninNewTab);
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(0));
+
     }
 
 
