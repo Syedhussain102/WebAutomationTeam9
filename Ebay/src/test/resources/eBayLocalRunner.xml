@@ -15,9 +15,9 @@
         <classes>
             <!--<class name="ebay.LoginTest"/>
             <class name="ebay.SearchTest"/>
-            <class name="ebay.TestEbay"/>
-            <class name="ebay.TestEbayHome"/>-->
-            <class name="ebay.TestExcelInputs"/>
+            <class name="ebay.TestEbay"/>-->
+            <class name="ebay.TestEbayHome"/>
+            <!--<class name="ebay.TestExcelInputs"/>-->
         </classes>
     </test>
 </suite>
