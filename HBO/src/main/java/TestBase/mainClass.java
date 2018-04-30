@@ -22,9 +22,5 @@ public class mainClass extends CommonAPI {
            clickByXpath("/html/body/main/div[1]/div/div/header/div[1]/div/div[2]/div/div/div");
 
        }
-
-
    }
 }
-
-//syed push try out---
