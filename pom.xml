@@ -17,6 +17,7 @@
         <module>Generic</module>
         <module>Ebay</module>
         <module>Cnbc</module>
+        <module>walmart</module>
     </modules>
 
     <!--<properties>
