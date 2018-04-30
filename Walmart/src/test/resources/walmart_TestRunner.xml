@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="bestBuy Automation Script " parallel="false">
+<suite name="ObamaCare Automation Script " parallel="false">
 
-    <parameter name="url" value="https://www.bestbuy.com/"/>
+    <parameter name="url" value="https://www.obamacareplans.com/"/>
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="53.0"/>
+    <test name = "test obamacare">
 
-<test name = "test bestBuy">
+        <classes>
 
-    <classes>
-       <class name="bestBuy.TestBestBuyHome"/>
 
-    </classes>
-</test>
+        </classes>
+    </test>
 
 </suite>

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bestbuy</artifactId>
+    <artifactId>walmart</artifactId>
 
     <dependencies>
         <dependency>
@@ -17,7 +17,6 @@
             <artifactId>generic</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
@@ -36,12 +35,11 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFiles>target/test-classes/ebay.xml</suiteXmlFiles>
+                        <suiteXmlFiles>target/test-classes/obamacare_TestRunner.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
 </project>
