@@ -10,60 +10,38 @@ public class mainClass extends CommonAPI {
     public void homeUs(){
         driver.findElement(By.xpath("//span[contains(text(),'HOME U.S.')]")).click();
     }
-    public void news(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='News'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Energy']")).click();
+    public void newss(){
+       mouseHoverNClickbyXC("//a[text()='News'][1]","ENERGY");
     }
     public void markets(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Markets'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Cryptocurrency']")).click();
+        mouseHoverNClickbyXC("//a[text()='Markets'][1]","CRYPTOCURRENCY");
     }
     public void investing(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Investing'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Futures Now'][1]")).click();
+        mouseHoverNClickbyXC("//a[text()='Investing'][1]","FUTURES NOW");
     }
     public void tech(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Tech'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Gaming']")).click();
+        mouseHoverNClickbyXC("//a[text()='Tech'][1]","GAMING");
     }
     public void makeIt(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Make It'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Leadership']")).click();
+        mouseHoverNClickbyXC("//a[text()='Make It'][1]","LEADERSHIP");
     }
     public void video(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Video'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Latest Video'][1]")).click();
+        mouseHoverNClickbyXC("//a[text()='Video'][1]","LATEST VIDEO");
     }
     public void shows(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Shows'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Watch Live']")).click();
+        mouseHoverNClickbyXC("//a[text()='Shows'][1]","WATCH LIVE");
     }
     public void subscribe(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//li[@id='bx-subscribe-anchor-342017']"))).build().perform();
+        mouseHoverByXpath("//li[@id='bx-subscribe-anchor-342017']");
     }
     public void pro(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Pro'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Take a Tour']"));
-        //driver.findElement(By.xpath("//div[@class='cnbc-popup-close-btn']")).click();
+        mouseHoverNClickbyXC("//a[text()='Pro'][1]","TAKE A TOUR");
     }
     public void liveTv(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='LIVE TV']"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Watch CNBC TV")).click();
+        mouseHoverNClickbyXC("//a[text()='LIVE TV']","WATCH CNBC TV");
     }
     public void watchList(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='WATCHLIST']"))).build().perform();
-        driver.findElement(By.xpath("")).click();
+       mouseHoverByXpath("//a[text()='WATCHLIST']");
     }
     public void breakingNews(){
         driver.findElement(By.xpath("//div[contains(text(),'Breaking News')]")).click();

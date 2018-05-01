@@ -13,7 +13,7 @@
     <test name = "test cnbc">
 
         <classes>
-        <class name="base.test1"/>
+        <class name="base.links"/>
 
         </classes>
     </test>
