@@ -11,26 +11,20 @@ public class cnbcTest extends mainClass {
     @Test
     public void investingTest(){ investing();}
     @Test
-    public void (){ }
+    public void techTest(){tech(); }
     @Test
-    public void home(){ }
+    public void makeItTest(){ makeIt();}
     @Test
-    public void home(){ }
+    public void videoTest(){ video();}
     @Test
-    public void home(){ }
+    public void showsTest(){ shows();}
     @Test
-    public void home(){ }
+    public void subscribeTest(){ subscribe();}
     @Test
-    public void home(){ }
+    public void proTest(){ pro();}
     @Test
-    public void home(){ }
+    public void liveTvTest(){liveTv();}
     @Test
-    public void home(){ }
-    @Test
-    public void home(){ }
-    @Test
-    public void home(){ }
-    @Test
-    public void home(){ }
+    public void watchList(){ watchList();}
 
 }
