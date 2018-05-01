@@ -398,9 +398,14 @@ public class CommonAPI {
            path= "C:\\Users\\rrt\\Pictures\\ds1.png";
          */
     }//clear Input
-    public void clearInput(String locator){
+    public void clearInputByCSS(String locator){
         driver.findElement(By.cssSelector(locator)).clear();
-    }//keys Input
+    }
+    //clear Input
+    public void clearInputByXpath(String locator){
+        driver.findElement(By.xpath(locator)).clear();
+    }
+    //keys Input
     public void keysInput(String locator){
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }//convert to string

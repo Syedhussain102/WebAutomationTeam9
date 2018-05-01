@@ -105,38 +105,61 @@ public class MainEbay extends CommonAPI {
     }
     //Check Ebay Fashion Mousehover and click by linkText
     public void fashion(){
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Women's Clothing");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Women's Clothing");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Women's Shoes");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Women's Shoes");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Men's Clothing");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Men's Clothing");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Men's Shoes");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Men's Shoes");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Handbags & Accessories");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Handbags & Accessories");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Kids & Baby");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Kids & Baby");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","My Garage");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Jewelry");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Vehicles");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Watches");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Cars & Trucks");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Beauty");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Motorcycles");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Health");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Classics & Exotics");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Fashion Deals");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Powersports");
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Sales & Events");
         navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","RVs & Other Vehicles");
-        navigateBack();
-        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Motors Blog");
-
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Pre-owned Fashion");
     }
     //Check Ebay Electronics Mousehover and click by linkText
     public void electronics(){
-
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Computers, Tablets & More");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Cell Phones, Smart Watches & Accessories");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","TV, Video & Home Audio");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Video Games & Consoles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Cameras & Photo");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Portable Audio & Headphones");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Smart Home");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","iPhone");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Laptops");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","PC Gaming");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Camera Drones");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Car Audio, Video & GPS");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Computer Graphics Cards");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Sell Your Phone");
     }
     //Check Ebay Collectiables & art Mousehover and click by linkText
     public void collectiablesNart(){
