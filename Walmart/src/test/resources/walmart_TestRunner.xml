@@ -3,7 +3,7 @@
 
 <suite name="ObamaCare Automation Script " parallel="false">
 
-    <parameter name="url" value="https://www.obamacareplans.com/"/>
+    <parameter name="url" value="https://www.walmart.com/"/>
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
@@ -13,7 +13,7 @@
     <test name = "test obamacare">
 
         <classes>
-
+            <class name="testBase.walmartTest"/>
 
         </classes>
     </test>
