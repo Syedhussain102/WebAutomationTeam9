@@ -1,11 +1,12 @@
 package main;
 
+import base.CommonAPI;
 import database.ConnectDB;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DBsearch {
+public class DBsearch extends CommonAPI {
 
     //insert data to db
     public static List<String> getItemValue() {
@@ -19,11 +20,21 @@ public class DBsearch {
         itemsList.add("Cap");
         return itemsList;
     }
+    //put data to db
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
         connectDB.insertDataFromArrayListToMySql(getItemValue(),"TestEbay","search");
-    }
+    }*/
 
     //bring data from db and search using them
+
+    public void searchByDB() throws Exception {
+        ConnectDB connectDB = new ConnectDB();
+        List<String> items = connectDB.readDataBase("TestEbay","search");
+        for (int i = 0; i < items.size(); i++) {
+            typeByXpathNEnter("//input[@id='gh-ac']", items.get(i));
+            clearInputByXpath("//input[@id='gh-ac']");
+        }
+    }
 }
