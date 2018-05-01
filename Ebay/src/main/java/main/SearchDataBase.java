@@ -10,14 +10,13 @@ public class SearchDataBase extends CommonAPI {
 
     public static List<String> getItemValue() {
         List<String> itemsList = new ArrayList<String>();
-        itemsList.add("Java Book");
-        itemsList.add("Selenium Book");
+        itemsList.add("Book");
+        itemsList.add("Pen");
         itemsList.add("Laptop");
-        itemsList.add("Honey");
-        itemsList.add("Toothpaste");
-        itemsList.add("ear-ring");
-        itemsList.add("ps4games");
-        itemsList.add("macAir");
+        itemsList.add("Pencil");
+        itemsList.add("Guitar");
+        itemsList.add("Pick");
+        itemsList.add("Cap");
         return itemsList;
     }
 

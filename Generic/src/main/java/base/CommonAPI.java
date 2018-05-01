@@ -19,6 +19,7 @@ import org.testng.annotations.*;
 import reporting.ApplicationLog;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
+import reporting.TestLogger;
 
 import java.io.File;
 import java.io.IOException;
@@ -510,7 +511,5 @@ public class CommonAPI {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
     }
-
-
 
 }

@@ -46,8 +46,7 @@ public class EbayHomeLinks extends CommonAPI {
     public void companies(){
         clickByLinkedText("eBay Classifieds");
         navigateBack();
-        clickByLinkedText("StubHub");
-        navigateBack();
+
         clickByLinkedText("See all companies");
         navigateBack();
     }
