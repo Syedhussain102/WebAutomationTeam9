@@ -275,6 +275,10 @@ public class CommonAPI {
         driver.switchTo().window(tabs.get(0));
 
     }
+    public List<WebElement> getElementsByXpathforList(String Xpath){
+        List<WebElement> value = driver.findElements(By.xpath(Xpath));
+        return value;
+    }
 
 
     public List<WebElement> getElementsByCSSforList(String CSS){

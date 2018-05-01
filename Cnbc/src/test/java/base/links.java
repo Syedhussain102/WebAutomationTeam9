@@ -6,10 +6,11 @@ import org.testng.annotations.Test;
 
 public class links extends mainClass {
     @Test
-    public void testtt(){newss();
-    driver.navigate().back();
-        newss();
-        //test1();
-
+    public void newsTest(){newss();
     }
+
+    //@Test
+    //public void view (){
+        //viewMultipleByXpath();
+    //}
 }

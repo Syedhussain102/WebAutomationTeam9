@@ -8,10 +8,47 @@ import org.testng.annotations.Test;
 
 public class mainClass extends CommonAPI {
     public void homeUs(){
-        driver.findElement(By.xpath("//span[contains(text(),'HOME U.S.')]")).click();
+        mouseHoverNClickbyXC("//span[contains(text(),'HOME U.S.')]","U.S EDITION");
+        navigateBack();
+        mouseHoverNClickbyXC("//span[contains(text(),'HOME U.S.')]","INTL EDITION");
     }
+
     public void newss(){
-       mouseHoverNClickbyXC("//a[text()='News'][1]","ENERGY");
+        mouseHoverNClickbyXC("//a[text()='News'][1]","ECONOMY");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","FINANCE");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","HEALTH CARE");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","REAL ESTATE");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","WEALTH");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","AUTOS");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","EARNINGS");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","ENERGY");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","LIFE");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","MEDIA");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","POLITICS");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","RETAIL");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","COMMENTARY");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","SPECIAL REPORTS");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","ASIA");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","EUROPE");
+        navigateBack();
+        mouseHoverNClickbyXC("//a[text()='News'][1]","CFO COUNCIL");
+
+
     }
     public void markets(){
         mouseHoverNClickbyXC("//a[text()='Markets'][1]","CRYPTOCURRENCY");
