@@ -1,13 +1,13 @@
 package main;
 
-import base.CommonAPI;
 import database.ConnectDB;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchDataBase extends CommonAPI {
+public class DBsearch {
 
+    //insert data to db
     public static List<String> getItemValue() {
         List<String> itemsList = new ArrayList<String>();
         itemsList.add("Book");
@@ -20,9 +20,10 @@ public class SearchDataBase extends CommonAPI {
         return itemsList;
     }
 
-
     public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
-        connectDB.insertDataFromArrayListToMySql(getItemValue(), "aftabShoppingList", "items");
+        connectDB.insertDataFromArrayListToMySql(getItemValue(),"TestEbay","search");
     }
+
+    //bring data from db and search using them
 }
