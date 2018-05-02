@@ -2,7 +2,6 @@ package main;
 
 import base.CommonAPI;
 import database.ConnectDB;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,15 +19,13 @@ public class DBsearch extends CommonAPI {
         itemsList.add("Cap");
         return itemsList;
     }
-    //put data to db
-
+    //put Data to DB-Mysql
     /*public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
         connectDB.insertDataFromArrayListToMySql(getItemValue(),"TestEbay","search");
     }*/
 
     //bring data from db and search using them
-
     public void searchByDB() throws Exception {
         ConnectDB connectDB = new ConnectDB();
         List<String> items = connectDB.readDataBase("TestEbay","search");

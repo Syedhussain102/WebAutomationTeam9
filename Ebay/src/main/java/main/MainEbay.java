@@ -163,37 +163,218 @@ public class MainEbay extends CommonAPI {
     }
     //Check Ebay Collectiables & art Mousehover and click by linkText
     public void collectiablesNart(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Coins & Paper Money");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Collectibles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Comics");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Entertainment Memorabilia");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Sports Cards, Memorabilia & Apparel");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Stamps");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Bullion Center");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Art");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Antiques");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Pottery & Glass");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","eBay Collective");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Live Auctions");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Sotheby's on eBay");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[6]/a","Consignment Center");
 
     }
     //Check Ebay Home & Garden Mousehover and click by linkText
     public void homeNgarden(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Yard & Garden");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Outdoor Power Equipment");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Lawn Mowers");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Patio Furniture");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Tools");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Home Improvement");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Pets");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Kitchen & Dining");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Housekeeping & Organization");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Furniture");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Home Décor");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Baby");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Bedding");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[7]/a","Wine");
+
 
     }
     //Check Ebay Sporting Goods Mousehover and click by linkText
     public void sportingGoods(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Golf");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Cycling");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Fishing");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Hunting");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Team Sports");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Fitness & Running");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Sales & Events");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Camping Equipment");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Baseball & Softball");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Golf Clothing, Shoes & Accessories");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Archery");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Fitness Equipment");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Water Sports");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[8]/a","Pre-owned Sports Gear");
 
     }
     //Check Ebay Toys Mousehover and click by linkText
     public void toys(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Action Figures");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Building Toys & LEGOs");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Board & Traditional Games");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Collectible Card Games");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Dart Guns, Ride-Ons & Outdoor Structures");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Dolls & Bears");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Preschool & Pretend Play");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Diecast & Toy Vehicles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Drones & RC Vehicles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Model Railroads & Trains");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","STEM & Educational Toys");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Toy Models & Kits");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Toy Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[9]/a","Toy Sales & Events");
 
     }
     //Check Ebay Business & Industrial Mousehover and click by linkText
     public void businessNindustrial(){
-
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Healthcare Lab & Life Science");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Laboratory Equipment and Supplies");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Heavy Equipment");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Construction Jobsite");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Manufacturing and Metalworking");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Electrical & Test Equipment");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Restaurant & Catering");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Office");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Retail & Services");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Packing and Shipping");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Light Equipment & Tools");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Heavy Equipment Attachments");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[10]/a","Heavy Equipment Parts & Accessories");
     }
     //Check Ebay Music Mousehover and click by linkText
     public void music(){
-
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Guitars");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Pro-Audio");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Vinyl, CDs, & More");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Orchestra & Band");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Drums");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","DJ");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Concert Tickets");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Electric Guitars");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Acoustic Guitars");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Bass");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Amps");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Effects & Pedals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Guitar Parts");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Pre-owned Musical Instruments");
     }
     //Check Ebay Deals Mousehover and click by linkText
     public void deals(){
-
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Daily Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Electronic Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Fashion Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","H&G Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Gift Card Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Collectibles & Art");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Toy Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Sporting Goods Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[12]/a","Motors Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Travel Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Musical Instrument Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Shop All Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[11]/a","Pre-owned Picks");
     }
     //Check Ebay Under $10 Mousehover and click by linkText
     public void under$10(){
-
+        clickByXpath("//*[@id='s0-container']/li[13]/a");
     }
-
-
 
 }
