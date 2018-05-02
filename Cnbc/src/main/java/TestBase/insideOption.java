@@ -36,18 +36,58 @@ public class insideOption extends CommonAPI {
         clickByXpath("//a[contains(text(),'Commercial Real Estate')][1]");
         clickByXpath("//a[contains(text(),'Reits')][1]");
     }
-    public void wealth(){}
-    public void autos(){}
-    public void earnings(){}
-    public void energy(){}
-    public void life(){}
-    public void media(){}
-    public void politics(){}
-    public void retails(){}
-    public void commentary(){}
-    public void specialReports(){}
-    public void asia(){}
-    public void europe(){}
-    public void cfoCouncil(){}
+    public void wealth(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","WEALTH");
+        clickByXpath("//a[contains(text(),'Millionaires & Billionaires')][1]");
+        clickByXpath("//a[contains(text(),'Luxury')][1]");
+        clickByXpath("//a[contains(text(),'Philanthropy')][1]");
+        clickByXpath("//a[contains(text(),'Millionaire Servey')][1]");
+    }
+    public void autos(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","AUTOS");
+        clickByXpath("//a[contains(text(),'Retail')][1]");
+        clickByXpath("//a[contains(text(),'Consumer')][1]");
+        clickByXpath("//a[contains(text(),'Food And Beverage')][1]");
+        clickByXpath("//a[contains(text(),'Restaurants')][1]");
+        clickByXpath("//a[contains(text(),'Fashion')][1]");
+        clickByXpath("//a[contains(text(),'Goods')][1]");
+        clickByXpath("//a[contains(text(),'Retail Report')][1]");
+
+
+    }
+    public void earnings(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","EARNINGS");
+        clickByXpath("//a[contains(text(),'Calendar')][1]");
+        clickByXpath("//a[contains(text(),'highlights')][1]");
+        clickByXpath("//a[contains(text(),'Ideas')][1]");
+    }
+    public void energy(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","ENERGY");
+        clickByXpath("//a[contains(text(),'Oil And Gas')][1]");
+        clickByXpath("//a[contains(text(),'Utilites')][1]");
+        clickByXpath("//a[contains(text(),'Renewable Energy')][1]");
+    }
+
+    public void life(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","LIFE");
+        clickByXpath("//a[contains(text(),'Travel')][1]");
+        clickByXpath("//a[contains(text(),'Entertainment')][1]");
+        clickByXpath("//a[contains(text(),'Sports')][1]");
+        clickByXpath("//a[contains(text(),'Weather')][1]");
+        clickByXpath("//a[contains(text(),'Crime')][1]");
+        clickByXpath("//a[contains(text(),'Art & Culture')][1]");
+        clickByXpath("//a[contains(text(),'Science')][1]");
+
+    }
+    public void media(){
+        clickByXpath("//a[contains(text(),'')][1]");
+    }
+    public void politics(){clickByXpath("//a[contains(text(),'')][1]");}
+    public void retails(){clickByXpath("//a[contains(text(),'')][1]");}
+    public void commentary(){clickByXpath("//a[contains(text(),'')][1]");}
+    public void specialReports(){clickByXpath("//a[contains(text(),'')][1]");}
+    public void asia(){clickByXpath("//a[contains(text(),'')][1]");}
+    public void europe(){clickByXpath("//a[contains(text(),'')][1]");}
+    public void cfoCouncil(){clickByXpath("//a[contains(text(),'')][1]");}
 
 }
