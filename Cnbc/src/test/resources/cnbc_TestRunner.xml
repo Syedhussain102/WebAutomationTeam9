@@ -4,7 +4,7 @@
 <suite name="ObamaCare Automation Script " parallel="false">
 
     <parameter name="url" value="https://www.cnbc.com/"/>
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>

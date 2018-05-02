@@ -134,28 +134,25 @@ public class mainClass extends CommonAPI {
        mouseHoverByXpath("//a[text()='WATCHLIST']");
     }
     public void breakingNews(){
-        driver.findElement(By.xpath("//div[contains(text(),'Breaking News')]")).click();
+        clickByXpath("//div[contains(text(),'Breaking News')]");
     }
     public void itemSearch(){
-        driver.findElement(By.xpath("//*[@placeholder='Search Quotes, News & Video']")).sendKeys("VERIZON",Keys.ENTER);
-        driver.findElement(By.xpath("//*[@class='fa fa-search fa-2']")).click();
+        typeByXpathNEnter("//*[@placeholder='Search Quotes, News & Video']","VERIZON");
+        clickByXpath("//*[@class='fa fa-search fa-2']");
     }
     public void work(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//i[@class='fa fa-user fa-2']"))).build().perform();
-        driver.findElement(By.xpath("//*[@id='unreg-user']/li/ul/li[1]")).click();
+        mouseHoverByXpath("//i[@class='fa fa-user fa-2']");
+        clickByXpath("//*[@id='unreg-user']/li/ul/li[1]");
     }
     public void work2() throws InterruptedException {
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//i[@class='fa fa-user fa-2']"))).build().perform();
-        driver.findElement(By.xpath("//*[@id='signin']")).click();
+        mouseHoverByXpath("//i[@class='fa fa-user fa-2']");
+        clickByXpath("//*[@id='signin']");
         Thread.sleep(10000);
-        driver.findElement(By.xpath("//input[@id='input_username']")).sendKeys("tester1");
+        typeByXpath("//input[@id='input_username']","tester1");
     }
     public void career(){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath("//a[text()='Make It'][1]"))).build().perform();
-        driver.findElement(By.xpath("//a[text()='Careers']")).click();
+        mouseHoverByXpath("//a[text()='Make It'][1]");
+        clickByXpath("//a[text()='Careers']");
     }
 
 }

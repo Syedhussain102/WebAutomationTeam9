@@ -15,8 +15,8 @@ public class signUp extends CommonAPI {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-       /* WebElement myFrame=driver.findElement(By.xpath("//div[@id='surf-xdm']/iframe[@name='easyXDM_default7303_provider']"));
-        driver.switchTo().frame(myFrame);*/
+            /* WebElement myFrame=driver.findElement(By.xpath("//div[@id='surf-xdm']/iframe[@name='easyXDM_default7303_provider']"));
+            driver.switchTo().frame(myFrame);*/
             driver.switchTo().frame("easyXDM_default965_provider");
             driver.findElement(By.xpath("//input[@name='user_data.email']")).sendKeys("testuserabcd13@gmail.com",Keys.ENTER);
             driver.findElement(By.xpath("//input[@name='user_data.password']")).sendKeys("testabcd1234",Keys.ENTER);
