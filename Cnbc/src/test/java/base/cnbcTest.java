@@ -7,6 +7,8 @@ public class cnbcTest extends mainClass {
     @Test
     public void homeTest(){homeUs();}
     @Test
+    public void nesTest(){newss();}
+    @Test
     public void marketTest(){markets();}
     @Test
     public void investingTest(){ investing();}
@@ -26,5 +28,7 @@ public class cnbcTest extends mainClass {
     public void liveTvTest(){liveTv();}
     @Test
     public void watchList(){ watchList();}
+    @Test
+    public void work1Test(){work();}
 
 }

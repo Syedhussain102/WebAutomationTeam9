@@ -4,13 +4,10 @@ import TestBase.TagNameClass;
 import TestBase.mainClass;
 import org.testng.annotations.Test;
 
-public class links extends mainClass {
+public class links extends TagNameClass {
     @Test
-    public void newsTest(){newss();
+    public void newsTest(){Economy();
     }
 
-    //@Test
-    //public void view (){
-        //viewMultipleByXpath();
-    //}
+
 }

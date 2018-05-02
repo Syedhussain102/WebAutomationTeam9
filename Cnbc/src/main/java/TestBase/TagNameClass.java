@@ -1,6 +1,7 @@
 package TestBase;
 
 import base.CommonAPI;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,4 +17,12 @@ public class TagNameClass extends CommonAPI {
             System.out.println(search.getText());
         }
     }
+    public void work(){
+        Actions action = new Actions(driver);
+        action.moveToElement(driver.findElement(By.xpath("//i[@class='fa fa-user fa-2']"))).build().perform();
+        driver.findElement(By.xpath("//*[@id='unreg-user']/li/ul/li[1]")).click();
+    }
+
+
+
 }
