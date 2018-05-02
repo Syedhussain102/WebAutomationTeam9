@@ -11,7 +11,6 @@ public class mainClass extends CommonAPI {
         navigateBack();
         mouseHoverNClickbyXC("//span[contains(text(),'HOME U.S.')]","INTL EDITION");
     }
-
     public void newss(){
         mouseHoverNClickbyXC("//a[text()='News'][1]","ECONOMY");
         navigateBack();
@@ -70,7 +69,6 @@ public class mainClass extends CommonAPI {
         navigateBack();
         mouseHoverNClickbyXC("//a[text()='Markets'][1]","ETFs");
     }
-
     public void investing(){
         mouseHoverNClickbyXC("//a[text()='Investing'][1]","TRADING NATION");
         navigateBack();
@@ -146,16 +144,12 @@ public class mainClass extends CommonAPI {
         Actions action = new Actions(driver);
         action.moveToElement(driver.findElement(By.xpath("//i[@class='fa fa-user fa-2']"))).build().perform();
         driver.findElement(By.xpath("//*[@id='unreg-user']/li/ul/li[1]")).click();
-
     }
     public void work2() throws InterruptedException {
         Actions action = new Actions(driver);
         action.moveToElement(driver.findElement(By.xpath("//i[@class='fa fa-user fa-2']"))).build().perform();
         driver.findElement(By.xpath("//*[@id='signin']")).click();
         Thread.sleep(10000);
-
-
-
         driver.findElement(By.xpath("//input[@id='input_username']")).sendKeys("tester1");
     }
     public void career(){

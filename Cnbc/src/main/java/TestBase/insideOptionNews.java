@@ -2,8 +2,8 @@ package TestBase;
 
 import base.CommonAPI;
 
-public class insideOption extends CommonAPI {
-    public void Economy(){
+public class insideOptionNews extends CommonAPI {
+    public void economy(){
         mouseHoverNClickbyXC("//a[text()='News'][1]","ECONOMY");
         clickByXpath("//a[contains(text(),'World Economy')][1]");
         clickByXpath("//a[contains(text(),'US Economy')][1]");
@@ -11,7 +11,7 @@ public class insideOption extends CommonAPI {
         clickByXpath("//a[contains(text(),'Central Banks')][1]");
         clickByXpath("//a[contains(text(),'Jobs')][1]");
     }
-    public void Finance(){
+    public void finance(){
         mouseHoverNClickbyXC("//a[text()='News'][1]","FINANCE");
         clickByXpath("//a[contains(text(),'Banks')][1]");
         clickByXpath("//a[contains(text(),'Investing')][1]");
@@ -52,8 +52,6 @@ public class insideOption extends CommonAPI {
         clickByXpath("//a[contains(text(),'Fashion')][1]");
         clickByXpath("//a[contains(text(),'Goods')][1]");
         clickByXpath("//a[contains(text(),'Retail Report')][1]");
-
-
     }
     public void earnings(){
         mouseHoverNClickbyXC("//a[text()='News'][1]","EARNINGS");
@@ -67,7 +65,6 @@ public class insideOption extends CommonAPI {
         clickByXpath("//a[contains(text(),'Utilites')][1]");
         clickByXpath("//a[contains(text(),'Renewable Energy')][1]");
     }
-
     public void life(){
         mouseHoverNClickbyXC("//a[text()='News'][1]","LIFE");
         clickByXpath("//a[contains(text(),'Travel')][1]");
@@ -77,17 +74,38 @@ public class insideOption extends CommonAPI {
         clickByXpath("//a[contains(text(),'Crime')][1]");
         clickByXpath("//a[contains(text(),'Art & Culture')][1]");
         clickByXpath("//a[contains(text(),'Science')][1]");
-
     }
-    public void media(){
-        clickByXpath("//a[contains(text(),'')][1]");
+    public void politics(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","POLITICS");
+        clickByXpath("//a[contains(text(),'Elections')][1]");
+        clickByXpath("//a[contains(text(),'White House')][1]");
+        clickByXpath("//a[contains(text(),'Congress')][1]");
+        clickByXpath("//a[contains(text(),'Law')][1]");
+        clickByXpath("//a[contains(text(),'Texes')][1]");
     }
-    public void politics(){clickByXpath("//a[contains(text(),'')][1]");}
-    public void retails(){clickByXpath("//a[contains(text(),'')][1]");}
-    public void commentary(){clickByXpath("//a[contains(text(),'')][1]");}
-    public void specialReports(){clickByXpath("//a[contains(text(),'')][1]");}
-    public void asia(){clickByXpath("//a[contains(text(),'')][1]");}
-    public void europe(){clickByXpath("//a[contains(text(),'')][1]");}
-    public void cfoCouncil(){clickByXpath("//a[contains(text(),'')][1]");}
-
+    public void retails(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","RETAIL");
+        clickByXpath("//a[contains(text(),'Consumer')][1]");
+        clickByXpath("//a[contains(text(),'Autos')][1]");
+        clickByXpath("//a[contains(text(),'Food And Beverage')][1]");
+        clickByXpath("//a[contains(text(),'Restaurants')][1]");
+        clickByXpath("//a[contains(text(),'Fashion')][1]");
+        clickByXpath("//a[contains(text(),'Goods')][1]");
+        clickByXpath("//a[contains(text(),'Retail Report')][1]");
+    }
+    public void asia(){
+        mouseHoverNClickbyXC("//a[text()='News'][1]","ASIA");
+        clickByXpath("//a[contains(text(),'China')][1]");
+        clickByXpath("//a[contains(text(),'Japan')][1]");
+        clickByXpath("//a[contains(text(),'Korea')][1]");
+        clickByXpath("//a[contains(text(),'Australia')][1]");
+        clickByXpath("//a[contains(text(),'India')][1]");
+    }
+    public void europe(){
+        clickByXpath("//a[contains(text(),'United Kingdom')][1]");
+        clickByXpath("//a[contains(text(),'Russia')][1]");
+        clickByXpath("//a[contains(text(),'Germany')][1]");
+        clickByXpath("//a[contains(text(),' France')][1]");
+        clickByXpath("//a[contains(text(),'European Union')][1]");
+    }
 }
