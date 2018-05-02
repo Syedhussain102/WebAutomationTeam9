@@ -73,4 +73,127 @@ public class MainEbay extends CommonAPI {
         Thread.sleep(2000);
         act.sendKeys(Keys.TAB).perform();
     }
+    //Check Ebay Motors Mousehover and click by linkText
+    public void motors(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Parts & Accessories");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Cars & Truck Parts");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Motorcycle Parts");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Automotive Tools & Supplies");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Sales & Events");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Motors Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","My Garage");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Vehicles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Cars & Trucks");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Motorcycles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Classics & Exotics");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Powersports");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","RVs & Other Vehicles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Motors Blog");
+    }
+    //Check Ebay Fashion Mousehover and click by linkText
+    public void fashion(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Women's Clothing");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Women's Shoes");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Men's Clothing");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Men's Shoes");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Handbags & Accessories");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Kids & Baby");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Jewelry");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Watches");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Beauty");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Health");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Fashion Deals");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Sales & Events");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[4]/a","Pre-owned Fashion");
+    }
+    //Check Ebay Electronics Mousehover and click by linkText
+    public void electronics(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Computers, Tablets & More");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Cell Phones, Smart Watches & Accessories");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","TV, Video & Home Audio");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Video Games & Consoles");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Cameras & Photo");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Portable Audio & Headphones");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Smart Home");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","iPhone");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Laptops");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","PC Gaming");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Camera Drones");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Car Audio, Video & GPS");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Computer Graphics Cards");
+        navigateBack();
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[5]/a","Sell Your Phone");
+    }
+    //Check Ebay Collectiables & art Mousehover and click by linkText
+    public void collectiablesNart(){
+
+    }
+    //Check Ebay Home & Garden Mousehover and click by linkText
+    public void homeNgarden(){
+
+    }
+    //Check Ebay Sporting Goods Mousehover and click by linkText
+    public void sportingGoods(){
+
+    }
+    //Check Ebay Toys Mousehover and click by linkText
+    public void toys(){
+
+    }
+    //Check Ebay Business & Industrial Mousehover and click by linkText
+    public void businessNindustrial(){
+
+    }
+    //Check Ebay Music Mousehover and click by linkText
+    public void music(){
+
+    }
+    //Check Ebay Deals Mousehover and click by linkText
+    public void deals(){
+
+    }
+    //Check Ebay Under $10 Mousehover and click by linkText
+    public void under$10(){
+
+    }
+
+
+
 }

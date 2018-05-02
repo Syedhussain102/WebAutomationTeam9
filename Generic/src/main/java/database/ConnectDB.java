@@ -26,7 +26,7 @@ public class ConnectDB {
 
     public Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("../Generic/databaseinfo/secret.properties");
+        InputStream ism = new FileInputStream("/Users/zann/IdeaProjects/WebAutomationTeam9/Generic/databaseinfo/secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
@@ -149,7 +149,7 @@ public class ConnectDB {
             connectToMySql();
             ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
             ps.executeUpdate();
-            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`SortingNumbers` bigint(20) DEFAULT NULL,  PRIMARY KEY (`ID`) );");
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`search` varchar(33) NOT NULL);");
             ps.executeUpdate();
             for(String st:list){
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");

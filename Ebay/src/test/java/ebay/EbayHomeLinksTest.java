@@ -18,7 +18,7 @@ public class EbayHomeLinksTest extends EbayHomeLinks {
         Sell();
     }
     //T&A
-    @Test
+   // @Test
     public void toolsNapps(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         TnA();
@@ -30,7 +30,7 @@ public class EbayHomeLinksTest extends EbayHomeLinks {
         companies();
     }
     //about Ebay
-    @Test
+    //@Test
     public void aboutEbay() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         //about();

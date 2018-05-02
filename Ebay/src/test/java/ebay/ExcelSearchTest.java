@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class ExcelSearchTest extends ExcelSearch {
-    //@Test
-    public void testExcel() throws IOException {
-        searchItemsAndSubmitButton();
+    @Test
+    public void TestExcel() throws IOException {
+        testExcel();
     }
 }

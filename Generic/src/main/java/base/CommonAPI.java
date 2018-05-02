@@ -19,6 +19,7 @@ import org.testng.annotations.*;
 import reporting.ApplicationLog;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
+import reporting.TestLogger;
 
 import java.io.File;
 import java.io.IOException;
@@ -397,9 +398,14 @@ public class CommonAPI {
            path= "C:\\Users\\rrt\\Pictures\\ds1.png";
          */
     }//clear Input
-    public void clearInput(String locator){
+    public void clearInputByCSS(String locator){
         driver.findElement(By.cssSelector(locator)).clear();
-    }//keys Input
+    }
+    //clear Input
+    public void clearInputByXpath(String locator){
+        driver.findElement(By.xpath(locator)).clear();
+    }
+    //keys Input
     public void keysInput(String locator){
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }//convert to string
@@ -514,7 +520,5 @@ public class CommonAPI {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
     }
-
-
 
 }
