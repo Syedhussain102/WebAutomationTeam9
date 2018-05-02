@@ -23,14 +23,11 @@ public class ExcelSearch extends CommonAPI {
         }
         return list;
     }
-
     public void testExcel() throws IOException {
         ArrayList<String> searchAbleItems = dataFromExcel(0);
         for (int i = 0; i < searchAbleItems.size(); i++) {
             typeByXpathNEnter("//input[@id='gh-ac']", searchAbleItems.get(i));
             clearInputByXpath("//input[@id='gh-ac']");
         }
-
     }
-
 }

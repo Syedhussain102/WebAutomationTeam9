@@ -13,11 +13,14 @@
 
     <test name = "eBay Home">
         <classes>
+            <class name="ebay.DBsearchTest"/>
             <class name="ebay.SignUpTest"/>
             <class name="ebay.SearchTest"/>
             <class name="ebay.TestEbay"/>
             <class name="ebay.EbayHomeLinksTest"/>
             <class name="ebay.ExcelSearchTest"/>
+            <class name="ebay.LoginTest"/>
+            <class name="ebay.MessagesTest"/>
         </classes>
     </test>
 </suite>
