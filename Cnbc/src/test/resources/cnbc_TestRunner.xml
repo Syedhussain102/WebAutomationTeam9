@@ -13,8 +13,10 @@
     <test name = "test cnbc">
 
         <classes>
-        <class name="base.links"/>
-
+        <class name="base.searchTest"/>
+        <!--<class name="base.newsTest"/>-->
+        <!--<class name="base.searchTest"/>-->
+        <!--<class name="base.signUpTest"/>-->
         </classes>
     </test>
 
