@@ -13,7 +13,7 @@
     <test name = "test cnbc">
 
         <classes>
-        <class name="base.searchTest"/>
+        <class name="base.newsTest"/>
         <!--<class name="base.newsTest"/>-->
         <!--<class name="base.searchTest"/>-->
         <!--<class name="base.signUpTest"/>-->
