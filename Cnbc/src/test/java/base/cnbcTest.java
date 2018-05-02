@@ -30,5 +30,4 @@ public class cnbcTest extends mainClass {
     public void watchList(){ watchList();}
     @Test
     public void work1Test(){work();}
-
 }
