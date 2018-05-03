@@ -1,8 +1,8 @@
 package base;
 
-import TestBase.signUp;
+import TestBase.SignUp;
 
-public class signUpTest extends signUp {
+public class SignUpTest extends SignUp {
     public void registerTest() throws InterruptedException {
         try {
             register();

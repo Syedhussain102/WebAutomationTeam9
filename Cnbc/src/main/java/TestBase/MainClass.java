@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-public class mainClass extends CommonAPI {
+public class MainClass extends CommonAPI {
     public void homeUs(){
         mouseHoverNClickbyXC("//span[contains(text(),'HOME U.S.')]","U.S EDITION");
         navigateBack();
@@ -138,7 +138,7 @@ public class mainClass extends CommonAPI {
     }
     public void itemSearch(){
         typeByXpathNEnter("//*[@placeholder='Search Quotes, News & Video']","VERIZON");
-        clickByXpath("//*[@class='fa fa-search fa-2']");
+        clickByXpath("//*[@class='fa fa-Search fa-2']");
     }
     public void work(){
         mouseHoverByXpath("//i[@class='fa fa-user fa-2']");
