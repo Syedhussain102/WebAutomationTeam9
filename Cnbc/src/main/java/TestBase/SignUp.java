@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-public class signUp extends CommonAPI {
+public class SignUp extends CommonAPI {
         public void register() throws InterruptedException {
             Actions action = new Actions(driver);
             action.moveToElement(driver.findElement(By.xpath("//i[@class='fa fa-user fa-2']"))).build().perform();

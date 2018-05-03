@@ -1,15 +1,15 @@
 package base;
 
-import TestBase.search;
+import TestBase.Search;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class searchTest extends search {
-    //@Test
+public class SearchTest extends Search {
+    @Test
     public void searchMultipleIteams() {
-        search sc = PageFactory.initElements(driver, search.class);
+        Search sc = PageFactory.initElements(driver, Search.class);
         sc.searchItems();
     }
     //@Test

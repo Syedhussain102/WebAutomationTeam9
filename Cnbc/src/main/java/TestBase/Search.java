@@ -16,11 +16,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class search extends CommonAPI {
-    //search single iteam
+public class Search extends CommonAPI {
+    //Search single iteam
     public void itemSearch(){
         typeByXpathNEnter("//*[@placeholder='Search Quotes, News & Video']","gaming");
-        //driver.findElement(By.xpath("//*[@placeholder='Search Quotes, News & Video']")).sendKeys("VERIZON",Keys.ENTER);
+
     }
     //SearchMultipleItems
     @FindBy(xpath = "//*[@placeholder='Search Quotes, News & Video']")
@@ -32,7 +32,7 @@ public class search extends CommonAPI {
         itemsList.add("mobile");
         for (String st : itemsList) {
             searchElements.sendKeys(st, Keys.ENTER);
-            //driver.findElement(By.xpath("//*[@class='fa fa-search fa-2']")).click();
+            //driver.findElement(By.xpath("//*[@class='fa fa-Search fa-2']")).click();
             searchElements.clear();
         }
     }

@@ -2,7 +2,7 @@ package TestBase;
 
 import base.CommonAPI;
 
-public class insideOptionNews extends CommonAPI {
+public class InsideOptionNews extends CommonAPI {
     public void economy(){
         mouseHoverNClickbyXC("//a[text()='News'][1]","ECONOMY");
         clickByXpath("//a[contains(text(),'World Economy')][1]");

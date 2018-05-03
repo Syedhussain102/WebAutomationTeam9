@@ -1,9 +1,9 @@
 package base;
 
-import TestBase.mainClass;
+import TestBase.MainClass;
 import org.testng.annotations.Test;
 
-public class cnbcTest extends mainClass {
+public class CnbcTest extends MainClass {
     @Test
     public void homeTest(){homeUs();}
     @Test

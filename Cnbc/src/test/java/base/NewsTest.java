@@ -1,10 +1,10 @@
 package base;
 
-import TestBase.insideOptionNews;
+import TestBase.InsideOptionNews;
 import org.testng.annotations.Test;
 
-public class newsTest extends insideOptionNews {
-    @Test
+public class NewsTest extends InsideOptionNews {
+    /*@Test
     public void economyTest(){economy();}
     @Test
     public void financeTest(){finance();}
@@ -27,7 +27,7 @@ public class newsTest extends insideOptionNews {
     @Test
     public void reatailTest(){retails();}
     @Test
-    public void asiaTest(){asia();}
+    public void asiaTest(){asia();}*/
     @Test
     public void europeTest(){europe();}
 }

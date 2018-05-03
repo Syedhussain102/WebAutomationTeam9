@@ -4,7 +4,7 @@
 <suite name="ObamaCare Automation Script " parallel="false">
 
     <parameter name="url" value="https://www.cnbc.com/"/>
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>
@@ -13,10 +13,10 @@
     <test name = "test cnbc">
 
         <classes>
-        <class name="base.newsTest"/>
-        <!--<class name="base.newsTest"/>-->
-        <!--<class name="base.searchTest"/>-->
-        <!--<class name="base.signUpTest"/>-->
+        <class name="base."/>
+        <!--<class name="base.NewsTest"/>-->
+        <!--<class name="base.SearchTest"/>-->
+        <!--<class name="base.SignUpTest"/>-->
         </classes>
     </test>
 
