@@ -12,7 +12,6 @@ public class SignUp extends CommonAPI {
     //******positive testing
     //REGISTER to ebay
     public void validRegister() throws InterruptedException {
-        beforeURL =getCurrentPageUrl();
         clickByLinkedText("register");
         typeByCss("#firstname_r [v]","naim");
         typeByCss("#lastname_r [v]","siam");
@@ -20,10 +19,6 @@ public class SignUp extends CommonAPI {
         typeByXpath("/html//input[@id='PASSWORD']","testMySelenium123#@");
         Thread.sleep(1000);
         clickByXpath("/html//input[@id='ppaFormSbtBtn']");
-
-
-
-        Assert.assertEquals(beforeURL,afterURL);
     }
     //*****negative testing
     //register with no email

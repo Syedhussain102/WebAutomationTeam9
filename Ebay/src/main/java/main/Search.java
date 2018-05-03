@@ -23,7 +23,6 @@ public class Search extends CommonAPI {
     @FindBy(xpath = "//a[contains(text(),'Apple Laptops')]")
     public static WebElement group;
     public void group() {
-
         lookForALaptop();
         group.click();
     }

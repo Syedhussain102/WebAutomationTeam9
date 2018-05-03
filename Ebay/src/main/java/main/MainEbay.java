@@ -44,7 +44,7 @@ public class MainEbay extends CommonAPI {
         try{clickByXpath("//*[@id='productSearchToggle']/div/span[2]");}catch (Exception ex){
         //click acer
         clickByXpath("//*[@id='w3-w0-w1-multiselect[0]']/a/span[1]");}
-        clickByCss("[id='w3-w0-w1-multiselect\\[0\\]'] .x-refine__multi-select-cbx");
+        clickByCss("[id='w3-w0-w1-multiselect[0]'] .x-refine__multi-select-cbx");
         clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_valueOption']");
         clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_select']/option[6]");
     }
