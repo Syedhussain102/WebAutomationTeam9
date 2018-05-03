@@ -9,13 +9,13 @@ public class TestEbay extends MainEbay {
     @Test
     public void mouse(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-       mouseHoverByXpath("//*[@id='s0-container']/li[3]/a","Vehicles");
+       mouseHoverByXpath();
     }
     //view multiple items
     @Test
     public void view(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        viewMultipleByCSS("[aria-label='Select a category for search']");
+        viewMultipleByCSS();
     }
     //extended search
     @Test

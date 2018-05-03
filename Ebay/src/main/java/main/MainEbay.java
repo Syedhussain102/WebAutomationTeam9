@@ -12,15 +12,12 @@ import java.util.List;
 
 public class MainEbay extends CommonAPI {
     //Mouse Hover By xpath
-    public void mouseHoverByXpath(String xpath, String linkedText){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath(xpath))).build().perform();
-        implicityWait();
-        driver.findElement(By.linkText(linkedText)).click();
+    public void mouseHoverByXpath(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Vehicles");
     }
     //view multiple items
-    public void viewMultipleByCSS(String CSS){
-        List<WebElement> menu = getElementsByCSSforList(CSS);
+    public void viewMultipleByCSS(){
+        List<WebElement> menu = getElementsByCSSforList("[aria-label='Select a category for search']");
         for (WebElement search : menu) {
             System.out.println(search.getText());
         }
