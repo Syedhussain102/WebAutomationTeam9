@@ -2,13 +2,17 @@ package main;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import reporting.TestLogger;
 
 public class SignUp extends CommonAPI {
+    String beforeURL;
+    String afterURL;
     //******positive testing
     //REGISTER to ebay
     public void validRegister() throws InterruptedException {
+        beforeURL =getCurrentPageUrl();
         clickByLinkedText("register");
         typeByCss("#firstname_r [v]","naim");
         typeByCss("#lastname_r [v]","siam");
@@ -16,6 +20,10 @@ public class SignUp extends CommonAPI {
         typeByXpath("/html//input[@id='PASSWORD']","testMySelenium123#@");
         Thread.sleep(1000);
         clickByXpath("/html//input[@id='ppaFormSbtBtn']");
+
+
+
+        Assert.assertEquals(beforeURL,afterURL);
     }
     //*****negative testing
     //register with no email
