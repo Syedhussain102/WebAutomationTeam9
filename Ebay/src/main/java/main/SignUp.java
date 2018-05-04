@@ -1,10 +1,7 @@
 package main;
 
-import base.CommonAPI;
-import org.openqa.selenium.By;
+import TestBase.CommonAPI;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-import reporting.TestLogger;
 
 public class SignUp extends CommonAPI {
     String beforeURL;

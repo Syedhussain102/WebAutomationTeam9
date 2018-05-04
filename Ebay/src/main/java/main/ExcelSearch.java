@@ -1,6 +1,6 @@
 package main;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;

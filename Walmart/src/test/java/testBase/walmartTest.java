@@ -1,6 +1,6 @@
 package testBase;
 
-import base.walmartMainClass;
+import TestBase.walmartMainClass;
 import org.testng.annotations.Test;
 
 public class walmartTest extends walmartMainClass {

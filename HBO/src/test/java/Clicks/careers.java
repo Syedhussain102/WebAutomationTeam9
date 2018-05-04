@@ -1,6 +1,6 @@
 package Clicks;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 

@@ -1,6 +1,5 @@
 package ebay;
 
-import base.CommonAPI;
 import main.ExcelSearch;
 import org.testng.annotations.Test;
 

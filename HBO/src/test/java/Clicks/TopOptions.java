@@ -1,6 +1,6 @@
 package Clicks;
 
-import TestBase.mainClass;
+import Base.mainClass;
 import org.testng.annotations.Test;
 
 public class TopOptions extends mainClass {

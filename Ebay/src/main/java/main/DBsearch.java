@@ -1,6 +1,6 @@
 package main;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 import database.ConnectDB;
 import java.util.ArrayList;
 import java.util.List;

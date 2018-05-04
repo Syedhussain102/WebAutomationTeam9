@@ -1176,100 +1176,237 @@
 																<tr>
 																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
 																	<td class='timestamp'>19:39:11</td>
-																	<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[id='w3-w0-w1-multiselect\[0\]'] .x-refine__multi-select-cbx"}
-  (Session info: chrome=53.0.2785.89)
-  (Driver info: chromedriver=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'mac-216-126-40-172.browserstack.com', ip: '216.126.40.172', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6), userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.sH2F4K}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.89, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: ff0179dcc7221514f3f35b0b0daf0f45
-*** Element info: {Using=css selector, value=[id='w3-w0-w1-multiselect\[0\]'] .x-refine__multi-select-cbx}
-Command duration or timeout: 0 milliseconds
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at base.CommonAPI.clickByCss(CommonAPI.java:175)
-	at main.MainEbay.searchWithDifferentRequirements(MainEbay.java:47)
-	at ebay.TestEbay.searcfDifferent(TestEbay.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[id='w3-w0-w1-multiselect\[0\]'] .x-refine__multi-select-cbx"}
-  (Session info: chrome=53.0.2785.89)
-  (Driver info: chromedriver=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'mac-216-126-40-172.browserstack.com', ip: '216.126.40.172', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6), userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.sH2F4K}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.89, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: ff0179dcc7221514f3f35b0b0daf0f45
-*** Element info: {Using=css selector, value=[id='w3-w0-w1-multiselect\[0\]'] .x-refine__multi-select-cbx}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Shunnolok.local', ip: 'fe80:0:0:0:1032:683:3308:4f22%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '9.0.4'
-Driver info: driver.version: EventFiringWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
-	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)</td>
+																	<td class='step-details'>org.openqa.selenium.NoSuchElementException:
+                                                                        no such element: Unable to locate element:
+                                                                        {"method":"css
+                                                                        selector","selector":"[id='w3-w0-w1-multiselect\[0\]']
+                                                                        .x-refine__multi-select-cbx"}
+                                                                        (Session info: chrome=53.0.2785.89)
+                                                                        (Driver info: chromedriver=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac
+                                                                        OS X 10.12.6 x86_64) (WARNING: The server did
+                                                                        not provide any stacktrace information)
+                                                                        Command duration or timeout: 20.05 seconds
+                                                                        For documentation on this error, please visit:
+                                                                        http://seleniumhq.org/exceptions/no_such_element.html
+                                                                        Build info: version: '2.53.0', revision:
+                                                                        '35ae25b', time: '2016-03-15 17:00:58'
+                                                                        System info: host:
+                                                                        'mac-216-126-40-172.browserstack.com', ip:
+                                                                        '216.126.40.172', os.name: 'Mac OS X', os.arch:
+                                                                        'x86_64', os.version: '10.12.6', java.version:
+                                                                        '1.8.0_51'
+                                                                        Driver info:
+                                                                        org.openqa.selenium.chrome.ChromeDriver
+                                                                        Capabilities [{applicationCacheEnabled=false,
+                                                                        rotatable=false, mobileEmulationEnabled=false,
+                                                                        networkConnectionEnabled=false,
+                                                                        chrome={chromedriverVersion=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),
+                                                                        userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.sH2F4K},
+                                                                        takesHeapSnapshot=true, pageLoadStrategy=normal,
+                                                                        databaseEnabled=false, handlesAlerts=true,
+                                                                        hasTouchScreen=false, version=53.0.2785.89,
+                                                                        platform=MAC, browserConnectionEnabled=false,
+                                                                        nativeEvents=true, acceptSslCerts=true,
+                                                                        locationContextEnabled=true,
+                                                                        webStorageEnabled=true, browserName=chrome,
+                                                                        takesScreenshot=true, javascriptEnabled=true,
+                                                                        cssSelectorsEnabled=true,
+                                                                        unexpectedAlertBehaviour=}]
+                                                                        Session ID: ff0179dcc7221514f3f35b0b0daf0f45
+                                                                        *** Element info: {Using=css selector,
+                                                                        value=[id='w3-w0-w1-multiselect\[0\]']
+                                                                        .x-refine__multi-select-cbx}
+                                                                        Command duration or timeout: 0 milliseconds
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
+                                                                        Method)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                                                                        at
+                                                                        java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+                                                                        at
+                                                                        org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+                                                                        at
+                                                                        org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+                                                                        at
+                                                                        org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+                                                                        at
+                                                                        org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
+                                                                        at
+                                                                        org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+                                                                        at
+                                                                        TestBase.CommonAPI.clickByCss(CommonAPI.java:175)
+                                                                        at
+                                                                        main.MainEbay.searchWithDifferentRequirements(MainEbay.java:47)
+                                                                        at
+                                                                        ebay.TestEbay.searcfDifferent(TestEbay.java:36)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native
+                                                                        Method)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                                                                        at
+                                                                        java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                                                                        at
+                                                                        org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+                                                                        at
+                                                                        org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+                                                                        at
+                                                                        org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+                                                                        at
+                                                                        org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+                                                                        at
+                                                                        org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+                                                                        at
+                                                                        org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+                                                                        at
+                                                                        org.testng.TestRunner.privateRun(TestRunner.java:648)
+                                                                        at
+                                                                        org.testng.TestRunner.run(TestRunner.java:505)
+                                                                        at
+                                                                        org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+                                                                        at
+                                                                        org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+                                                                        at
+                                                                        org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+                                                                        at
+                                                                        org.testng.SuiteRunner.run(SuiteRunner.java:364)
+                                                                        at
+                                                                        org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                                                                        at
+                                                                        org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+                                                                        at
+                                                                        org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+                                                                        at
+                                                                        org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+                                                                        at org.testng.TestNG.runSuites(TestNG.java:1049)
+                                                                        at org.testng.TestNG.run(TestNG.java:1017)
+                                                                        at
+                                                                        org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+                                                                        at
+                                                                        org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+                                                                        Caused by:
+                                                                        org.openqa.selenium.NoSuchElementException: no
+                                                                        such element: Unable to locate element:
+                                                                        {"method":"css
+                                                                        selector","selector":"[id='w3-w0-w1-multiselect\[0\]']
+                                                                        .x-refine__multi-select-cbx"}
+                                                                        (Session info: chrome=53.0.2785.89)
+                                                                        (Driver info: chromedriver=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac
+                                                                        OS X 10.12.6 x86_64) (WARNING: The server did
+                                                                        not provide any stacktrace information)
+                                                                        Command duration or timeout: 20.05 seconds
+                                                                        For documentation on this error, please visit:
+                                                                        http://seleniumhq.org/exceptions/no_such_element.html
+                                                                        Build info: version: '2.53.0', revision:
+                                                                        '35ae25b', time: '2016-03-15 17:00:58'
+                                                                        System info: host:
+                                                                        'mac-216-126-40-172.browserstack.com', ip:
+                                                                        '216.126.40.172', os.name: 'Mac OS X', os.arch:
+                                                                        'x86_64', os.version: '10.12.6', java.version:
+                                                                        '1.8.0_51'
+                                                                        Driver info:
+                                                                        org.openqa.selenium.chrome.ChromeDriver
+                                                                        Capabilities [{applicationCacheEnabled=false,
+                                                                        rotatable=false, mobileEmulationEnabled=false,
+                                                                        networkConnectionEnabled=false,
+                                                                        chrome={chromedriverVersion=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),
+                                                                        userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.sH2F4K},
+                                                                        takesHeapSnapshot=true, pageLoadStrategy=normal,
+                                                                        databaseEnabled=false, handlesAlerts=true,
+                                                                        hasTouchScreen=false, version=53.0.2785.89,
+                                                                        platform=MAC, browserConnectionEnabled=false,
+                                                                        nativeEvents=true, acceptSslCerts=true,
+                                                                        locationContextEnabled=true,
+                                                                        webStorageEnabled=true, browserName=chrome,
+                                                                        takesScreenshot=true, javascriptEnabled=true,
+                                                                        cssSelectorsEnabled=true,
+                                                                        unexpectedAlertBehaviour=}]
+                                                                        Session ID: ff0179dcc7221514f3f35b0b0daf0f45
+                                                                        *** Element info: {Using=css selector,
+                                                                        value=[id='w3-w0-w1-multiselect\[0\]']
+                                                                        .x-refine__multi-select-cbx}
+                                                                        For documentation on this error, please visit:
+                                                                        http://seleniumhq.org/exceptions/no_such_element.html
+                                                                        Build info: version: '3.11.0', revision:
+                                                                        'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+                                                                        System info: host: 'Shunnolok.local', ip:
+                                                                        'fe80:0:0:0:1032:683:3308:4f22%en0', os.name:
+                                                                        'Mac OS X', os.arch: 'x86_64', os.version:
+                                                                        '10.13.4', java.version: '9.0.4'
+                                                                        Driver info: driver.version:
+                                                                        EventFiringWebDriver
+                                                                        at
+                                                                        sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native
+                                                                        Method)
+                                                                        at
+                                                                        sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                                                                        at
+                                                                        sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                                                                        at
+                                                                        java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+                                                                        at
+                                                                        org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+                                                                        at
+                                                                        sun.reflect.NativeMethodAccessorImpl.invoke0(Native
+                                                                        Method)
+                                                                        at
+                                                                        sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                                                                        at
+                                                                        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                                                                        at
+                                                                        java.lang.reflect.Method.invoke(Method.java:497)
+                                                                        at
+                                                                        org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+                                                                        at com.sun.proxy.$Proxy1.findElement(Unknown
+                                                                        Source)
+                                                                        at
+                                                                        org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+                                                                        at
+                                                                        org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+                                                                        at
+                                                                        org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+                                                                        at
+                                                                        java.util.concurrent.FutureTask.run(FutureTask.java:266)
+                                                                        at
+                                                                        org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+                                                                        at
+                                                                        java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+                                                                        at
+                                                                        java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+                                                                        at java.lang.Thread.run(Thread.java:745)</td>
 																</tr>
 														</tbody>
 													</table>
@@ -1314,99 +1451,231 @@ Driver info: driver.version: EventFiringWebDriver
 																<tr>
 																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
 																	<td class='timestamp'>19:40:11</td>
-																	<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Laboratory Equipment and Supplies"}
-  (Session info: chrome=53.0.2785.89)
-  (Driver info: chromedriver=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.15 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'mac-208-52-157-3.browserstack.com', ip: '208.52.157.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6), userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.uNbftB}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.89, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 0d6ae13ca6ba204a4e2fef5b7b12690a
-*** Element info: {Using=link text, value=Laboratory Equipment and Supplies}
-Command duration or timeout: 0 milliseconds
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:373)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at base.CommonAPI.mouseHoverNClickbyXC(CommonAPI.java:329)
-	at main.MainEbay.businessNindustrial(MainEbay.java:293)
-	at ebay.TestEbay.testBusinessNindustrial(TestEbay.java:111)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Laboratory Equipment and Supplies"}
-  (Session info: chrome=53.0.2785.89)
-  (Driver info: chromedriver=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.15 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'mac-208-52-157-3.browserstack.com', ip: '208.52.157.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.26.436421 (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6), userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.uNbftB}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.89, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 0d6ae13ca6ba204a4e2fef5b7b12690a
-*** Element info: {Using=link text, value=Laboratory Equipment and Supplies}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Shunnolok.local', ip: 'fe80:0:0:0:1032:683:3308:4f22%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '9.0.4'
-Driver info: driver.version: EventFiringWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
-	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)</td>
+																	<td class='step-details'>org.openqa.selenium.NoSuchElementException:
+                                                                        no such element: Unable to locate element:
+                                                                        {"method":"link text","selector":"Laboratory
+                                                                        Equipment and Supplies"}
+                                                                        (Session info: chrome=53.0.2785.89)
+                                                                        (Driver info: chromedriver=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac
+                                                                        OS X 10.12.6 x86_64) (WARNING: The server did
+                                                                        not provide any stacktrace information)
+                                                                        Command duration or timeout: 20.15 seconds
+                                                                        For documentation on this error, please visit:
+                                                                        http://seleniumhq.org/exceptions/no_such_element.html
+                                                                        Build info: version: '2.53.0', revision:
+                                                                        '35ae25b', time: '2016-03-15 17:00:58'
+                                                                        System info: host:
+                                                                        'mac-208-52-157-3.browserstack.com', ip:
+                                                                        '208.52.157.3', os.name: 'Mac OS X', os.arch:
+                                                                        'x86_64', os.version: '10.12.6', java.version:
+                                                                        '1.8.0_51'
+                                                                        Driver info:
+                                                                        org.openqa.selenium.chrome.ChromeDriver
+                                                                        Capabilities [{applicationCacheEnabled=false,
+                                                                        rotatable=false, mobileEmulationEnabled=false,
+                                                                        networkConnectionEnabled=false,
+                                                                        chrome={chromedriverVersion=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),
+                                                                        userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.uNbftB},
+                                                                        takesHeapSnapshot=true, pageLoadStrategy=normal,
+                                                                        databaseEnabled=false, handlesAlerts=true,
+                                                                        hasTouchScreen=false, version=53.0.2785.89,
+                                                                        platform=MAC, browserConnectionEnabled=false,
+                                                                        nativeEvents=true, acceptSslCerts=true,
+                                                                        locationContextEnabled=true,
+                                                                        webStorageEnabled=true, browserName=chrome,
+                                                                        takesScreenshot=true, javascriptEnabled=true,
+                                                                        cssSelectorsEnabled=true,
+                                                                        unexpectedAlertBehaviour=}]
+                                                                        Session ID: 0d6ae13ca6ba204a4e2fef5b7b12690a
+                                                                        *** Element info: {Using=link text,
+                                                                        value=Laboratory Equipment and Supplies}
+                                                                        Command duration or timeout: 0 milliseconds
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
+                                                                        Method)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                                                                        at
+                                                                        java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+                                                                        at
+                                                                        org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+                                                                        at
+                                                                        org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+                                                                        at
+                                                                        org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+                                                                        at
+                                                                        org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:373)
+                                                                        at
+                                                                        org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+                                                                        at
+                                                                        TestBase.CommonAPI.mouseHoverNClickbyXC(CommonAPI.java:329)
+                                                                        at
+                                                                        main.MainEbay.businessNindustrial(MainEbay.java:293)
+                                                                        at
+                                                                        ebay.TestEbay.testBusinessNindustrial(TestEbay.java:111)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native
+                                                                        Method)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                                                                        at
+                                                                        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                                                                        at
+                                                                        java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                                                                        at
+                                                                        org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+                                                                        at
+                                                                        org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+                                                                        at
+                                                                        org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+                                                                        at
+                                                                        org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+                                                                        at
+                                                                        org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+                                                                        at
+                                                                        org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+                                                                        at
+                                                                        org.testng.TestRunner.privateRun(TestRunner.java:648)
+                                                                        at
+                                                                        org.testng.TestRunner.run(TestRunner.java:505)
+                                                                        at
+                                                                        org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+                                                                        at
+                                                                        org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+                                                                        at
+                                                                        org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+                                                                        at
+                                                                        org.testng.SuiteRunner.run(SuiteRunner.java:364)
+                                                                        at
+                                                                        org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                                                                        at
+                                                                        org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+                                                                        at
+                                                                        org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+                                                                        at
+                                                                        org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+                                                                        at org.testng.TestNG.runSuites(TestNG.java:1049)
+                                                                        at org.testng.TestNG.run(TestNG.java:1017)
+                                                                        at
+                                                                        org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+                                                                        at
+                                                                        org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+                                                                        Caused by:
+                                                                        org.openqa.selenium.NoSuchElementException: no
+                                                                        such element: Unable to locate element:
+                                                                        {"method":"link text","selector":"Laboratory
+                                                                        Equipment and Supplies"}
+                                                                        (Session info: chrome=53.0.2785.89)
+                                                                        (Driver info: chromedriver=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),platform=Mac
+                                                                        OS X 10.12.6 x86_64) (WARNING: The server did
+                                                                        not provide any stacktrace information)
+                                                                        Command duration or timeout: 20.15 seconds
+                                                                        For documentation on this error, please visit:
+                                                                        http://seleniumhq.org/exceptions/no_such_element.html
+                                                                        Build info: version: '2.53.0', revision:
+                                                                        '35ae25b', time: '2016-03-15 17:00:58'
+                                                                        System info: host:
+                                                                        'mac-208-52-157-3.browserstack.com', ip:
+                                                                        '208.52.157.3', os.name: 'Mac OS X', os.arch:
+                                                                        'x86_64', os.version: '10.12.6', java.version:
+                                                                        '1.8.0_51'
+                                                                        Driver info:
+                                                                        org.openqa.selenium.chrome.ChromeDriver
+                                                                        Capabilities [{applicationCacheEnabled=false,
+                                                                        rotatable=false, mobileEmulationEnabled=false,
+                                                                        networkConnectionEnabled=false,
+                                                                        chrome={chromedriverVersion=2.26.436421
+                                                                        (6c1a3ab469ad86fd49c8d97ede4a6b96a49ca5f6),
+                                                                        userDataDir=/var/folders/3y/zz_w6_s56sl__vcrf3r5bhzr0000hr/T/.org.chromium.Chromium.uNbftB},
+                                                                        takesHeapSnapshot=true, pageLoadStrategy=normal,
+                                                                        databaseEnabled=false, handlesAlerts=true,
+                                                                        hasTouchScreen=false, version=53.0.2785.89,
+                                                                        platform=MAC, browserConnectionEnabled=false,
+                                                                        nativeEvents=true, acceptSslCerts=true,
+                                                                        locationContextEnabled=true,
+                                                                        webStorageEnabled=true, browserName=chrome,
+                                                                        takesScreenshot=true, javascriptEnabled=true,
+                                                                        cssSelectorsEnabled=true,
+                                                                        unexpectedAlertBehaviour=}]
+                                                                        Session ID: 0d6ae13ca6ba204a4e2fef5b7b12690a
+                                                                        *** Element info: {Using=link text,
+                                                                        value=Laboratory Equipment and Supplies}
+                                                                        For documentation on this error, please visit:
+                                                                        http://seleniumhq.org/exceptions/no_such_element.html
+                                                                        Build info: version: '3.11.0', revision:
+                                                                        'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+                                                                        System info: host: 'Shunnolok.local', ip:
+                                                                        'fe80:0:0:0:1032:683:3308:4f22%en0', os.name:
+                                                                        'Mac OS X', os.arch: 'x86_64', os.version:
+                                                                        '10.13.4', java.version: '9.0.4'
+                                                                        Driver info: driver.version:
+                                                                        EventFiringWebDriver
+                                                                        at
+                                                                        sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native
+                                                                        Method)
+                                                                        at
+                                                                        sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                                                                        at
+                                                                        sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                                                                        at
+                                                                        java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+                                                                        at
+                                                                        org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+                                                                        at
+                                                                        org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+                                                                        at
+                                                                        org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+                                                                        at
+                                                                        sun.reflect.GeneratedMethodAccessor19.invoke(Unknown
+                                                                        Source)
+                                                                        at
+                                                                        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                                                                        at
+                                                                        java.lang.reflect.Method.invoke(Method.java:497)
+                                                                        at
+                                                                        org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+                                                                        at com.sun.proxy.$Proxy1.findElement(Unknown
+                                                                        Source)
+                                                                        at
+                                                                        org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+                                                                        at
+                                                                        org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+                                                                        at
+                                                                        org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+                                                                        at
+                                                                        java.util.concurrent.FutureTask.run(FutureTask.java:266)
+                                                                        at
+                                                                        org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+                                                                        at
+                                                                        java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+                                                                        at
+                                                                        java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+                                                                        at java.lang.Thread.run(Thread.java:745)</td>
 																</tr>
 														</tbody>
 													</table>

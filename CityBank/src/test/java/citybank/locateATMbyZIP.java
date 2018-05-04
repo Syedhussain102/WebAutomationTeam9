@@ -1,6 +1,6 @@
 package citybank;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 import org.testng.annotations.Test;
 
 public class locateATMbyZIP extends CommonAPI{

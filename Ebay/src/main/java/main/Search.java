@@ -1,14 +1,9 @@
 package main;
-import base.CommonAPI;
-import org.openqa.selenium.By;
+import TestBase.CommonAPI;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-import utility.DataReader;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

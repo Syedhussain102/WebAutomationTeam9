@@ -1,13 +1,12 @@
 package main;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
-import java.security.Key;
 import java.util.List;
 
 public class MainEbay extends CommonAPI {
