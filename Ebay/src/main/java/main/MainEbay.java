@@ -11,15 +11,12 @@ import java.util.List;
 
 public class MainEbay extends CommonAPI {
     //Mouse Hover By xpath
-    public void mouseHoverByXpath(String xpath, String linkedText){
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(By.xpath(xpath))).build().perform();
-        implicityWait();
-        driver.findElement(By.linkText(linkedText)).click();
+    public void mouseHoverByXpath(){
+        mouseHoverNClickbyXC("//*[@id='s0-container']/li[3]/a","Vehicles");
     }
     //view multiple items
-    public void viewMultipleByCSS(String CSS){
-        List<WebElement> menu = getElementsByCSSforList(CSS);
+    public void viewMultipleByCSS(){
+        List<WebElement> menu = getElementsByCSSforList("[aria-label='Select a category for search']");
         for (WebElement search : menu) {
             System.out.println(search.getText());
         }
@@ -43,7 +40,7 @@ public class MainEbay extends CommonAPI {
         try{clickByXpath("//*[@id='productSearchToggle']/div/span[2]");}catch (Exception ex){
         //click acer
         clickByXpath("//*[@id='w3-w0-w1-multiselect[0]']/a/span[1]");}
-        clickByCss("[id='w3-w0-w1-multiselect\\[0\\]'] .x-refine__multi-select-cbx");
+        clickByCss("[id='w3-w0-w1-multiselect[0]'] .x-refine__multi-select-cbx");
         clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_valueOption']");
         clickByXpath("//*[@id='w3-w0-singleselect[9]-w0-_select']/option[6]");
     }
