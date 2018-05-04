@@ -1,5 +1,6 @@
 package utility;
 
+
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -22,7 +23,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class GoogleSheetReader {
-    private static final String APPLICATION_NAME = "Google Sheets API Java Quickstart";
+    private static final String APPLICATION_NAME = "TeamX-Web-Auto";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final String CREDENTIALS_FOLDER = "credentials"; // Directory to store user credentials.
 
@@ -31,7 +32,7 @@ public class GoogleSheetReader {
      * If modifying these scopes, delete your previously saved credentials/ folder.
      */
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
-    private static final String CLIENT_SECRET_DIR = "client_secret.json";
+    private static final String CLIENT_SECRET_DIR = "/client_secret.json";
 
     /**
      * Creates an authorized Credential object.
@@ -60,7 +61,7 @@ public class GoogleSheetReader {
     public static void main(String... args) throws IOException, GeneralSecurityException {
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        final String spreadsheetId = "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms";
+        final String spreadsheetId = "1zol7P2x9kO8peSVjAVOuAZ3r8JgPQax8sen4glj_teY";
         final String range = "Class Data!A2:E";
         Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
@@ -75,8 +76,11 @@ public class GoogleSheetReader {
             System.out.println("Name, Major");
             for (List row : values) {
                 // Print columns A and E, which correspond to indices 0 and 4.
-                System.out.printf("%s, %s\n", row.get(0), row.get(4));
+                System.out.printf("%s, %s, %s, %s, %s\n", row.get(0), row.get(1), row.get(2), row.get(3),row.get(4));
             }
         }
     }
+
+
+
 }

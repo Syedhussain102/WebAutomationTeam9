@@ -49,7 +49,7 @@ public class ConnectDB {
 
         return mongoDatabase;
     }
-    public List<String> readDataBase(String tableName, String columnName)throws Exception{
+public List<String> readDataBase(String tableName, String columnName)throws Exception{
         List<String> data = new ArrayList<String>();
 
         try {
