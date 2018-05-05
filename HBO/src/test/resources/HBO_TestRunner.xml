@@ -13,10 +13,10 @@
     <test name = "HBO test">
 
         <classes>
-        <!--<class name="TestBase.dropDown"/>
+        <!--<class name="Base.dropDown"/>
         <class name="Clicks.ableToChooseBoxing"/>
-        <class name="TestBase.searchItem"/>
-        <class name="TestBase.PlayAvideo"/>-->
+        <class name="Base.searchItem"/>
+        <class name="Base.PlayAvideo"/>-->
             <class name="Clicks.TopOptions"/>
 
         </classes>

@@ -1,3 +1,4 @@
+/*
 package utility;
 
 import com.google.api.client.auth.oauth2.Credential;
@@ -26,19 +27,23 @@ public class GoogleSheetReader {
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final String CREDENTIALS_FOLDER = "credentials"; // Directory to store user credentials.
 
-    /**
+    */
+/**
      * Global instance of the scopes required by this quickstart.
      * If modifying these scopes, delete your previously saved credentials/ folder.
-     */
+     *//*
+
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
     private static final String CLIENT_SECRET_DIR = "/client_secret.json";
 
-    /**
+    */
+/**
      * Creates an authorized Credential object.
      * @param HTTP_TRANSPORT The network HTTP Transport.
      * @return An authorized Credential object.
      * @throws IOException If there is no client_secret.
-     */
+     *//*
+
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
         InputStream in = GoogleSheetReader.class.getResourceAsStream(CLIENT_SECRET_DIR);
@@ -53,10 +58,12 @@ public class GoogleSheetReader {
         return new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
     }
 
-    /**
+    */
+/**
      * Prints the names and majors of students in a sample spreadsheet:
      * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-     */
+     *//*
+
     public static void main(String... args) throws IOException, GeneralSecurityException {
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
@@ -101,4 +108,4 @@ public class GoogleSheetReader {
         }
     }
 
-}
+}*/

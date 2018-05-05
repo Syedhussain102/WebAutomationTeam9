@@ -1,12 +1,10 @@
 package ebay;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 import main.Search;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.TestLogger;
-
-import java.io.IOException;
 
 public class SearchTest extends CommonAPI {
     //search for a laptop

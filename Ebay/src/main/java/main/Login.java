@@ -1,6 +1,6 @@
 package main;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 
 public class Login extends CommonAPI {
     //******positive testing

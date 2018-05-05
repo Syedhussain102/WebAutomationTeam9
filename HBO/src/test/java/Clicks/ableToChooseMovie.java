@@ -1,6 +1,6 @@
 package Clicks;
 
-import base.CommonAPI;
+import TestBase.CommonAPI;
 import org.testng.annotations.Test;
 
 public class ableToChooseMovie extends CommonAPI {

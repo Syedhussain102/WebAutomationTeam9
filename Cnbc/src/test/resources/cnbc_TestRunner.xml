@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ObamaCare Automation Script " parallel="false">
+<suite name="Cnbc Automation Script " parallel="false">
 
     <parameter name="url" value="https://www.cnbc.com/"/>
     <parameter name="useCloudEnv" value="false"/>
@@ -13,10 +13,10 @@
     <test name = "test cnbc">
 
         <classes>
-        <class name="base."/>
-        <!--<class name="base.NewsTest"/>-->
-        <!--<class name="base.SearchTest"/>-->
-        <!--<class name="base.SignUpTest"/>-->
+        <class name="TestBase.SearchTest"/>
+        <!--<class name="TestBase.NewsTest"/>-->
+        <!--<class name="TestBase.SearchTest"/>-->
+        <!--<class name="TestBase.SignUpTest"/>-->
         </classes>
     </test>
 
