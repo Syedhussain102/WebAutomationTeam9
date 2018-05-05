@@ -21,9 +21,8 @@ public class DBsearch extends CommonAPI {
     //put Data to DB-Mysql
     /*public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
-        connectDB.insertDataFromArrayListToMySql(getItemValue(),"TestEbay","search");
+        connectDB.insertDataFromArrayListToMySql(getItemValue(),"TestTwo","search");
     }*/
-
     //bring data from db and search using them
     public void searchByDB() throws Exception {
         ConnectDB connectDB = new ConnectDB();
@@ -32,5 +31,36 @@ public class DBsearch extends CommonAPI {
             typeByXpathNEnter("//input[@id='gh-ac']", items.get(i));
             clearInputByXpath("//input[@id='gh-ac']");
         }
+    }
+    //-------------
+    //insert datas to db
+    public static List<String> setUserName() {
+        List<String> username = new ArrayList<String>();
+        username.add("user1");
+        username.add("user2");
+        username.add("user3");
+        username.add("user4");
+        username.add("user5");
+        username.add("user6");
+        username.add("user7");
+        return username;
+    }
+    public static List<String> setUserPass() {
+        List<String> passWord = new ArrayList<String>();
+        passWord.add("Pass-user1");
+        passWord.add("Pass-user2");
+        passWord.add("Pass-user3");
+        passWord.add("Pass-user4");
+        passWord.add("Pass-user5");
+        passWord.add("Pass-user6");
+        passWord.add("Pass-user7");
+        return passWord;
+    }
+    //put Datas to DB-Mysql
+    public static void main(String[] args) {
+        ConnectDB connectDB = new ConnectDB();
+        connectDB.insertDataFromArrayListToMySql(setUserName(),"TestTwo","search");
+        connectDB.insertDataFromArrayListToMySql(setUserPass(),"TestTwo","search");
+
     }
 }

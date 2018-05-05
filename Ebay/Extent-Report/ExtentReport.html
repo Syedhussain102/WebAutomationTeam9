@@ -42,7 +42,6 @@
 			</div>
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
-					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
@@ -53,7 +52,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2018-05-03 16:38:04</span>
+					<span class='suite-started-time'>2018-05-05 06:56:49</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +82,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 44s+517ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 0m 0s+553ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 44s+517ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 0m 0s+553ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2018-05-03 16:37:20</span> 
+							<span class='panel-lead suite-started-time'>2018-05-05 06:56:48</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2018-05-03 16:38:04</span> 
+							<span class='panel-lead suite-ended-time'>2018-05-05 06:56:49</span> 
 						</div> 
 					</div>
 				</div>
@@ -191,27 +190,6 @@
 						</div>
 					</div>
 				</div>
-					<div class='category-summary-view'>
-						<div class='col l4 m6 s12'>
-							<div class='card-panel'>
-								<span class='label info outline right'>Categories</span>
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-										</tr>
-									</thead>
-									<tbody>
-											<tr>
-												<td>
-													ExcelSearchTest
-												</td>
-											</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
 			</div>
 			<!-- /dashboard -->
 			
@@ -235,16 +213,6 @@
 									<li class='clear'><a href='#!'>Clear Filters</a></li>
 								</ul>
 							</div>
-								<div>
-									<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-										<i class='mdi-maps-local-offer'></i>
-									</a>
-									<ul id='category-toggle' class='dropdown-content'>
-											<li class='ExcelSearchTest'><a href='#!'>ExcelSearchTest</a></li>
-										<li class='divider'></li>
-										<li class='clear'><a href='#!'>Clear Filters</a></li>
-									</ul>
-								</div>
 							<div>
 								<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
 									<i class='mdi-navigation-close'></i>
@@ -272,99 +240,6 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active fail ' extentid='aa37e0fd-bb0f-45f4-b39f-1341a8fdb213'>
-											<div class='test-head'>
-												<span class='test-name'>TestExcel </span>
-												<span class='test-status label right outline capitalize fail'>fail</span>
-												<span class='category-assigned hide  excelsearchtest'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-05-03 16:37:23</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-05-03 16:37:53</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 29s+673ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>ExcelSearchTest</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>16:37:53</td>
-																	<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#pri_signin div:nth-of-type(3) [size]"}
-  (Session info: chrome=66.0.3359.139)
-  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Shunnolok.nyc.rr.com', ip: '2604:2000:1200:8226:613a:8217:5fe1:578f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '9.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544337 (8c0344a12e5521..., userDataDir: /var/folders/g5/3mmf6phj5_x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 3f641303342bf218d763cbc379ade6ca
-*** Element info: {Using=css selector, value=#pri_signin div:nth-of-type(3) [size]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at base.CommonAPI.clearInputByCSS(CommonAPI.java:402)
-	at main.ExcelSearch.multipleLoginExcel(ExcelSearch.java:43)
-	at ebay.ExcelSearchTest.TestExcel(ExcelSearchTest.java:13)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
 								</ul>
 							</div>
 						</div>
@@ -393,75 +268,6 @@ Session ID: 3f641303342bf218d763cbc379ade6ca
 			<!-- /tests -->
 			
 			<!-- categories -->
-				<div id='categories-view' class='row _addedTable hide'>
-					<div class='col _addedCell1'>
-						<div class='contents'>
-							<div class='card-panel heading'>
-								<h5>Categories</h5>
-							</div>
-							<div class='card-panel filters'>
-								<div class='search' alt='Search tests' title='Search tests'>
-									<div class='input-field left'>
-										<input id='searchTests' type='text' class='validate' placeholder='Search...'>
-									</div>
-									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
-										<i class='mdi-action-search'></i>
-									</a>
-								</div>
-							</div>
-							<div class='card-panel no-padding-h no-padding-v'>
-								<div class='wrapper'>
-									<ul id='cat-collection' class='cat-collection'>
-											<li class='category-item displayed'>
-												<div class='cat-head'>
-													<span class='category-name'>ExcelSearchTest</span>
-												</div>
-												<div class='category-status-counts'>
-														<span class='fail label dot'>Fail: 1</span>
-												</div>
-												<div class='cat-body'>
-													<div class='category-status-counts'>
-														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
-															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
-														</div>
-													</div>
-													<div class='cat-tests'>
-														<table class='bordered'>
-															<thead>
-																<tr>
-																	<th>RunDate</th>
-																	<th>Test Name</th>
-																	<th>Status</th>
-																</tr>
-															</thead>
-															<tbody>
-																	<tr class='fail'>
-																		<td>2018-05-03 16:37:23</td>
-																		<td><span class='category-link linked' extentid='aa37e0fd-bb0f-45f4-b39f-1341a8fdb213'>TestExcel</span></td>
-																		<td><div class='status label capitalize fail'>fail</div></td>
-																	</tr>
-															<tbody>
-														</table>
-													</div>
-												</div> 
-											</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id='cat-details-wrapper' class='col _addedCell2'>
-						<div class='contents'>
-							<div class='card-panel details-view'>
-								<h5 class='cat-name'></h5>
-								<div class='cat-container'>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			<!-- /categories -->
 			
 			<!-- exceptions -->

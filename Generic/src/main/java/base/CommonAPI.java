@@ -71,7 +71,6 @@ public class CommonAPI {
     public void afterEachTestMethod(ITestResult result) {
         ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
         ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
-
         for (String group : result.getMethod().getGroups()) {
             ExtentTestManager.getTest().assignCategory(group);
         }

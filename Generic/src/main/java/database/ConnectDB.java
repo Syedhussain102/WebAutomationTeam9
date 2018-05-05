@@ -11,10 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * Created by mrahman on 04/02/18.
- */
-
 public class ConnectDB {
 
     public static MongoDatabase mongoDatabase = null;
@@ -151,7 +147,30 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
             ps.executeUpdate();
             ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`search` varchar(33) NOT NULL);");
             ps.executeUpdate();
-            for(String st:list){
+            for(Object st:list){
+                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
+                ps.setObject(1,st);
+                ps.executeUpdate();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void insertDataFromArrayListToMySql2Column(String[][]list, String tableName, String columnName, String column2Name)
+    {
+        try {
+            connectToMySql();
+            ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
+            ps.executeUpdate();
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`login` varchar(33) NOT NULL,`pass` varchar(33));");
+            ps.executeUpdate();
+            for(Object st:list){
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
                 ps.setObject(1,st);
                 ps.executeUpdate();

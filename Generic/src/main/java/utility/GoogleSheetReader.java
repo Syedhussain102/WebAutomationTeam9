@@ -1,6 +1,5 @@
 package utility;
 
-
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -61,7 +60,7 @@ public class GoogleSheetReader {
     public static void main(String... args) throws IOException, GeneralSecurityException {
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        final String spreadsheetId = "1zol7P2x9kO8peSVjAVOuAZ3r8JgPQax8sen4glj_teY";
+        final String spreadsheetId = "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms";
         final String range = "Class Data!A2:E";
         Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
@@ -81,6 +80,25 @@ public class GoogleSheetReader {
         }
     }
 
-
+    // custom methods
+    public static List<List<Object>> getGoogleSheetValues() throws IOException, GeneralSecurityException{
+        // Build a new authorized API client service.
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+        final String spreadsheetId = "1nHi8IV_-AUZq8-9ejFZblhZ6Fq7ea4jFGEPKBOrtGA8";
+        final String range = "Sheet1!A2:A";
+        Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+        ValueRange response = service.spreadsheets().values()
+                .get(spreadsheetId, range)
+                .execute();
+        List<List<Object>> values = response.getValues();
+        if (values == null || values.isEmpty()) {
+            System.out.println("No data found.");
+            return null;
+        } else {
+            return values;
+        }
+    }
 
 }

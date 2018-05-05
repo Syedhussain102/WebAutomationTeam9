@@ -18,10 +18,10 @@
             <!--<class name="ebay.SearchTest"/>
             <class name="ebay.TestEbay"/>
             <class name="ebay.EbayHomeLinksTest"/>
-
             <class name="ebay.LoginTest"/>
             <class name="ebay.MessagesTest"/>-->
-            <class name="ebay.ExcelSearchTest"/>
+            <!--<class name="ebay.ExcelSearchTest"/>-->
+            <class name="ebay.GoogleSheetTest"/>
         </classes>
     </test>
 </suite>
