@@ -1,9 +1,9 @@
 package Base;
 
-import TestBase.CommonAPI;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import base.CommonAPI;
 
 public class UseOfTab extends CommonAPI {
    @Test

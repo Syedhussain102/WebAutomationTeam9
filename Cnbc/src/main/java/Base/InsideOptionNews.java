@@ -1,6 +1,6 @@
 package Base;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 
 public class InsideOptionNews extends CommonAPI {
     public void economy(){

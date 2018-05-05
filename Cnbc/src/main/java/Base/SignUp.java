@@ -1,9 +1,9 @@
 package Base;
 
-import TestBase.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import base.CommonAPI;
 
 public class SignUp extends CommonAPI {
         public void register() throws InterruptedException {

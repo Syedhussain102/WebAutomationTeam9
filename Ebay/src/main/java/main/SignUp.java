@@ -1,7 +1,6 @@
 package main;
 
-import TestBase.CommonAPI;
-import org.testng.Assert;
+import base.CommonAPI;
 
 public class SignUp extends CommonAPI {
     String beforeURL;

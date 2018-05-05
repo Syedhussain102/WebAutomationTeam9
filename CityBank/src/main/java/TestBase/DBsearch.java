@@ -22,7 +22,7 @@ public class DBsearch extends CommonAPI {
     //put Data to DB-Mysql
     public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
-        connectDB.insertDataFromArrayListToMySql2Column(getItemValue(),"TestCiti","login","pass");
+        //connectDB.insertDataFromArrayListToMySql2Column(getItemValue(),"TestCiti","login","pass");
     }
 
     //bring data from db and search using them

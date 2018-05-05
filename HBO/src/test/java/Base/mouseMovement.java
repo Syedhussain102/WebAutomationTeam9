@@ -1,9 +1,9 @@
 package Base;
 
-import TestBase.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import base.CommonAPI;
 
 import java.util.concurrent.TimeUnit;
 

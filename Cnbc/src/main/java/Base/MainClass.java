@@ -1,6 +1,6 @@
 package Base;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 
 public class MainClass extends CommonAPI {
     public void homeUs(){

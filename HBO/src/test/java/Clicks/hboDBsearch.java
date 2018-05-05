@@ -1,6 +1,6 @@
 package Clicks;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 import database.ConnectDB;
 
 import java.util.ArrayList;

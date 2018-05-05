@@ -1,6 +1,6 @@
 package ebay;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 import main.Search;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;

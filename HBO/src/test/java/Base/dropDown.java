@@ -1,9 +1,9 @@
 package Base;
 
-import TestBase.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
+import base.CommonAPI;
 
 @Test
 public class dropDown extends CommonAPI {

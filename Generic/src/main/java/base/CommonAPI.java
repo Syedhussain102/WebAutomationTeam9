@@ -1,4 +1,4 @@
-package TestBase;
+package base;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;

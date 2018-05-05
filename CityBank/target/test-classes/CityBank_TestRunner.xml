@@ -14,7 +14,7 @@
     <test name = "test CityBank">
 
         <classes>
-       <class name="citybank.login"/>
+       <class name="citybank.CityHomeLinksTest"/>
 
         </classes>
     </test>

@@ -1,6 +1,5 @@
 package Base;
 
-import TestBase.CommonAPI;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
@@ -9,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import base.CommonAPI;
 
 import java.io.FileInputStream;
 import java.io.IOException;

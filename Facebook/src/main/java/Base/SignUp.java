@@ -1,7 +1,6 @@
 package Base;
 
-import TestBase.CommonAPI;
-import org.openqa.selenium.By;
+import base.CommonAPI;
 
 public class SignUp extends CommonAPI {
     public void register() throws InterruptedException {
@@ -9,7 +8,7 @@ public class SignUp extends CommonAPI {
         typeByXpath("//input[@class='inputtext _58mg _5dba _2ph-' and @name='lastname']","user");
         typeByXpath("//input[@class='inputtext _58mg _5dba _2ph-' and @name='reg_email__']","testuserabcd13@gmail.com");
         Thread.sleep(2000);
-        typeByXpath("//*[@id=\"u_0_l\"]","testuserabcd13@gmail.com");
+        typeByXpath("//*[@id='u_0_l']","testuserabcd13@gmail.com");
         typeByXpath("//input[@class='inputtext _58mg _5dba _2ph-' and @name='reg_passwd__']","testabcd1234");
         clickByXpath("//select[@name='birthday_month']");
         clickByXpath("//*[@id='month']/option[10]");

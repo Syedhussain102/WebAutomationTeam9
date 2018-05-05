@@ -1,6 +1,6 @@
 package main;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 
 public class EbayHomeLinks extends CommonAPI {
     //Buy

@@ -1,6 +1,6 @@
 package main;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 import org.openqa.selenium.By;
 
 public class Messages extends CommonAPI {

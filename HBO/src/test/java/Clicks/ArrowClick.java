@@ -1,6 +1,6 @@
 package Clicks;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 import org.testng.annotations.Test;
 
 public class ArrowClick extends CommonAPI {

@@ -1,8 +1,8 @@
 package Base;
 
-import TestBase.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import base.CommonAPI;
 
 import java.util.List;
 

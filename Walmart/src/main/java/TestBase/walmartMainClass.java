@@ -1,6 +1,8 @@
 package TestBase;
 
-public class walmartMainClass extends CommonAPI{
+import base.CommonAPI;
+
+public class walmartMainClass extends CommonAPI {
     //search
     public void search(){
         typeByXpathNEnter("//input[@class='GlobalHeaderSearchbar-input header-GlobalSearch-input']","fishing rod");

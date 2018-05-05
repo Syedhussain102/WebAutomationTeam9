@@ -1,6 +1,6 @@
 package citybank;
 
-import TestBase.CommonAPI;
+import base.CommonAPI;
 import org.testng.annotations.Test;
 
 
