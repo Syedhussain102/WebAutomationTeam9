@@ -22,7 +22,7 @@ public class ConnectDB {
 
     public Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("/Users/zann/IdeaProjects/WebAutomationTeam9/Generic/databaseinfo/secret.properties");
+        InputStream ism = new FileInputStream("/Users/sreejon/IdeaProjects/WebAutomationTeam9/Facebook/databaseinfo/secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
