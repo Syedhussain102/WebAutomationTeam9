@@ -25,4 +25,4 @@ public class TestLogIn extends LogIn {
     @Test
     public void test10() {loginWithWrongPass();}
   
-}
+}}
