@@ -26,6 +26,3 @@ public class TestLogIn extends LogIn {
     public void test10() {loginWithWrongPass();}
   
 }
-
-}
-

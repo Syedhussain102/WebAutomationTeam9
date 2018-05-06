@@ -17,6 +17,7 @@
         <module>Ebay</module>
         <module>Cnbc</module>
         <module>Walmart</module>
+        <module>RestApi</module>
     </modules>
 
    <!-- <properties>
@@ -98,6 +99,12 @@
                 <groupId>com.google.apis</groupId>
                 <artifactId>google-api-services-sheets</artifactId>
                 <version>v4-rev516-1.23.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>3.1.0</version>
             </dependency>
 
         </dependencies>

@@ -32,7 +32,6 @@ public class Search extends CommonAPI {
         itemsList.add("mobile");
         for (String st : itemsList) {
             searchElements.sendKeys(st, Keys.ENTER);
-            //driver.findElement(By.xpath("//*[@class='fa fa-Search fa-2']")).click();
             searchElements.clear();
         }
     }
