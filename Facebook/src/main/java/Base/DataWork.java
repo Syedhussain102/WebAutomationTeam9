@@ -20,7 +20,6 @@ public class DataWork extends CommonAPI {
             driver.findElement(By.xpath("//input[@name='pass']")).sendKeys(password.get(i));
             clearInputByXpath("//input[@name='email']");
             clearInputByXpath("//input[@name='pass']");
-            // clickByXpath("//div[@id='logoutMenu']");
         }
     }
     public ArrayList<String> dataFromExcel(int colNo) throws IOException {
