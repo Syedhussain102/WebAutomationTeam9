@@ -24,14 +24,21 @@ import java.util.List;
 public class GoogleSheetReader {
     private static final String APPLICATION_NAME = "TeamX-Web-Auto";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
-    private static final String CREDENTIALS_FOLDER = "credentials"; // Directory to store user credentials.
+    private static final String CREDENTIALS_FOLDER = "src/main/credentials"; // Directory to store user credentials.
 
-
-
+    /**
+     * Global instance of the scopes required by this quickstart.
+     * If modifying these scopes, delete your previously saved credentials/ folder.
+     */
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
-    private static final String CLIENT_SECRET_DIR = "/client_secret.json";
+    private static final String CLIENT_SECRET_DIR = "../credentials/client_secret.json";
 
-
+    /**
+     * Creates an authorized Credential object.
+     * @param HTTP_TRANSPORT The network HTTP Transport.
+     * @return An authorized Credential object.
+     * @throws IOException If there is no client_secret.
+     */
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
         InputStream in = GoogleSheetReader.class.getResourceAsStream(CLIENT_SECRET_DIR);
@@ -46,6 +53,10 @@ public class GoogleSheetReader {
         return new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
     }
 
+    /**
+     * Prints the names and majors of students in a sample spreadsheet:
+     * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+     */
     public static void main(String... args) throws IOException, GeneralSecurityException {
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
@@ -73,7 +84,7 @@ public class GoogleSheetReader {
     public static List<List<Object>> getGoogleSheetValues() throws IOException, GeneralSecurityException{
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        final String spreadsheetId = "1nHi8IV_-AUZq8-9ejFZblhZ6Fq7ea4jFGEPKBOrtGA8";
+        final String spreadsheetId = "1RipEIeqO8WYDkB2fIBYmGs8b4iqTUHOUKoG6XZr68cM";
         final String range = "Sheet1!A2:A";
         Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
