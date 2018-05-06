@@ -8,3 +8,4 @@ public class TestSignUp extends SignUp {
     @Test
     public void logInAttempt() throws InterruptedException {register();}
 }
+
