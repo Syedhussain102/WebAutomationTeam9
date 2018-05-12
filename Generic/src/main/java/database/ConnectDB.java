@@ -22,7 +22,7 @@ public class ConnectDB {
 
     public Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("/Users/sreejon/IdeaProjects/WebAutomationTeam9/Facebook/databaseinfo/secret.properties");
+        InputStream ism = new FileInputStream("./Generic/databaseinfo/secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
@@ -139,8 +139,7 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
         return data;
     }
 
-    public void insertDataFromArrayListToMySql(List<String> list, String tableName, String columnName)
-    {
+    public void insertDataFromArrayListToMySql(List<String> list, String tableName, String columnName) {
         try {
             connectToMySql();
             ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
@@ -152,7 +151,6 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
                 ps.setObject(1,st);
                 ps.executeUpdate();
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -225,27 +223,6 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
         return data;
     }
 
-
-
-    public void insertProfileToMySql(String tableName, String columnName1, String columnName2)
-    {
-        try {
-            connectToMySql();
-            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-            ps.setString(1,"Ankita Sing");
-            ps.setInt(2,3590);
-            ps.executeUpdate();
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
     public List<String> readFromMySql()throws IOException, SQLException, ClassNotFoundException{
         List<String> list = new ArrayList<String>();
 
@@ -285,5 +262,24 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
         */
 
     }
+    public void insertProfileToMySql(String tableName, String columnName1, String columnName2)
+    {
+        try {
+            connectToMySql();
+            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
+            ps.setString(1,"Siam");
+            ps.setString(2,"abc123");
+            ps.executeUpdate();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

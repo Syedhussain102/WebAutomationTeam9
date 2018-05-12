@@ -1,4 +1,4 @@
-package main;
+package dataDriven;
 
 import base.CommonAPI;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -26,7 +26,7 @@ public class ExcelSearch extends CommonAPI {
     }
 
     public void testExcel() throws IOException {
-        ArrayList<String> searchAbleItems = dataFromExcel("../data/Book1.xls","Sheet1",1);
+        ArrayList<String> searchAbleItems = dataFromExcel("/Users/zann/IdeaProjects/WebAutomationTeam9/Ebay/data/Book1.xls","Sheet1",1);
         for (int i = 0; i < searchAbleItems.size(); i++) {
             driver.findElement(By.xpath("fgerdvdf")).sendKeys(searchAbleItems.get(i));
             driver.findElement(By.xpath("fgerdvdf")).clear();

@@ -1,9 +1,7 @@
-package main;
+package database;
 
 import base.CommonAPI;
 import database.ConnectDB;
-import org.openqa.selenium.remote.server.handler.SendKeys;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,22 +16,24 @@ public class DBsearch extends CommonAPI {
         itemsList.add("Guitar");
         itemsList.add("Pick");
         itemsList.add("Cap");
+        itemsList.add("Phone");
         return itemsList;
     }
     //put Data to DB-Mysql
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
-        connectDB.insertDataFromArrayListToMySql(getItemValue(),"TestTwo","search");
-    }*/
+        connectDB.insertDataFromArrayListToMySql(getItemValue(),"Testebay","search");
+    }
     //bring data from db and search using them
-    /*public void searchByDB() throws Exception {
+    public void searchByDB() throws Exception {
         ConnectDB connectDB = new ConnectDB();
         List<String> items = connectDB.readDataBase("TestEbay","search");
         for (int i = 0; i < items.size(); i++) {
             typeByXpathNEnter("//input[@id='gh-ac']", items.get(i));
             clearInputByXpath("//input[@id='gh-ac']");
         }
-    }*/
+    }
+
     //-------------
     //insert datas to db
     public static List<String> setUserName() {
@@ -58,30 +58,18 @@ public class DBsearch extends CommonAPI {
         passWord.add("Pass-user7");
         return passWord;
     }
-   /* //put Datas to DB-Mysql
-    public static void main(String[] args) {
+    //put Datas to DB-Mysql
+    /*public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
-        connectDB.insertDataFromArrayListToMySql2("TestTwo",setUserName(),"name","pass",setUserPass());
-    }*/
-    //bring data from db and search using them
-
-    /*public void searchByDBmultiple() throws Exception {
-        ConnectDB connectDB = new ConnectDB();
-        List<String> items = connectDB.readDataBase2("tableTry","name","pass");
-        clickByLinkedText("Sign in");
-        for (int i = 0; i < items.size(); i++) {
-            typeByXpathNEnter("//input[@id='userid']", items.get(i));
-            typeByXpathNEnter("//input[@id='pass']",items.get(i));
-        }
+        connectDB.insertDataFromArrayListToMySql2("TestT",setUserName(),"name","pass",setUserPass());
     }*/
 
+    //bring data from db and input them
     public void searchByDBmultiple() throws Exception {
         ConnectDB connectDB = new ConnectDB();
         List<String> items = connectDB.readDataBase("tableTry","name");
         List<String> items2 = connectDB.readDataBase("tableTry","pass");
-
         clickByLinkedText("Sign in");
-
         for (int i = 0; i < items.size(); i++) {
             typeByXpath("//input[@id='userid']",items.get(i));
             Thread.sleep(2000);

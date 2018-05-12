@@ -1,6 +1,6 @@
 package ebay;
 
-import main.ExcelSearch;
+import dataDriven.ExcelSearch;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
