@@ -24,4 +24,5 @@ public class TestLogIn extends LogIn {
     public void test9() {loginWithWrongEmail();}
     @Test
     public void test10() {loginWithWrongPass();}
+  
 }
