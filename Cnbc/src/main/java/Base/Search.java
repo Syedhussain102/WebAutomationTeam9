@@ -20,19 +20,23 @@ public class Search extends CommonAPI {
     //Search single iteam
     public void itemSearch(){
         typeByXpathNEnter("//*[@placeholder='Search Quotes, News & Video']","gaming");
-
+    }
+    @FindBy(xpath = "[@placeholder='Search Quotes, News & Video']")
+    public static WebElement webElement1 ;
+    public void lookForALaptop() {
+        webElement1.sendKeys("laptop", Keys.ENTER);
     }
     //SearchMultipleItems
     @FindBy(xpath = "//*[@placeholder='Search Quotes, News & Video']")
-    public WebElement searchElements;
+    public WebElement webElement2;
     public void searchItems() {
         List<String> itemsList = new ArrayList<String>();
         itemsList.add("gaming");
         itemsList.add("social media");
         itemsList.add("mobile");
         for (String st : itemsList) {
-            searchElements.sendKeys(st, Keys.ENTER);
-            searchElements.clear();
+            webElement2.sendKeys(st, Keys.ENTER);
+            webElement2.clear();
         }
     }
     public ArrayList<String> dataFromExcel(int colNo) throws IOException {

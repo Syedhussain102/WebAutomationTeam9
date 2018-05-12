@@ -59,8 +59,8 @@ public class DBsearch extends CommonAPI {
     //put Datas to DB-Mysql
     public static void main(String[] args) {
         ConnectDB connectDB = new ConnectDB();
-        connectDB.insertDataFromArrayListToMySql(setUserName(),"TestTwo","search");
-        connectDB.insertDataFromArrayListToMySql(setUserPass(),"TestTwo","search");
+        connectDB.insertDataFromArrayListToMySql(setUserName(),"TestTwo","userName");
+        connectDB.insertDataFromArrayListToMySql(setUserPass(),"TestTwo","userPass");
 
     }
 }

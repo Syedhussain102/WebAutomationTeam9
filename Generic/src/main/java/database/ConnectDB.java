@@ -22,7 +22,7 @@ public class ConnectDB {
 
     public Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("/Users/sreejon/IdeaProjects/WebAutomationTeam9/Facebook/databaseinfo/secret.properties");
+        InputStream ism = new FileInputStream("/Users/sreejon/IdeaProjects/WebAutomationTeam9/Generic/databaseinfo/secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
@@ -45,7 +45,7 @@ public class ConnectDB {
 
         return mongoDatabase;
     }
-public List<String> readDataBase(String tableName, String columnName)throws Exception{
+    public List<String> readDataBase(String tableName, String columnName)throws Exception{
         List<String> data = new ArrayList<String>();
 
         try {
@@ -138,21 +138,18 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
         }
         return data;
     }
-
-    public void insertDataFromArrayListToMySql(List<String> list, String tableName, String columnName)
-    {
+    public void insertDataFromArrayListToMySql(List<String> list, String tableName, String columnName) {
         try {
             connectToMySql();
             ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
             ps.executeUpdate();
-            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`search` varchar(33) NOT NULL);");
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`column1` varchar(33) NOT NULL);");
             ps.executeUpdate();
             for(Object st:list){
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
                 ps.setObject(1,st);
                 ps.executeUpdate();
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -185,18 +182,25 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
         }
     }
 
-
-
-    public void insertProfileToMySql(String tableName, String columnName1, String columnName2)
+    public void insertDataFromArrayListToMySql2( String tableName,List<String> list1, String columnName1,String columnName2,List<String> list2)
     {
         try {
             connectToMySql();
-            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-            ps.setString(1,"Ankita Sing");
-            ps.setInt(2,3590);
+            ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
             ps.executeUpdate();
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`name` varchar(33) NOT NULL,`pass` varchar(33) NOT NULL);");
+            ps.executeUpdate();
+            for(Object st:list1){
+                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName1+" ) VALUES(?)");
+                ps.setObject(1,st);
+                ps.executeUpdate();
+            }
 
-
+            for(Object st:list2){
+                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName2+" ) VALUES(?)");
+                ps.setObject(1,st);
+                ps.executeUpdate();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -204,6 +208,18 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+    public List<String> readDataBase2(String tableName, String columnName1,String columnName2)throws Exception{
+        List<String> data = new ArrayList<String>();
+        Connection conn = connectToMySql();
+        String query = "SELECT * FROM "+tableName;
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        while (rs.next()) {
+            String name = rs.getString(columnName1);
+            String pass = rs.getString(columnName2);
+        }
+        return data;
     }
 
     public List<String> readFromMySql()throws IOException, SQLException, ClassNotFoundException{
@@ -245,5 +261,45 @@ public List<String> readDataBase(String tableName, String columnName)throws Exce
         */
 
     }
+    public void insertProfileToMySql(String tableName, String columnName1, String columnName2)
+    {
+        try {
+            connectToMySql();
+            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
+            ps.setString(1,"Siam");
+            ps.setString(2,"abc123");
+            ps.executeUpdate();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void insertDataFromArrayListToMySql333(List<String> list, String tableName, String columnName) {
+        try {
+            connectToMySql();
+            /*ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
+            ps.executeUpdate();*/
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` ("+columnName+"` varchar(33));");
+            ps.executeUpdate();
+            for(Object st:list){
+                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
+                ps.setObject(1,st);
+                ps.executeUpdate();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

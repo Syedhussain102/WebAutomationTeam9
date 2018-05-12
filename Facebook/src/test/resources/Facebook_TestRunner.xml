@@ -14,7 +14,8 @@
     <test name = "test FB">
 
         <classes>
-            <class name="facebook.TestLogIn"/>
+           <!-- <class name="facebook."/>-->
+            <class name="facebook.TestTry"/>
 
         </classes>
     </test>

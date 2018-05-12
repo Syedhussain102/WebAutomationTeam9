@@ -13,7 +13,7 @@ public class SearchTest extends Search {
         Search sc = PageFactory.initElements(driver, Search.class);
         sc.searchItems();
     }
-    //@Test
+    @Test
     public void searchOneItem(){ searchItems();}
     @Test
     public void exTest() throws IOException {

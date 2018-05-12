@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class DataWork extends CommonAPI {
-    public void tc() throws IOException {
+    public void excelData() throws IOException {
         ArrayList <String> userName= dataFromExcel(0);
         ArrayList<String> password =dataFromExcel(1);
         for(int i=0;i<userName.size();i++){
