@@ -13,7 +13,7 @@
     <test name = "test cnbc">
 
         <classes>
-        <class name="TestBase.TestReadData"/>
+        <class name="TestBase.TestGoogleAPI"/>
         <!--<class name="TestBase.NewsTest"/>-->
         <!--<class name="TestBase.SearchTest"/>-->
         <!--<class name="TestBase.SignUpTest"/>-->

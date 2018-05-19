@@ -25,7 +25,6 @@ public class SeeInfo extends CommonAPI {
     }
     public void seeInfoInvesting(){
         mouseHoverByXpath("//a[text()='Investing'][1]");
-
         List<WebElement> list =driver.findElements(By.xpath("//*[@id='nav']/li[4]/ul//li//a"));
         System.out.println(list.size());
         for (int i=0;i<list.size();i++){

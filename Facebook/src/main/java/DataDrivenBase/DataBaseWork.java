@@ -1,4 +1,4 @@
-package Base;
+package DataDrivenBase;
 
 import base.CommonAPI;
 import database.ConnectDB;
@@ -30,7 +30,7 @@ public class DataBaseWork extends CommonAPI{
     //multiple colomn
     public void infoDatabase2() throws Exception {
         ConnectDB connectDB =new ConnectDB();
-        List<String> myDBlist=connectDB.readDataBase("login","usernam");
+        List<String> myDBlist=connectDB.readDataBase("login","username");
         List<String> myDBlist2=connectDB.readDataBase("login","password");
         for (int i=0;i<myDBlist.size();i++){
             typeByXpath("//input[@name='email']",myDBlist.get(i));
@@ -40,17 +40,6 @@ public class DataBaseWork extends CommonAPI{
             clearInputByXpath("//input[@name='pass']");
         }
     }
+
 }
 
-/*package restAPI;
-
-import sun.jvm.hotspot.utilities.Assert;
-
-public class RestApiUse {
-    public void testResponseCode(){
-        Response resp = RestAssured.get("") ;
-        int code = resp.getStatusCode():
-        System.out.println("status code is"+code);
-    }
-}*/
-//

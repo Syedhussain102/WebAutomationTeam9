@@ -1,6 +1,6 @@
 package facebook;
 
-import Base.DataBaseWork;
+import DataDrivenBase.DataBaseWork;
 import org.testng.annotations.Test;
 
 public class TestDatabaseWork extends DataBaseWork {

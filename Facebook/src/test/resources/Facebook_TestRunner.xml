@@ -15,7 +15,7 @@
 
         <classes>
            <!-- <class name="facebook."/>-->
-            <class name="facebook.TestTry"/>
+            <class name="facebook.TestDatabaseWork"/>
 
         </classes>
     </test>

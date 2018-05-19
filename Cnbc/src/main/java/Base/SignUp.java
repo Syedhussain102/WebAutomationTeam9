@@ -25,7 +25,6 @@ public class SignUp extends CommonAPI {
             driver.findElement(By.xpath("//input[@name='user_data.password']")).sendKeys("testabcd1234",Keys.ENTER);
             driver.findElement(By.xpath("//input[@name='user_data.username']")).sendKeys("testuser");
             //driver.findElement(By.xpath("//span[text()='Sign up']")).click();
-
         }
     }
 

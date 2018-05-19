@@ -16,8 +16,6 @@ public class CountryDropDown extends CommonAPI {
         driver.manage().window().fullscreen();
         clickByXpath("/html/body/div[12]/ul/li[2]/label/span");
         clickByXpath("//*[@id=\"location-selects\"]/button[2]");
-
-
         //clickByXpath("/html/body/div[7]/div/ul/li[3]/a/span");
         clickByXpath("/html/body/div[11]/div/ul/li[2]/a");
         clickByXpath("/html/body/div[11]/ul/li[3]/label/span");

@@ -113,7 +113,7 @@ public class CommonAPI {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.get(url);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
     public WebDriver getLocalDriver(@Optional("mac") String OS, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
@@ -516,6 +516,18 @@ public class CommonAPI {
     public static boolean isPopUpWindowDisplayed(WebDriver driver1, String locator){
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
+    }
+    public void typeByIdNEnter(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
+    }
+
+    public String getCurrentPageTitle(){
+        String title = driver.getTitle();
+        return title;
+    }
+
+    public void clearInputFieldById(String locator){
+        driver.findElement(By.id(locator)).clear();
     }
 
 }

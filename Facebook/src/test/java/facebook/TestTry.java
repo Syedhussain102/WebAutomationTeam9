@@ -1,7 +1,6 @@
 package facebook;
 
-import Base.DataBaseWork;
-import Base.DataWork;
+import DataDrivenBase.DataBaseWork;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
