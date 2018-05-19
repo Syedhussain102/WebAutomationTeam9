@@ -374,4 +374,7 @@ public class MainEbay extends CommonAPI {
         clickByXpath("//*[@id='s0-container']/li[13]/a");
     }
 
+
+
+
 }

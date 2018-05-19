@@ -3,6 +3,9 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,22 +19,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
@@ -516,6 +514,24 @@ public class CommonAPI {
     public static boolean isPopUpWindowDisplayed(WebDriver driver1, String locator){
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
+    }
+
+
+    public static ArrayList<String> dataFromExcel(String path, String sheetName, int columnNo) throws IOException {
+        FileInputStream fis = new FileInputStream(path);
+        HSSFWorkbook wb = new HSSFWorkbook(fis);
+        HSSFSheet s = wb.getSheet(sheetName);
+        Iterator<Row> rowIT = s.iterator();
+        ArrayList<String> list = new ArrayList<String>();
+        while (rowIT.hasNext()) {
+            list.add(rowIT.next().getCell(columnNo).getStringCellValue());
+        }
+        return list;
+    }
+
+    public void printExcelSpecificColumn(String sheetName,int columnNo,String path) throws IOException {
+        String excelValues= String.valueOf(dataFromExcel(path,sheetName,columnNo));
+        System.out.println(excelValues);
     }
 
 }

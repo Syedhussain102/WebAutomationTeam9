@@ -20,7 +20,7 @@
         <module>RestApi</module>
     </modules>
 
-   <!-- <properties>
+    <!--<properties>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
     </properties>-->
@@ -106,7 +106,6 @@
                 <artifactId>rest-assured</artifactId>
                 <version>3.1.0</version>
             </dependency>
-
         </dependencies>
 
     </dependencyManagement>

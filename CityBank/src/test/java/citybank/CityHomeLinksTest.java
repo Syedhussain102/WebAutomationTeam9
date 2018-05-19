@@ -1,6 +1,6 @@
 package citybank;
 
-import TestBase.CityHomeLinks;
+import main.CityHomeLinks;
 import org.testng.annotations.Test;
 import reporting.TestLogger;
 

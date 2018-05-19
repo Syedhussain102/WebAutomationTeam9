@@ -14,7 +14,7 @@
     <test name = "test CityBank">
 
         <classes>
-       <class name="citybank.CityHomeLinksTest"/>
+       <class name="testGoogleSheet.TestGoogleSheet"/>
 
         </classes>
     </test>

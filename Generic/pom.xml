@@ -71,6 +71,7 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
         </dependency>
+
     </dependencies>
 
 </project>

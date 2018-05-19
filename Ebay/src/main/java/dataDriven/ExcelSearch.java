@@ -13,18 +13,6 @@ import java.util.Iterator;
 
 public class ExcelSearch extends CommonAPI {
 
-    public static ArrayList<String> dataFromExcel(String path, String sheetName, int columnNo) throws IOException {
-        FileInputStream fis = new FileInputStream(path);
-        HSSFWorkbook wb = new HSSFWorkbook(fis);
-        HSSFSheet s = wb.getSheet(sheetName);
-        Iterator<Row> rowIT = s.iterator();
-        ArrayList<String> list = new ArrayList<>();
-        while (rowIT.hasNext()) {
-            list.add(rowIT.next().getCell(columnNo).getStringCellValue());
-        }
-        return list;
-    }
-
     public void testExcel() throws IOException {
         ArrayList<String> searchAbleItems = dataFromExcel("/Users/zann/IdeaProjects/WebAutomationTeam9/Ebay/data/Book1.xls","Sheet1",1);
         for (int i = 0; i < searchAbleItems.size(); i++) {
@@ -54,6 +42,14 @@ public class ExcelSearch extends CommonAPI {
         String excelValues= String.valueOf(dataFromExcel("/Users/zann/IdeaProjects/WebAutomationTeam9/Ebay/data/Book1.xls","Sheet1",0));
         System.out.println(excelValues);
     }
+
+    public void printExcelSpecificColumn(String sheetName,int columnNo,String path) throws IOException {
+        String excelValues= String.valueOf(dataFromExcel(path,sheetName,columnNo));
+        System.out.println(excelValues);
+    }
+
+
+
 
 
 

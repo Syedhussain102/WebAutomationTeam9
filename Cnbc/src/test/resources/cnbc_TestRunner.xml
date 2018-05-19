@@ -13,10 +13,10 @@
     <test name = "test cnbc">
 
         <classes>
-        <class name="TestBase.SeeInfoTest"/>
-        <!--<class name="TestBase.NewsTest"/>-->
-        <!--<class name="TestBase.SearchTest"/>-->
-        <!--<class name="TestBase.SignUpTest"/>-->
+        <class name="Base.TestBase.SeeInfoTest"/>
+        <!--<class name="Base.TestBase.NewsTest"/>-->
+        <!--<class name="Base.TestBase.SearchTest"/>-->
+        <!--<class name="Base.TestBase.SignUpTest"/>-->
         </classes>
     </test>
 
