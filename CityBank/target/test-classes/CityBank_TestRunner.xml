@@ -14,7 +14,7 @@
     <test name = "test CityBank">
 
         <classes>
-       <class name="testGoogleSheet.TestGoogleSheet"/>
+       <class name="Interview.Interview"/>
 
         </classes>
     </test>

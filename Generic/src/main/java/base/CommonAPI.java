@@ -8,6 +8,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -120,7 +121,9 @@ public class CommonAPI {
             }else if(OS.equalsIgnoreCase("Windows")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
             }
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("disable-infobars");
+            driver = new ChromeDriver(options);
         }else if(browserName.equalsIgnoreCase("firefox")){
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/driver/geckodriver");
@@ -349,6 +352,12 @@ public class CommonAPI {
     public void cancelAlert() {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
+
+    }
+    //explicit wait
+    public void explicitWaitByXpath(String locator, int second){
+        WebDriverWait w = new WebDriverWait(driver,second);
+        w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
     //iframe Handle --window for popup window, frame for iframe,default content for going back to home window
     public void iframeHandle(WebElement element) {

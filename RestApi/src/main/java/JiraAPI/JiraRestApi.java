@@ -60,7 +60,7 @@ public class JiraRestApi {
         Response response = given().header("Content-Type", "application/json").
                 header("Cookie","JSESSIONID="+CommonRestAPI.getSessionKEY()).
                 body("{ \"body\": \"random comment\", \"visibility\": { \"type'\": \"role\", \"value\": \"Administrators\"} } ").
-                when().post("/rest/api/2/issue/10000/comment/10001").then().statusCode(200).extract().response();
+                when().put("/rest/api/2/issue/10000/comment/10001").then().statusCode(200).extract().response();
         JsonPath js = CommonRestAPI.rawToJson(response);
         String ID = js.get("id");
         System.out.println(ID);

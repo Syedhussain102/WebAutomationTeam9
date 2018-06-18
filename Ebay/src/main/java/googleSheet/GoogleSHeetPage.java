@@ -55,5 +55,4 @@ public class GoogleSHeetPage extends CommonAPI {
             Assert.assertEquals(actual,expected);
         }return actual;
 }
-
 }
