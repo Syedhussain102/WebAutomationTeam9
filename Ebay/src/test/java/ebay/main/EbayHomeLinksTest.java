@@ -6,25 +6,25 @@ import reporting.TestLogger;
 
 public class EbayHomeLinksTest extends EbayHomeLinks {
     //buy
-    @Test(groups = {"1"})
+    @Test
     public void testBuy(){
 //        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Buy();
     }
     //Sell
-    @Test(groups = {"2"})
+    @Test
     public void testSell(){
  //       TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Sell();
     }
     //T&A
-   @Test(groups = {"1"})
+   @Test
     public void toolsNapps(){
  //       TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         TnA();
     }
     //Companies
-    @Test(groups = {"2"})
+    @Test
     public void ebayCompanies(){
  //       TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         companies();

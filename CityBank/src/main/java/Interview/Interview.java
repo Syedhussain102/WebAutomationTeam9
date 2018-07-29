@@ -63,7 +63,7 @@ public class Interview extends CommonAPI {
         ((JavascriptExecutor)driver).executeScript("window.resizeTo(800,800);");
     }
 
-    @Test //          DropDown
+    //@Test //          DropDown
     public void dropDown(){
         WebElement dropDown = driver.findElement(By.xpath("xpath"));
         Select select = new Select(dropDown);
@@ -72,7 +72,7 @@ public class Interview extends CommonAPI {
         select.selectByValue("option2");
     }
 
-    @Test
+    //@Test
     public void switchTo(){
         driver.switchTo().window("window_name");
         driver.switchTo().frame("frameName or ID");

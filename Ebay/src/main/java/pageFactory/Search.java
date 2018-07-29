@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Search extends CommonAPI {
+    ran r = new ran();
     //search for a laptop,
-    @FindBy(xpath = "//input[@id='gh-ac']")
-    public static WebElement search;
+
     public void lookForALaptop() {
-        search.sendKeys("laptop", Keys.ENTER);
+        ran.search.sendKeys("laptop", Keys.ENTER);
     }
     // define group apple
     @FindBy(xpath = "//a[contains(text(),'Apple Laptops')]")
