@@ -7,15 +7,17 @@ public class TestAPIf1 extends APIf1 {
     //
 
     @Test
-    public void f1APItest(){
+    public void f1APItest() {
         f1API();
     }
+
     @Test
-    public void f1APITestBadCall(){
+    public void f1APITestBadCall() {
         f1APIBadCall();
     }
+
     @Test
-    public void f1APIserverError(){
+    public void f1APIserverError() {
         f1APIserverErrors();
     }
 }

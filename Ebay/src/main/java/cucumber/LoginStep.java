@@ -1,10 +1,10 @@
 package cucumber;
+
 public class LoginStep {
 
-    public void test2(){
+    public void test2() {
 
     }
-
 
 
 }

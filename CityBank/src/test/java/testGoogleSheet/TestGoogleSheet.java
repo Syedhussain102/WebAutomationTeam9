@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class TestGoogleSheet extends GoogleSHeetPage {
     @Test
-    public  void test1() throws IOException, InterruptedException {
+    public void test1() throws IOException, InterruptedException {
         loginUsers();
     }
 }

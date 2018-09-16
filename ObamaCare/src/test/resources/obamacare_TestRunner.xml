@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="ObamaCare Automation Script " parallel="false">
 
@@ -10,10 +10,10 @@
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="53.0"/>
-    <test name = "test obamacare">
+    <test name="test obamacare">
 
         <classes>
-        <class name="obamacare.test1"/>
+            <class name="obamacare.test1"/>
 
         </classes>
     </test>

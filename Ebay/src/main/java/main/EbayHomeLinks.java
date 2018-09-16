@@ -4,7 +4,7 @@ import base.CommonAPI;
 
 public class EbayHomeLinks extends CommonAPI {
     //Buy
-    public void Buy(){
+    public void Buy() {
         clickByLinkedText("Registration");
         navigateBack();
         clickByLinkedText("eBay Money Back Guarantee");
@@ -13,8 +13,9 @@ public class EbayHomeLinks extends CommonAPI {
         navigateBack();
         clickByLinkedText("Stores");
     }
+
     //Sell
-    public void Sell(){
+    public void Sell() {
         clickByLinkedText("Start selling");
         navigateBack();
         clickByLinkedText("Learn to sell");
@@ -24,8 +25,9 @@ public class EbayHomeLinks extends CommonAPI {
         clickByLinkedText("Affiliates");
         navigateBack();
     }
+
     //Tools & apps
-    public void TnA(){
+    public void TnA() {
         clickByLinkedText("Mobile apps");
         navigateBack();
         clickByLinkedText("Developers");
@@ -37,8 +39,9 @@ public class EbayHomeLinks extends CommonAPI {
         clickByLinkedText("Site map");
         navigateBack();
     }
+
     //eBay companies
-    public void companies(){
+    public void companies() {
         clickByLinkedText("eBay Classifieds");
         navigateBack();
         clickByLinkedText("See all companies");

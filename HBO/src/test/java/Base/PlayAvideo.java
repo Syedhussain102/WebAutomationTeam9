@@ -1,9 +1,9 @@
 package Base;
 
+import base.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
-import base.CommonAPI;
 
 public class PlayAvideo extends CommonAPI {
 
@@ -11,7 +11,7 @@ public class PlayAvideo extends CommonAPI {
     public void playVideo() throws InterruptedException {
         clickByXpath("/html/body/main/div[1]/div/div/header/div[1]/div/div[2]/div/div/div");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//input[@type='text' and @class='components/Search--searchInput']")).sendKeys("game of thrones",Keys.ENTER);
+        driver.findElement(By.xpath("//input[@type='text' and @class='components/Search--searchInput']")).sendKeys("game of thrones", Keys.ENTER);
         Thread.sleep(3000);
         clickByXpath("/html/body/main/div[2]/div/div/div/div[1]/div[2]/div/div[2]/div[2]/div[4]/a/span/span[1]");
         Thread.sleep(3000);

@@ -1,12 +1,8 @@
 package dataDriven;
 
 import base.CommonAPI;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,12 +10,16 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ExcelSearch extends CommonAPI {
 
+    public static void main(String[] args) throws IOException {
+        String excelValues = String.valueOf(dataFromExcel("../Ebay/data/Book1.xls", "Sheet1", 0));
+        System.out.println(excelValues);
+    }
+
     public void testExcel() throws IOException {
-        ArrayList<String> searchAbleItems = dataFromExcel("../Ebay/data/Book1.xls","Sheet1",1);
+        ArrayList<String> searchAbleItems = dataFromExcel("../Ebay/data/Book1.xls", "Sheet1", 1);
         for (int i = 0; i < searchAbleItems.size(); i++) {
             driver.findElement(By.xpath("fgerdvdf")).sendKeys(searchAbleItems.get(i));
             driver.findElement(By.xpath("fgerdvdf")).clear();
@@ -55,10 +55,10 @@ public class ExcelSearch extends CommonAPI {
     @Test
     public void testUntitledTestCase() throws Exception {
         driver.get("https://www.weightwatchers.com/us/");
-        Assert.assertEquals(driver.getTitle(),"Weight Loss Program, Recipes & Help | Weight Watchers");
+        Assert.assertEquals(driver.getTitle(), "Weight Loss Program, Recipes & Help | Weight Watchers");
 
         driver.findElement(By.id("ela-menu-visitor-desktop-supplementa_find-a-meeting")).click();
-        Assert.assertEquals(driver.getTitle(),"Get Schedules & Times Near You");
+        Assert.assertEquals(driver.getTitle(), "Get Schedules & Times Near You");
 
         WebElement element = driver.findElement(By.xpath("a[href='/us/find-a-meeting/1180510/weight-watchers-store-23rd-st-5th-ave-new-york-ny']"));
         System.out.println(element.getText());
@@ -69,21 +69,13 @@ public class ExcelSearch extends CommonAPI {
         driver.findElement(By.xpath("//div[@id='ml-1180510']/result-location/div/div/a/location-address/div/div/div/div/span")).click();
     }
 
-
-
-    public static void main(String[] args) throws IOException {
-        String excelValues= String.valueOf(dataFromExcel("../Ebay/data/Book1.xls","Sheet1",0));
-        System.out.println(excelValues);
-    }
-
-    public void printExcelSpecificColumn(String sheetName,int columnNo,String path) throws IOException {
-        String excelValues= String.valueOf(dataFromExcel(path,sheetName,columnNo));
+    public void printExcelSpecificColumn(String sheetName, int columnNo, String path) throws IOException {
+        String excelValues = String.valueOf(dataFromExcel(path, sheetName, columnNo));
         System.out.println(excelValues);
     }
 
 
-
-    public void method(){
+    public void method() {
         driver.getWindowHandle();
         driver.switchTo();
     }

@@ -1,16 +1,16 @@
 package Base;
 
+import base.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
-import base.CommonAPI;
 
 public class CountryDropDown extends CommonAPI {
     @Test
-    public void dropDownCountry(){
+    public void dropDownCountry() {
         clickByXpath("/html//main/div[11]/div/div//ul[@class='modules/FooterLinks--links modules/FooterLinks--topLinks']//a[@href='https://hbocareers.com/']");
-        switchTabs(0,1);
-        driver.findElement(By.xpath("/html/body/main/section[1]/div/div[2]/div/form/table/tbody/tr/td[1]/input")).sendKeys("SOFTWARE ENGINEER",Keys.ENTER);
+        switchTabs(0, 1);
+        driver.findElement(By.xpath("/html/body/main/section[1]/div/div[2]/div/form/table/tbody/tr/td[1]/input")).sendKeys("SOFTWARE ENGINEER", Keys.ENTER);
         driver.manage().window().fullscreen();
         clickByXpath("//*[@id=\"location-selects\"]/button[1]");
         driver.manage().window().fullscreen();

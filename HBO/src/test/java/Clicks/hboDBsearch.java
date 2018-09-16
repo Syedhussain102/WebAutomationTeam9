@@ -27,7 +27,7 @@ public class hboDBsearch extends CommonAPI {
     //bring data from db and search using them
     public void searchByDB() throws Exception {
         ConnectDB connectDB = new ConnectDB();
-        List<String> items = connectDB.readDataBase("TestHBO","search");
+        List<String> items = connectDB.readDataBase("TestHBO", "search");
         for (int i = 0; i < items.size(); i++) {
             typeByXpathNEnter("//input[@id='gh-ac']", items.get(i));
             clearInputByXpath("//input[@id='gh-ac']");

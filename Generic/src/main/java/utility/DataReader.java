@@ -1,4 +1,3 @@
-
 package utility;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -62,6 +61,7 @@ public class DataReader {
         }
         return data;
     }
+
     public String[] colReader(String path, int col) throws IOException {
         String[] data = {};
         File file = new File(path);
@@ -82,6 +82,7 @@ public class DataReader {
         }
         return data;
     }
+
 
     public String getCellValue(HSSFCell cell) {
         Object value = null;

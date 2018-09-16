@@ -1,4 +1,5 @@
 package utility;
+
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -17,19 +18,20 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.List;
+
 public class GoogleSheetReader {
     // Application name.
     private static final String APPLICATION_NAME = "Team 9";
     // Directory to store user credentials for this application.
     private static final java.io.File DATA_STORE_DIR = new java.io.File(System.getProperty("user.dir"), ".credentials/sheets-googleapis");
-    // Global instance of the {@link FileDataStoreFactory}.
-    private static FileDataStoreFactory DATA_STORE_FACTORY;
     // Global instance of the JSON factory.
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
-    // Global instance of the HTTP transport.
-    private static HttpTransport HTTP_TRANSPORT;
     // Global instance of the scopes
     private static final List<String> SCOPES = Arrays.asList(SheetsScopes.SPREADSHEETS_READONLY);
+    // Global instance of the {@link FileDataStoreFactory}.
+    private static FileDataStoreFactory DATA_STORE_FACTORY;
+    // Global instance of the HTTP transport.
+    private static HttpTransport HTTP_TRANSPORT;
 
     static {
         try {
@@ -40,6 +42,7 @@ public class GoogleSheetReader {
             System.exit(1);
         }
     }
+
     /**
      * Creates an authorized Credential object.
      *
@@ -60,6 +63,7 @@ public class GoogleSheetReader {
         System.out.println("Credentials saved to " + DATA_STORE_DIR.getAbsolutePath());
         return credential;
     }
+
     /**
      * Build and return an authorized Sheets API client service.
      *

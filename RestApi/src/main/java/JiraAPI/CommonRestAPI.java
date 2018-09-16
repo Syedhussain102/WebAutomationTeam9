@@ -3,24 +3,25 @@ package JiraAPI;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.path.xml.XmlPath;
-import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.given;
 
 public class CommonRestAPI {
 
     public static XmlPath rawToXML(Response r) {
-        String respon=r.asString();
-        XmlPath x=new XmlPath(respon);
+        String respon = r.asString();
+        XmlPath x = new XmlPath(respon);
         return x;
     }
 
     public static JsonPath rawToJson(Response r) {
-        String respon=r.asString();
-        JsonPath x=new JsonPath(respon);
+        String respon = r.asString();
+        JsonPath x = new JsonPath(respon);
         return x;
     }
 
-    public static String getSessionKEY(){
+    public static String getSessionKEY() {
         RestAssured.baseURI = "http://localhost:8080";
         Response res = given().header("Content-Type", "application/json").
                 body("{\"username\": \"naim_khan\",\"password\": \"jira123\"}").

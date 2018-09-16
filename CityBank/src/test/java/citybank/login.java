@@ -4,19 +4,20 @@ import base.CommonAPI;
 import org.testng.annotations.Test;
 
 
-public class login extends CommonAPI{
+public class login extends CommonAPI {
 
     @Test
     public void inputuserid() {
-        typeByCssNEnter("#UserNameGoesHereBro","YoungShuvon@citibank.com");
+        typeByCssNEnter("#UserNameGoesHereBro", "YoungShuvon@citibank.com");
     }
 
     //@Test
-    public void inputpassword(){
+    public void inputpassword() {
         //searchByCSS("#password" ,"12345");
     }
+
     //@Test
-    public void clickSignin(){
+    public void clickSignin() {
         //clickbuttonbyCSS("#signInBtn");
     }
 }

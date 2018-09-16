@@ -1,17 +1,16 @@
 package dataDriven;
 
 import base.CommonAPI;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Row;
-import org.openqa.selenium.By;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ExcelSearch extends CommonAPI {
+
+    public static void main(String[] args) throws IOException {
+        String excelValues = String.valueOf(dataFromExcel("/Users/zann/IdeaProjects/WebAutomationTeam9/Ebay/data/Book1.xls", "Sheet1", 0));
+        System.out.println(excelValues);
+    }
 
     public void multipleLoginExcel() throws IOException, InterruptedException {
         clickByXpath("//*[@id='gh-ug']/a");
@@ -25,14 +24,6 @@ public class ExcelSearch extends CommonAPI {
             navigateBack();
         }
     }
-    public static void main(String[] args) throws IOException {
-        String excelValues= String.valueOf(dataFromExcel("/Users/zann/IdeaProjects/WebAutomationTeam9/Ebay/data/Book1.xls","Sheet1",0));
-        System.out.println(excelValues);
-    }
-
-
-
-
 
 
 }

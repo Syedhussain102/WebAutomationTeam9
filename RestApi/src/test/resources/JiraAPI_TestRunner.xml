@@ -10,7 +10,7 @@
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="53.0"/>
-    <test name = "Jira test">
+    <test name="Jira test">
 
         <classes>
             <class name="Jira_Test.API_Jira"/>

@@ -13,11 +13,16 @@ public class SearchTest extends Search {
         Search sc = PageFactory.initElements(driver, Search.class);
         sc.searchItems();
     }
+
     //@Test
-    public void searchOneItem(){ searchItems();}
+    public void searchOneItem() {
+        searchItems();
+    }
+
     @Test
     public void exTest() throws IOException {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
         excelTest();
     }
 }

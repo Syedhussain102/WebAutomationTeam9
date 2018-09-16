@@ -1,8 +1,8 @@
 package Base;
 
+import base.CommonAPI;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
-import base.CommonAPI;
 
 public class Scroll extends CommonAPI {
     @Test

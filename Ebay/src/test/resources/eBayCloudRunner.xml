@@ -11,7 +11,7 @@
     <parameter name="browserVersion" value="53.0"/>
     <parameter name="url" value="https://www.ebay.com"/>
 
-    <test name = "eBay Home">
+    <test name="eBay Home">
         <classes>
             <class name="ebay.database.DBsearchTest"/>
             <class name="ebay.main.SignUpTest"/>

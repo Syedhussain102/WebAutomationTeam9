@@ -8,6 +8,7 @@ public class DBsearchTest extends DBsearch {
     public void testSearchByDB() throws Exception {
         searchByDB();
     }
+
     @Test
     public void testMultipleByDB() throws Exception {
         searchByDBmultiple();

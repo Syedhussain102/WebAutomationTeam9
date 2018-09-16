@@ -7,10 +7,32 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class APIf1 extends CommonAPI {
+
+    //http://ergast.com/api/f1/drivers.json?limit=10&offset=20
+    public static void main(String[] args) {
+        RestAssured.baseURI = "http://ergast.com";
+        String b = "{'MRData':{'xmlns':'http://ergast.com/mrd/1.4','series':'f1','url':'http://ergast.com/api/f1/drivers/alonso.json','limit':'30','offset':'0','total':'1','DriverTable':{'driverId':'alonso','Drivers':[{'driverId':'alonso','permanentNumber':'14','code':'ALO','url':'http://en.wikipedia.org/wiki/Fernando_Alonso','givenName':'Fernando','familyName':'Alonso','dateOfBirth':'1981-07-29','nationality':'Spanish'}]}}";
+        Response response = given().
+                queryParam("limit", "10").
+                body(b).
+                when().
+                post("/api/f1/drivers/alonso.json").
+                then().assertThat().statusCode(200).and().contentType(ContentType.JSON).
+                and().
+                body("Content-Length", equalTo(null)). //supposed to be 416
+                extract().response();
+        String responseString = response.asString();
+        System.out.println(responseString);
+        JsonPath jsonpath = new JsonPath(responseString);
+        System.out.println(jsonpath);
+        String series = jsonpath.get("MRData.series");
+        System.out.println(series);
+        given().body("{'series':" + series + "");
+    }
 
     public void f1API() {
         Response response = given().when().get("http://ergast.com/api/f1/2008/5/results.json");
@@ -49,27 +71,7 @@ public class APIf1 extends CommonAPI {
         System.out.println("Status code of the page is : " + statusCode);
         System.out.println("Response code of the page is : " + response);
     }
-    //http://ergast.com/api/f1/drivers.json?limit=10&offset=20
-    public static void main(String[] args) {
-        RestAssured.baseURI = "http://ergast.com";
-        String b = "{'MRData':{'xmlns':'http://ergast.com/mrd/1.4','series':'f1','url':'http://ergast.com/api/f1/drivers/alonso.json','limit':'30','offset':'0','total':'1','DriverTable':{'driverId':'alonso','Drivers':[{'driverId':'alonso','permanentNumber':'14','code':'ALO','url':'http://en.wikipedia.org/wiki/Fernando_Alonso','givenName':'Fernando','familyName':'Alonso','dateOfBirth':'1981-07-29','nationality':'Spanish'}]}}";
-        Response response = given().
-        queryParam("limit", "10").
-        body(b).
-        when().
-        post("/api/f1/drivers/alonso.json").
-        then().assertThat().statusCode(200).and().contentType(ContentType.JSON).
-        and().
-        body("Content-Length", equalTo(null)). //supposed to be 416
-        extract().response();
-        String responseString = response.asString();
-        System.out.println(responseString);
-        JsonPath jsonpath = new JsonPath(responseString);
-        System.out.println(jsonpath);
-        String series = jsonpath.get("MRData.series");
-        System.out.println(series);
-        given().body("{'series':"+series+"");
-    }
+
     //assert if status code and content type matches and travel to specific place
     public void test2() {
         RestAssured.baseURI = "http://ergast.com";

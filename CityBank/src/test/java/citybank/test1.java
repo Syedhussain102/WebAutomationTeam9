@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 
 public class test1 extends mainClass {
     //check top bar
-   // @Test
-    public void testCheckBar(){
+    // @Test
+    public void testCheckBar() {
         CheckCreditCard();
     }
 

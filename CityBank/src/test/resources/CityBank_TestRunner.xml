@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="cityBank Automation Script " parallel="false">
 
@@ -11,10 +11,10 @@
     <parameter name="browserVersion" value="53.0"/>
     <parameter name="url" value="https://online.citi.com/US/login.do"/>
 
-    <test name = "test CityBank">
+    <test name="test CityBank">
 
         <classes>
-       <class name="Interview.Interview"/>
+            <class name="Interview.Interview"/>
 
         </classes>
     </test>

@@ -10,6 +10,7 @@ public class ExcelSearchTest extends ExcelSearch {
     public void TestExcel() throws IOException {
         testExcel();
     }
+
     @Test
     public void TestMultipleUsersExcel() throws IOException {
         multipleLoginExcel();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="ebay Automation Script " parallel="methods" thread-count="4">
 
@@ -13,19 +13,11 @@
 
 
     <test name="FF Test">
-        <parameter name="browserName" value="firefox"/>
-        <classes>
-            <class name="ebay.main.MessagesTest"/>
-        </classes>
-    </test>
-
-    <test name="F Test">
         <parameter name="browserName" value="chrome"/>
         <classes>
             <class name="ebay.main.MessagesTest"/>
         </classes>
     </test>
-
 
 
     <!--<class name="ebay.main.TestValidate"/>-->

@@ -4,7 +4,7 @@ import base.CommonAPI;
 
 public class CityHomeLinks extends CommonAPI {
     //Why Citi
-    public void WhyCiti(){
+    public void WhyCiti() {
         clickByLinkedText("Our Story");
         navigateBack();
         clickByLinkedText("Careers");
@@ -16,8 +16,9 @@ public class CityHomeLinks extends CommonAPI {
         clickByLinkedText("Special Offers");
         navigateBack();
     }
+
     //Relationship Banking
-    public void relBanking(){
+    public void relBanking() {
         clickByLinkedText("Citi Priority");
         navigateBack();
         clickByLinkedText("Citigold®");
@@ -25,8 +26,9 @@ public class CityHomeLinks extends CommonAPI {
         clickByLinkedText("Citi Global Banking");
         navigateBack();
     }
+
     //Business Banking
-    public void businessBanking(){
+    public void businessBanking() {
         clickByLinkedText("Small Business Accounts");
         navigateBack();
         clickByLinkedText("Commercial Accounts");
@@ -34,7 +36,7 @@ public class CityHomeLinks extends CommonAPI {
     }
 
     //Rates
-    public void rates(){
+    public void rates() {
         clickByLinkedText("Personal Banking");
         navigateBack();
         clickByLinkedText("Credit Cards");
@@ -44,18 +46,21 @@ public class CityHomeLinks extends CommonAPI {
         clickByLinkedText("Home Equity");
         navigateBack();
     }
+
     //Citi Easy
-    public void CitiEasy(){
+    public void CitiEasy() {
         clickByLinkedText("Citi Easy DealsSMs");
 
     }
+
     //Citi® Private Pass®
-    public void CitiPrivate(){
+    public void CitiPrivate() {
         clickByLinkedText("Citi® Private Pass®");
 
     }
+
     //Citi® Private Pass®
-    public void CitiPrivateBank(){
+    public void CitiPrivateBank() {
         clickByLinkedText("Citi Private Bank");
     }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="HBO Automation Script " parallel="false">
 
@@ -10,13 +10,13 @@
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="53.0"/>
-    <test name = "HBO test">
+    <test name="HBO test">
 
         <classes>
-        <!--<class name="Base.dropDown"/>
-        <class name="Clicks.ableToChooseBoxing"/>
-        <class name="Base.searchItem"/>
-        <class name="Base.PlayAvideo"/>-->
+            <!--<class name="Base.dropDown"/>
+            <class name="Clicks.ableToChooseBoxing"/>
+            <class name="Base.searchItem"/>
+            <class name="Base.PlayAvideo"/>-->
             <class name="Clicks.TopOptions"/>
 
         </classes>

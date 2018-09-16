@@ -12,22 +12,22 @@ import java.io.IOException;
 
 public class ExcelReader {
     public static String[][] FetchDataFromExcel(String path) throws IOException {
-        File excel= new File(path);
-        FileInputStream fis= new FileInputStream(excel);
-        HSSFWorkbook wb= new HSSFWorkbook(fis);
-        HSSFSheet ws= wb.getSheet("Sheet1");
+        File excel = new File(path);
+        FileInputStream fis = new FileInputStream(excel);
+        HSSFWorkbook wb = new HSSFWorkbook(fis);
+        HSSFSheet ws = wb.getSheet("Sheet1");
 
-        int rowNum=ws.getLastRowNum()+1;
-        int colNum=ws.getRow(0).getLastCellNum();
+        int rowNum = ws.getLastRowNum() + 1;
+        int colNum = ws.getRow(0).getLastCellNum();
 
-        String[][] data= new String[rowNum][colNum];
+        String[][] data = new String[rowNum][colNum];
 
-        for(int i=0; i<rowNum; i++) {
-            HSSFRow row=ws.getRow(i);
-            for(int j=0; j<colNum; j++) {
-                HSSFCell cell= row.getCell(j);
-                String value=cellToString(cell);
-                data[i][j]=value;
+        for (int i = 0; i < rowNum; i++) {
+            HSSFRow row = ws.getRow(i);
+            for (int j = 0; j < colNum; j++) {
+                HSSFCell cell = row.getCell(j);
+                String value = cellToString(cell);
+                data[i][j] = value;
             }
 
             /*System.out.println("Value is "+ data[i][0] + data[i][1] + data[i][2] );
@@ -45,25 +45,24 @@ public class ExcelReader {
         return data;
     }
 
-    public static String cellToString(HSSFCell cell){
+    public static String cellToString(HSSFCell cell) {
         int type;
         Object result;
         String strReturn = null;
-        if (cell==null) {
-            strReturn="";
-        }
-        else {
-            switch (cell.getCellType()){
+        if (cell == null) {
+            strReturn = "";
+        } else {
+            switch (cell.getCellType()) {
                 case Cell.CELL_TYPE_NUMERIC: //Numeric
-                    result=cell.getNumericCellValue();
-                    strReturn=result.toString();
+                    result = cell.getNumericCellValue();
+                    strReturn = result.toString();
                     break;
                 case Cell.CELL_TYPE_STRING:
-                    result=cell.getStringCellValue();
-                    strReturn=result.toString();
+                    result = cell.getStringCellValue();
+                    strReturn = result.toString();
                     break;
                 default:
-                    strReturn=null;
+                    strReturn = null;
             }
         }
         return strReturn;

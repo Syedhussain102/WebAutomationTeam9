@@ -3,11 +3,12 @@ package JiraAPI;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+
 import static io.restassured.RestAssured.given;
 
 public class JiraRestApi {
     //getting status code
-    public void test2(){
+    public void test2() {
         RestAssured.baseURI = "http://localhost:8080";
         Response response = given().header("Content-Type", "application/json").
                 body("{\"username\": \"naim_khan\",\"password\": \"jira123\"}").
@@ -19,10 +20,10 @@ public class JiraRestApi {
     }
 
     //creating issue/Defact
-    public void JiraApi(){
+    public void JiraApi() {
         RestAssured.baseURI = "http://localhost:8080";
-       Response response = given().header("Content-Type", "application/json").
-          header("Cookie","JSESSIONID="+CommonRestAPI.getSessionKEY()).
+        Response response = given().header("Content-Type", "application/json").
+                header("Cookie", "JSESSIONID=" + CommonRestAPI.getSessionKEY()).
                 body("{\n" +
                         "\t\"fields\": {\n" +
                         "\t\t\"project\":\n" +
@@ -43,10 +44,10 @@ public class JiraRestApi {
     }
 
     //insert comment
-    public void testInsertComment(){
+    public void testInsertComment() {
         RestAssured.baseURI = "http://localhost:8080";
         Response response = given().header("Content-Type", "application/json").
-                header("Cookie","JSESSIONID="+CommonRestAPI.getSessionKEY()).
+                header("Cookie", "JSESSIONID=" + CommonRestAPI.getSessionKEY()).
                 body("{ \"body\": \"random updated comment\", \"visibility\": { \"type'\": \"role\", \"value\": \"Administrators\"} } ").
                 when().post("/rest/api/2/issue/10001/comment").then().statusCode(201).extract().response();
         JsonPath js = CommonRestAPI.rawToJson(response);
@@ -55,10 +56,10 @@ public class JiraRestApi {
     }
 
     //update comment --put
-    public void testUpdateComment(){
+    public void testUpdateComment() {
         RestAssured.baseURI = "http://localhost:8080";
         Response response = given().header("Content-Type", "application/json").
-                header("Cookie","JSESSIONID="+CommonRestAPI.getSessionKEY()).
+                header("Cookie", "JSESSIONID=" + CommonRestAPI.getSessionKEY()).
                 body("{ \"body\": \"random comment\", \"visibility\": { \"type'\": \"role\", \"value\": \"Administrators\"} } ").
                 when().put("/rest/api/2/issue/10000/comment/10001").then().statusCode(200).extract().response();
         JsonPath js = CommonRestAPI.rawToJson(response);

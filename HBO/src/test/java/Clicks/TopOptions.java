@@ -5,13 +5,20 @@ import org.testng.annotations.Test;
 
 public class TopOptions extends mainClass {
     @Test
-    public void series() throws InterruptedException {}
+    public void series() throws InterruptedException {
+    }
+
     @Test
-    public void Movies(){;}
+    public void Movies() {
+        ;
+    }
+
     @Test
-    public void Kids(){}
+    public void Kids() {
+    }
+
     @Test
-    public void clickcareers(){
+    public void clickcareers() {
         clickByLinkedText("CAREERS");
     }
 }

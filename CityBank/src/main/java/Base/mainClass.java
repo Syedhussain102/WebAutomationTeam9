@@ -3,7 +3,7 @@ package Base;
 import base.CommonAPI;
 
 public class mainClass extends CommonAPI {
-    public void CheckCreditCard(){
+    public void CheckCreditCard() {
         clickByLinkedText("Credit Cards");
         clickByXpath("//*[@id='cA-DD-taskbarMenu']/div[1]/div[1]/div/a");
     }
