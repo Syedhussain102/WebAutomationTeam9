@@ -12,11 +12,9 @@
         <module>HBO</module>
         <module>Facebook</module>
         <module>CityBank</module>
-        <module>ObamaCare</module>
         <module>Generic</module>
         <module>Ebay</module>
         <module>Cnbc</module>
-        <module>Walmart</module>
         <module>RestApi</module>
     </modules>
 

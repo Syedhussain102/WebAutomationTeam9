@@ -83,7 +83,7 @@ public class DataReader {
         return data;
     }
 
-
+    @SuppressWarnings("deprication")
     public String getCellValue(HSSFCell cell) {
         Object value = null;
 

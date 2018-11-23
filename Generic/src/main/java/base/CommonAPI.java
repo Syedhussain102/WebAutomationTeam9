@@ -20,8 +20,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
 import org.testng.annotations.Optional;
+import org.testng.annotations.*;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -31,8 +31,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.*;
 import java.util.NoSuchElementException;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
@@ -442,7 +442,7 @@ public class CommonAPI {
     //explicit wait
     public void explicitWaitByXpath(String locator, int second) {
         WebDriverWait w = new WebDriverWait(driver, second);
-        w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+        //w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
     //iframe Handle --window for popup window, frame for iframe,default content for going back to home window

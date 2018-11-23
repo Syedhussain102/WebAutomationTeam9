@@ -21,10 +21,16 @@ public class MessagesTest extends Messages {
         folderInMessages();
     }
 
-    @Test
+    //@Test
     public void m() {
         clickByXpath("//ul[@id='gh-topl']//a[@href='https://ocsnext.ebay.com/ocs/home']", true);
         clickByXpath("/html//a[@id='gh-la']", true);
+    }
+
+    @Test
+    public void mx() throws InterruptedException {
+        Thread.sleep(20000);
+
     }
 
 }
